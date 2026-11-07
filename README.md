@@ -49,7 +49,7 @@
 
 ### 路线 1：Windows 便携包（最省事，老师 / 有 Windows 电脑的同学）
 
-1. 从本仓库的 [Releases](../../releases/latest) 下载 `aixx-server-win-v0.1.zip`（也可以让老师把解压后的文件夹直接发给你），解压到任意目录，例如 `D:\aixx-server-win`。
+1. 从本仓库的 [Releases](https://github.com/sbdcf/aixx-arena/releases/latest) 下载 `aixx-server-win-v0.1.zip`（也可以让老师把解压后的文件夹直接发给你），解压到任意目录，例如 `D:\aixx-server-win`。
 2. 双击目录里的 `start.cmd`。第一次运行时 Windows 可能弹出「是否允许访问网络」，勾选「**专用网络**」并允许。
 3. 窗口里出现 `ready. Ctrl+C to stop.` 就是启动成功。**这个黑窗口不要关**，关了服务就停了。
 4. 本机浏览器打开 `http://127.0.0.1:8787/`；要让同教室的学生连，把窗口里 `lan` 那行地址（形如 `http://192.168.1.23:8787`）发给他们。
@@ -455,7 +455,7 @@ runtime\node.exe packages\server\src\main.ts --port 9000 --max-rooms 30 --web-ro
 
 #### B0 直接用发布包（最省事，x64）
 
-从 [Releases](../../releases/latest) 下载 `aixx-server-linux-v0.1.tar.gz`，解压后执行：
+从 [Releases](https://github.com/sbdcf/aixx-arena/releases/latest) 下载 `aixx-server-linux-v0.1.tar.gz`，解压后执行：
 
 ```bash
 tar -xzf aixx-server-linux-v0.1.tar.gz
