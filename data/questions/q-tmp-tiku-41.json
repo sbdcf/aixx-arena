@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-41",
+  "type": "multiple",
+  "title": "黄明东加拿大高校学术伦理研究观点",
+  "stem": "加拿大高等学校内部学术伦理机制及其运行过程,对于规范我国高校学术行为有积极的建设性意义。请在中国知网查询作者为黄明东的相关研究文献，以下说法正确的是（）",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "加拿大十分重视妇女、儿童和社会弱势群体的权利的保护"
+    },
+    {
+      "key": "B",
+      "text": "加拿大的每一所高等学校都设有学术伦理审查办公室"
+    },
+    {
+      "key": "C",
+      "text": "加拿大高校要求教授每年必须完成2门次课程的教学任务"
+    },
+    {
+      "key": "D",
+      "text": "在加拿大，课题的申报获得成功以后，所有经费均直接拨付到课题组"
+    }
+  ],
+  "answer": [
+    "A",
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "该文指出加拿大重视妇女、儿童及弱势群体权利保护，各高校普遍设学术伦理审查机构；C 的“每年 2 门次课程”与 D 的“经费直接拨付课题组”与原文不符。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "作者=黄明东 AND 主题=加拿大 学术伦理",
+    "steps": "CNKI 作者检索定位相关论文，阅读全文核对关于弱势群体保护、伦理审查机构、教学任务与经费拨付的表述。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-ethics"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 41 题",
+  "difficulty": 3,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

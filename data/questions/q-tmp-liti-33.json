@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-33",
+  "type": "single",
+  "title": "比亚迪商标申请日期核实",
+  "stem": "比亚迪股份有限公司注册号为 27706260 的商标“比亚迪云微”，申请日期为 ( ) ?",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "2017 年 11 月 24 日"
+    },
+    {
+      "key": "B",
+      "text": "2017 年 10 月 24 日"
+    },
+    {
+      "key": "C",
+      "text": "2018 年 11 月 24 日"
+    },
+    {
+      "key": "D",
+      "text": "2018 年 10 月 24 日"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在在国家知识产权局商标局中国商标网商标综合查询在（ https://wcjs.sbj.cnipa.gov.cn/sgtmi）中检索注册号为27706260 的商标“比亚迪云微”，可以查到该商标申请日期为 2017 年 11 月 24 日。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "注册号=27706260 比亚迪云微",
+    "steps": "在在国家知识产权局商标局中国商标网商标综合查询在（ https://wcjs.sbj.cnipa.gov.cn/sgtmi）中检索注册号为27706260 的商标“比亚迪云微”，可以查到该商标申请日期为 2017 年 11 月 24 日。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 6",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

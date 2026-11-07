@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-37",
+  "type": "multiple",
+  "title": "低空经济法律 CSSCI 论文筛选",
+  "stem": "在中国知网检索以中国民航大学为第一作者单位发表的篇名中既包含“低空经济”又包含“法律”的CSSCI论文，下列论文中符合上述条件的有哪些？",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "龙卫球,王锡柱.低空经济发展特殊法律制度创新研究[J].华东政法大学学报,2025,28(2):63-76."
+    },
+    {
+      "key": "B",
+      "text": "贾圣真.低空经济法律制度的体系建构[J].当代法学,2025,39(6):76-86."
+    },
+    {
+      "key": "C",
+      "text": "康健.低空经济发展法律规范供给的地方实践及其完善[J].河南财经政法大学学报,2025,40(4):1-14."
+    },
+    {
+      "key": "D",
+      "text": "王锡柱.低空经济发展中的空地冲突及其法律因应[J].法律科学(西北政法大学学报),2026,44(1):190-201."
+    }
+  ],
+  "answer": [
+    "B",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "贾圣真、王锡柱均以中国民航大学为第一作者单位，且篇名同时含“低空经济”“法律”；龙卫球（北航）、康健（河南财经政法大学）不符合。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "作者单位=中国民航大学 AND 篇名=低空经济 AND 篇名=法律 AND 来源类别=CSSCI",
+    "steps": "CNKI 高级检索组合「第一作者单位」与两个「篇名」条件并限定 CSSCI，逐篇核对作者单位与刊名。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-boolean"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 37 题",
+  "difficulty": 3,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-31",
+  "type": "multiple",
+  "title": "《人工智能在电力系统…》的关键词",
+  "stem": "关键词是从文献题目、文摘或正文中提取具有实质意义并能代表文献主题内容的词汇，具有一定的精确搜索功能。中国知网收录的《人工智能在电力系统及综合能源系统中的应用综述》的关键词有以下哪些（）",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "综合能源系统"
+    },
+    {
+      "key": "B",
+      "text": "人工智能"
+    },
+    {
+      "key": "C",
+      "text": "电力系统"
+    },
+    {
+      "key": "D",
+      "text": "机器学习"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "该综述的关键词为综合能源系统、人工智能、电力系统、机器学习四项，四项均属该文关键词。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "篇名=人工智能在电力系统及综合能源系统中的应用综述",
+    "steps": "CNKI 打开该文详情页，读取「关键词」字段列出的词。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 31 题",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

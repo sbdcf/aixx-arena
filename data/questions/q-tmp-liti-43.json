@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-43",
+  "type": "multiple",
+  "title": "一稿多投的界定",
+  "stem": "下列行为，属于“一稿多投”的是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "论文以不同或同一种文字在同一种期刊的国际版本上再次发表"
+    },
+    {
+      "key": "B",
+      "text": "将主要数据和图表相同的两篇论文分别投稿不同期刊"
+    },
+    {
+      "key": "C",
+      "text": "将同一篇论文同时投稿多家期刊"
+    },
+    {
+      "key": "D",
+      "text": "将发表过的会议论文充实 50%以上数据后再次向期刊投稿，引用上次发表的论文并向编辑部说明"
+    }
+  ],
+  "answer": [
+    "B",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "论文以不同或同一种文字在同一种期刊的国际版本上再次发表，或者将发表过的会议论文充实 50%以上数据后再次向期刊投稿，引用上次发表的论文并向编辑部说明不属于“一稿多投”。",
+  "evidence": {
+    "database_id": "web",
+    "query": "一稿多投 界定 学术规范",
+    "steps": "论文以不同或同一种文字在同一种期刊的国际版本上再次发表，或者将发表过的会议论文充实 50%以上数据后再次向期刊投稿，引用上次发表的论文并向编辑部说明不属于“一稿多投”。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ethics"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "学术写作-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

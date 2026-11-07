@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-34",
+  "type": "multiple",
+  "title": "中国互联网联合辟谣平台的栏目分类",
+  "stem": "在中国互联网联合辟谣平台官网有一个“辟谣信息查证”的栏目，提供搜索和筛选功能。请问：筛选中的“按分类分”，系统提供的筛选项包括以下哪些？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "科学常识"
+    },
+    {
+      "key": "B",
+      "text": "时事政治"
+    },
+    {
+      "key": "C",
+      "text": "公共政策"
+    },
+    {
+      "key": "D",
+      "text": "公共安全"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "进入这个网站，在首页找到入口，进去这个栏目（ https://www.piyao.org.cn/pysjk/frontsql.htm）实地查询。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "piyao.org.cn 辟谣数据库",
+    "steps": "进入这个网站，在首页找到入口，进去这个栏目（ https://www.piyao.org.cn/pysjk/frontsql.htm）实地查询。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ethics",
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 7",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

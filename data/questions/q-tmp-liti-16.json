@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-16",
+  "type": "multiple",
+  "title": "百度高级检索“关键词位置”的可选范围",
+  "stem": "在百度的高级检索界面中有一个“关键词位置”的限定，其中可以选择（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "网页任何地方"
+    },
+    {
+      "key": "B",
+      "text": "仅网页标题中"
+    },
+    {
+      "key": "C",
+      "text": "仅 URL 中"
+    },
+    {
+      "key": "D",
+      "text": "仅网页图片中"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在百度页面的右上角点击“设置”，在弹出的菜单中选择“高级检索”，仔细看一下“关键词位置”这个选项。",
+  "evidence": {
+    "database_id": "web",
+    "query": "百度 高级检索 关键词位置",
+    "steps": "在百度页面的右上角点击“设置”，在弹出的菜单中选择“高级检索”，仔细看一下“关键词位置”这个选项。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-boolean",
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "信息检索理论与技术-样题 7",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

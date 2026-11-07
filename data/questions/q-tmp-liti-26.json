@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-26",
+  "type": "single",
+  "title": "维普学位论文的题名检索",
+  "stem": "通过维普学位论文系统检索论文“《蒙古族翻译史研究》汉英翻译实践报告”，作者单位是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "内蒙古大学"
+    },
+    {
+      "key": "B",
+      "text": "四川大学"
+    },
+    {
+      "key": "C",
+      "text": "重庆大学"
+    },
+    {
+      "key": "D",
+      "text": "四川师范大学"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在维普学位论文通过题名检索论文。",
+  "evidence": {
+    "database_id": "vip",
+    "query": "题名=<题干论文题名>",
+    "steps": "在维普学位论文通过题名检索论文。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-vip"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "常用中文商业数据库-样题 2",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

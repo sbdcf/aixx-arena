@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-44",
+  "type": "multiple",
+  "title": "期刊收录来源（CSSCI/北大核心）辨别",
+  "stem": "刊发学术论文《基于认捐模式的图书馆受赠研究》的期刊属于（ ）期刊。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "CSSCI"
+    },
+    {
+      "key": "B",
+      "text": "SSCI"
+    },
+    {
+      "key": "C",
+      "text": "北大核心"
+    },
+    {
+      "key": "D",
+      "text": "CSCD"
+    }
+  ],
+  "answer": [
+    "A",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在 CNKI（或万方、维普）中找到这篇论文，确定所在期刊，进入期刊主页，即可看到答案。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "刊名=<题干期刊名> 期刊主页",
+    "steps": "在 CNKI（或万方、维普）中找到这篇论文，确定所在期刊，进入期刊主页，即可看到答案。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "学术写作-样题 3",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

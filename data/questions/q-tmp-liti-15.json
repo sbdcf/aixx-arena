@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-15",
+  "type": "single",
+  "title": "字段限制检索的检索点识别",
+  "stem": "在 CNKI 期刊论文数据库中（或者是在CNKI 数据库的高级检索中文献类型选择“学术期刊”），可选的检索字段不包括（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "关键词"
+    },
+    {
+      "key": "B",
+      "text": "题名"
+    },
+    {
+      "key": "C",
+      "text": "作者单位"
+    },
+    {
+      "key": "D",
+      "text": "期刊"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "进入系统，打开核对一下。",
+  "evidence": {
+    "database_id": "web",
+    "query": "字段限制检索 题名 关键词 作者单位",
+    "steps": "进入系统，打开核对一下。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic",
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "信息检索理论与技术-样题 6",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

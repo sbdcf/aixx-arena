@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-31",
+  "type": "single",
+  "title": "国家标准主要起草人核实",
+  "stem": "2020 年 5 月 6 日，国家标准《儿童口罩技术规范》（标准号：GB/T38880-2020）发布并实施。以下所列哪一位不是该标准的起草人？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "高尚荣"
+    },
+    {
+      "key": "B",
+      "text": "李桂梅"
+    },
+    {
+      "key": "C",
+      "text": "许伟民"
+    },
+    {
+      "key": "D",
+      "text": "李建全"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "国家标准全文公开系统里利用标准号查到该标准全文，第 2 页“本标准主要起草人”中查询即得。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "按题干标准号检索（国家标准全文公开系统）",
+    "steps": "国家标准全文公开系统里利用标准号查到该标准全文，第 2 页“本标准主要起草人”中查询即得。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data",
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 4",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

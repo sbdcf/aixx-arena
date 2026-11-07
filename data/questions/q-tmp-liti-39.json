@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-39",
+  "type": "single",
+  "title": "公益大讲堂课程时长",
+  "stem": "在高校信息素养教育数据库中可以找到多个全国信息素养公益大讲堂的在线讲座视频，其中包括第三期四川师范大学王一老师主讲的《数字数据可视化——快速搞定炫酷图表》，请问这个在线视频讲座的时长与下列哪个选项最接近？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "45 分 35 秒"
+    },
+    {
+      "key": "B",
+      "text": "55 分 55 秒"
+    },
+    {
+      "key": "C",
+      "text": "60 分 09 秒"
+    },
+    {
+      "key": "D",
+      "text": "65 分 43 秒"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "百度一下，找到这个数据库的官网；选择“直播讲座”栏目。（如果不在校园网内，可能会有登录提示，选择“不登录”即可，这个公益讲座是开放的）；选择“公益大讲堂”栏目，找到课程；播放视频，看进度条。",
+  "evidence": {
+    "database_id": "web",
+    "query": "直播讲座 公益大讲堂 <课程名>",
+    "steps": "百度一下，找到这个数据库的官网；选择“直播讲座”栏目。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "实用学习资源-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

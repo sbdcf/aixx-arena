@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-25",
+  "type": "multiple",
+  "title": "“人工智能*图书馆”检索结果的机构发文量",
+  "stem": "在中国知网“学术期刊”库中检索主题同时包含“人工智能”和“图书馆”的文献，下列哪些机构发文量排名前五以内？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "南京大学"
+    },
+    {
+      "key": "B",
+      "text": "中国国家图书馆"
+    },
+    {
+      "key": "C",
+      "text": "武汉大学"
+    },
+    {
+      "key": "D",
+      "text": "四川大学"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在中国期刊库选择“主题”字段，输入检索词“人工智能 * 图书馆”，在检索结果页面左侧分组浏览的“机构”分组中可以找到各机构的发文量。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "主题=人工智能 * 图书馆",
+    "steps": "在中国期刊库选择“主题”字段，输入检索词“人工智能 * 图书馆”，在检索结果页面左侧分组浏览的“机构”分组中可以找到各机构的发文量。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-boolean"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "常用中文商业数据库-样题 1",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

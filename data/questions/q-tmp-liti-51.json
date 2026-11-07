@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-51",
+  "type": "single",
+  "title": "CNKI“第一单位”检索点识别",
+  "stem": "请问 2011 年至 2020 年间以“四川师范大学”为第一作者单位发表 CSSCI 论文最多的作者是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "谭光辉"
+    },
+    {
+      "key": "B",
+      "text": "汪洪亮"
+    },
+    {
+      "key": "C",
+      "text": "唐代兴"
+    },
+    {
+      "key": "D",
+      "text": "蔡方鹿"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "CSSCI 论文，一般在中文期刊论文数据库中检索，其中比较常用的是 CNKI、维普、万方。在这三个数据库中，只有 CNKI 有“第一单位”（第一作者单位）这个检索点。所以选择 CNKI。在 CNKI 的高级检索界面，文献类型选择“学术期刊”，检索点选择“第一单位”，检索词输入“四川师范大学”，匹配方式选择默认的“模糊”，时间限制 2011-2020，来源期刊勾选“CSSCI ”，然后点击“检索”。在检索结果页面，选择“导出与分析”→“可视化分析”→“全部检索结果分析”，在分析结果页面，选择“中国作者分布”项，即可看到高频作者排序柱状图。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "第一作者=谭光辉 AND 第一单位=<机构>",
+    "steps": "CSSCI 论文，一般在中文期刊论文数据库中检索，其中比较常用的是 CNKI、维普、万方。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "科研工具-样题 3",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

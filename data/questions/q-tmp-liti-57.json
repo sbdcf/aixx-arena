@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-57",
+  "type": "multiple",
+  "title": "讯飞星火论文写作栏目的功能",
+  "stem": "星火科研助手中有一个学术写作的栏目，这个栏目下的具体功能包括（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "学术翻译"
+    },
+    {
+      "key": "B",
+      "text": "英文润色"
+    },
+    {
+      "key": "C",
+      "text": "中文润色"
+    },
+    {
+      "key": "D",
+      "text": "全文审校"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "注册登录这个网站，进入“学术写作”栏目，即可看到答案。网址：https://paper.iflytek.com",
+  "evidence": {
+    "database_id": "web",
+    "query": "paper.iflytek.com 学术写作",
+    "steps": "注册登录这个网站，进入“学术写作”栏目，即可看到答案。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "AI素养-样题 5",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

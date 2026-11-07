@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-06",
+  "type": "single",
+  "title": "信息素养主题被引最高论文的作者",
+  "stem": "利用中国知网，检索武汉大学黄如花老师所发表的，标题中含有“信息素养”的论文，其中被引频次最高文章合作者是( )。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "李白杨"
+    },
+    {
+      "key": "B",
+      "text": "黄雨婷"
+    },
+    {
+      "key": "C",
+      "text": "冯婕"
+    },
+    {
+      "key": "D",
+      "text": "黄颖"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在中国知网的高级检索中分别输入作者：黄如花，作者单位：武汉大学，标题：信息素养，检索结果按照“被引”倒序，可以看到被引频次最高文章为《数据素养教育:大数据时代信息素养教育的拓展》，作者为黄如花和李白杨。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "作者=黄如花 AND 作者单位=武汉大学 AND 篇名=信息素养 AND 排序=被引",
+    "steps": "在中国知网的高级检索中分别输入作者：黄如花，作者单位：武汉大学，标题：信息素养，检索结果按照“被引”倒序，可以看到被引频次最高文章为《数据素养教育:大数据时代信息素养教育的拓展》，作者为黄如花和李白杨。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息基本概念-样题 6",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

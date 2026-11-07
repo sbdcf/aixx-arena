@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-32",
+  "type": "single",
+  "title": "专利的技术领域与附图数量",
+  "stem": "小米公司持有一项名为“一种用于耳机插头的连接部件、耳机插孔及终端”的发明专利，通过国家知识产权局专利检索系统搜索并阅读专利原文，在文献的说明书部分，了解到该专利的技术领域为（ ），附图共有（ ）页。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "电子工程，3"
+    },
+    {
+      "key": "B",
+      "text": "物联网，4"
+    },
+    {
+      "key": "C",
+      "text": "电子技术，5"
+    },
+    {
+      "key": "D",
+      "text": "制造技术，6"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在国家知识产权局的专利库中查找专利原文，阅读文献即可查到该专利的技术领域和附图。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "按题干专利号检索（国家知识产权局专利检索）",
+    "steps": "在国家知识产权局的专利库中查找专利原文，阅读文献即可查到该专利的技术领域和附图。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 5",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-48",
+  "type": "judge",
+  "title": "印象笔记的笔记类型与快捷键",
+  "stem": "印象笔记可以新建普通笔记和语音笔记，均可以快速插入智能表格和添加标签；可以新建桌面便签，可以插入待办事项和添加标签；可以按Ctrl+Alt+D组合键调用新Markdown笔记编辑窗口。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "“语音笔记”不支持插入智能表格，故“均可以快速插入智能表格”不成立；桌面便签、Ctrl+Alt+D 新建 Markdown 笔记等描述为真。",
+  "evidence": {
+    "database_id": "web",
+    "query": "印象笔记 语音笔记 桌面便签 Ctrl+Alt+D",
+    "steps": "在印象笔记客户端逐项试用：新建普通/语音笔记、桌面便签、待办事项，并测试 Ctrl+Alt+D 是否为 Markdown 编辑窗口。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 48 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-30",
+  "type": "single",
+  "title": "2025 年食品类强制性国标数量",
+  "stem": "利用全国标准信息公共服务平台检索，2025 年发布的与“食品”相关的强制性国家标准共有多少条",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "3"
+    },
+    {
+      "key": "B",
+      "text": "2"
+    },
+    {
+      "key": "C",
+      "text": "1"
+    },
+    {
+      "key": "D",
+      "text": "4"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "2025 年发布的与“食品”相关的强制性国家标准为 GB 7718-2025《预包装食品标签通则》与 GB 28050-2025《预包装食品营养标签通则》两条；GB 2762 现行版本是 2022 年发布，不计入。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "食品 AND 强制性国家标准 AND 发布日期=2025",
+    "steps": "在全国标准信息公共服务平台按「食品」检索，筛选强制性标准且发布日期为 2025 年，统计条数。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data",
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 30 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

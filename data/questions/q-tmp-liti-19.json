@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-19",
+  "type": "single",
+  "title": "NSTL 重点领域信息服务的覆盖领域",
+  "stem": "NSTL（国家科技图书文献中心）的重点领域信息服务门户，不包括（ ）领域。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "轨道交通"
+    },
+    {
+      "key": "B",
+      "text": "新能源汽车"
+    },
+    {
+      "key": "C",
+      "text": "生物育种"
+    },
+    {
+      "key": "D",
+      "text": "新发突发与重点传染病"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在 NSTL（国家科技图书文献中心）官网查看重点领域信息服务领域（ https://portal.las.ac.cn/）。",
+  "evidence": {
+    "database_id": "web",
+    "query": "NSTL 重点领域信息服务",
+    "steps": "在 NSTL（国家科技图书文献中心）官网查看重点领域信息服务领域（ https://portal.las.ac.cn/）。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data",
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 3",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

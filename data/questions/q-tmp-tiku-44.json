@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-44",
+  "type": "multiple",
+  "title": "李娜博士论文的引证文献",
+  "stem": "利用万方中国学位论文全文数据库检索，下列哪项是吉林大学李娜博士论文《满铁对中国东北的文化侵略》的引证文献",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "伪满洲国时期的辽宁报刊文献研究"
+    },
+    {
+      "key": "B",
+      "text": "日伪政权在武汉沦陷区的文化建构"
+    },
+    {
+      "key": "C",
+      "text": "满铁对我国东北煤资源的调查过程探析"
+    },
+    {
+      "key": "D",
+      "text": "《辽东诗坛》中的中日古典诗歌交流考"
+    }
+  ],
+  "answer": [
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "万方中国学位论文全文库中该文的引证文献含《日伪政权在武汉沦陷区的文化建构》《满铁对我国东北煤资源的调查过程探析》《〈辽东诗坛〉中的中日古典诗歌交流考》（B、C、D）；《伪满洲国时期的辽宁报刊文献研究》不在其列。",
+  "evidence": {
+    "database_id": "wanfang",
+    "query": "题名=满铁对中国东北的文化侵略",
+    "steps": "万方学位论文库打开该论文详情，切换「引证文献」标签逐条比对题名。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-wanfang",
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 44 题",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

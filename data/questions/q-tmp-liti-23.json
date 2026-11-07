@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-23",
+  "type": "judge",
+  "title": "国图民国时期文献的在线阅览",
+  "stem": "在国家图书馆旗下的民国时期文献库中可以找到名为图书《代数难题详解》（俞树德编）并查看全文，“二简易方程式”这一节在正文的第 10 页。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [
+    "needs_review"
+  ],
+  "explain": "进入国家图书馆网站。在数字资源栏目下找到“民国时期文献”的链接并进入。搜索书名，找到“在线阅览”入口。",
+  "evidence": {
+    "database_id": "nlc-opac",
+    "query": "民国时期文献 在线阅览",
+    "steps": "进入国家图书馆网站。在数字资源栏目下找到“民国时期文献”的链接并进入。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic",
+    "t-biblio"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 6 之后的判断题（原文无标题）",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

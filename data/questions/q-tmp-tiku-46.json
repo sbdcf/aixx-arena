@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-46",
+  "type": "judge",
+  "title": "联合国教科文组织 AI 伦理建议书通过时间",
+  "stem": "《人工智能伦理问题建议书》是联合国教科文组织于2021年11月24日通过。建议书中提到：会员国应投资于并促进数字以及媒体与信息素养技能，加强理解人工智能系统的使用和影响所需的批判性思维和能力，从而减少和打击虚假信息、错误信息和仇恨言论。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "中文报道均记《人工智能伦理问题建议书》于 2021 年 11 月 24 日经教科文组织第 41 届大会通过，且建议书确含数字与媒体信息素养条款。",
+  "evidence": {
+    "database_id": "web",
+    "query": "Recommendation on the Ethics of Artificial Intelligence 2021",
+    "steps": "查阅 UNESCO《人工智能伦理问题建议书》官方文本，核对其通过时间（2021 年 11 月 23 日大会通过、11 月 24 日发布）与关于信息素养的条款。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ethics",
+    "t-ai-tools"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 46 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

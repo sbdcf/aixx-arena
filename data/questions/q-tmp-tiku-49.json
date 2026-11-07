@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-49",
+  "type": "judge",
+  "title": "GB/T 4894-2024 的文献定义",
+  "stem": "《信息与文献 基础和术语》（GB/T 4894-2024）将“文献”定义为：在文献工作过程中，作为一个单位处理的记录信息或实物对象。由此可见，文献不仅涵盖纸张或缩微版本的书写和印刷资料（如图书、期刊等），也包括非印刷的媒介（如内部网资源、电影）以及集合等，具有更为广泛的外延。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "GB/T 4894-2024 将“文献”定义为文献工作过程中作为一个单位处理的记录信息或实物对象，外延包含非印刷媒介与集合。",
+  "evidence": {
+    "database_id": "web",
+    "query": "GB/T 4894-2024 信息与文献 基础和术语",
+    "steps": "查阅《信息与文献 基础和术语》（GB/T 4894-2024）「文献」条目，核对其定义与外延是否涵盖非印刷媒介。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-biblio",
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 49 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

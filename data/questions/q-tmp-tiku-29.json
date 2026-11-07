@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-29",
+  "type": "single",
+  "title": "第五次经济普查四川建筑业法人单位数",
+  "stem": "经济普查，有利于全面把握我国经济“家底”，更好服务推进中国式现代化。国家统计局（https://data.stats.gov.cn）第五次经济普查数据中，四川地区建筑业法人单位数为（）个。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "109790"
+    },
+    {
+      "key": "B",
+      "text": "38958"
+    },
+    {
+      "key": "C",
+      "text": "43162"
+    },
+    {
+      "key": "D",
+      "text": "102080"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "国家统计局第五次全国经济普查数据中，四川地区建筑业法人单位数为 109,790 个。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "建筑业 法人单位数 四川 第五次经济普查",
+    "steps": "进入 data.stats.gov.cn，「数据查询 → 普查数据」中选择第五次经济普查，按地区（四川）与行业（建筑业）取法人单位数。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 29 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

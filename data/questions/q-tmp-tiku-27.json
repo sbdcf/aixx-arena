@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-27",
+  "type": "single",
+  "title": "超星汇雅电子书检索字段数量",
+  "stem": "在超星汇雅电子书检索结果页（二级页面）的搜索栏下方，可切换的检索类别（字段）共有（）种。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "4种：书名、作者、目录、全文检索"
+    },
+    {
+      "key": "B",
+      "text": "2种：书名、作者"
+    },
+    {
+      "key": "C",
+      "text": "5种：书名、作者、目录、全文检索、出版社"
+    },
+    {
+      "key": "D",
+      "text": "3种：书名、作者、主题词"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "汇雅电子书检索结果页搜索栏下方提供 4 种字段：书名、作者、目录、全文检索。",
+  "evidence": {
+    "database_id": "web",
+    "query": "超星汇雅电子书 检索结果页",
+    "steps": "打开超星汇雅电子书执行一次检索，在结果页搜索栏下方读取可切换的检索类别项。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 27 题",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

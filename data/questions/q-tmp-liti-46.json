@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-46",
+  "type": "judge",
+  "title": "雨课堂 PPT 插件的功能判断",
+  "stem": "雨课堂是一个 PPT 插件，可以免费安装使用，可以弹幕，支持单选、多选、填空、主观题等多种题型，有分组功能。( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "装上这个插件，深度使用一下，就知道了。",
+  "evidence": {
+    "database_id": "web",
+    "query": "雨课堂 PPT 插件 弹幕 分组",
+    "steps": "装上这个插件，深度使用一下，就知道了。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "学术写作-样题 5",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

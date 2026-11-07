@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-36",
+  "type": "single",
+  "title": "研招网天体物理专业开设院校筛选",
+  "stem": "通过研招网查询可知，招天体物理专业硕士研究生并且接受退役大学生士兵专项计划考试报考的“双一流”建设高校是( )。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "北京大学"
+    },
+    {
+      "key": "B",
+      "text": "中国科学院大学"
+    },
+    {
+      "key": "C",
+      "text": "天津师范大学"
+    },
+    {
+      "key": "D",
+      "text": "云南大学"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在研招网的硕士专业目录检索界面中输入专业名称“天体物理”，是否接收退役大学生士兵专项计划考生报考筛选条件选择“是”，找到检索结果，点击“开设院校”按钮，在检索结果中勾选“双一流”建设高校，可以看到答案。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "专业名称=天体物理 AND 退役大学生士兵专项=是",
+    "steps": "在研招网的硕士专业目录检索界面中输入专业名称“天体物理”，是否接收退役大学生士兵专项计划考生报考筛选条件选择“是”，找到检索结果，点击“开设院校”按钮，在检索结果中勾选“双一流”建设高校，可以看到答案。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 9",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

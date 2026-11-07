@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "paper-buzz-01",
+  "name": "抢答赛 10 题",
+  "format": "buzz",
+  "duration_sec": 0,
+  "draw": {
+    "single": 5,
+    "multiple": 3,
+    "judge": 2,
+    "min_available": 10,
+    "allow_partial": true,
+    "seed": null
+  },
+  "submit_mode": "stream",
+  "scoring": {
+    "mode": "per_question",
+    "points": {
+      "single": 0,
+      "multiple": 0,
+      "judge": 0
+    },
+    "wrong_penalty": 0,
+    "unanswered": 0,
+    "total_normalize": 0
+  },
+  "buzz": {
+    "buffer_ms": 1000,
+    "submit_window_sec": 20,
+    "qualify_ratio": 0.5,
+    "qualify_fill": "strict",
+    "correct_points": 4,
+    "wrong_points": -1,
+    "reveal_sec": 5,
+    "close_on_all_submitted": false,
+    "tie_window_ms": 5
+  }
+}

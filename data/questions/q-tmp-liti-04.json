@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-04",
+  "type": "judge",
+  "title": "年鉴在参考文献中的文献级别",
+  "stem": "《环境科学研究》2025 年网络首发的文章《生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响》直接引用了某种三次文献。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在中国知网检索《环境科学研究》2025 年网络首发的文章《生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响》，其参考文献中”中国统计年鉴[Z].付凌晖,刘爱华总编.中国统计出版社”属于三次文献。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响 参考文献",
+    "steps": "在中国知网检索《环境科学研究》2025 年网络首发的文章《生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响》，其参考文献中”中国统计年鉴[Z].付凌晖,刘爱华总编.中国统计出版社”属于三次文献。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-literature",
+    "t-biblio"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息基本概念-样题 4",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

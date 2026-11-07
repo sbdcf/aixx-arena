@@ -1,0 +1,33 @@
+# 用法（在 aixx-arena/ 根目录）：
+#   npm ci && npm run sync:data && npm run build:web
+#   docker compose -f deploy/linux/docker-compose.yml up -d --build
+# 学生访问 http://<服务器IP>:${ARENA_PORT:-8787}，联机大厅里填同一个地址。
+
+services:
+  arena:
+    build:
+      context: ../..
+      dockerfile: deploy/linux/Dockerfile
+    image: aixx-arena-server:0.1.0
+    container_name: aixx-arena
+    restart: unless-stopped
+    ports:
+      - "${ARENA_PORT:-8787}:8787"
+    # 服务端只认命令行参数（不读环境变量）；房间上限在这里用 ARENA_MAX_ROOMS 传给 --max-rooms。
+    command:
+      - node
+      - packages/server/src/main.ts
+      - --port
+      - "8787"
+      - --host
+      - 0.0.0.0
+      - --web-root
+      - packages/web/dist
+      - --max-rooms
+      - "${ARENA_MAX_ROOMS:-100}"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8787/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

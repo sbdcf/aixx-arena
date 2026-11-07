@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-49",
+  "type": "single",
+  "title": "CNKI 期刊 RSS 订阅地址",
+  "stem": "中文期刊《马克思主义研究》在 CNKI 中的 RSS 订阅地址是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "https://navi.cnki.net/knavi/RSS/STUD"
+    },
+    {
+      "key": "B",
+      "text": "https://navi.cnki.net/knavi/RSS/RST"
+    },
+    {
+      "key": "C",
+      "text": "https://navi.cnki.net/knavi/RSS/STYU"
+    },
+    {
+      "key": "D",
+      "text": "https://navi.cnki.net/knavi/RSS/STEU"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "CNKI 的期刊导航中找到该期刊的详细页面，页面中有 RSS 订阅图标，点击后即可获取 URL。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "期刊导航 <刊名> RSS",
+    "steps": "CNKI 的期刊导航中找到该期刊的详细页面，页面中有 RSS 订阅图标，点击后即可获取 URL。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "科研工具-样题 1",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

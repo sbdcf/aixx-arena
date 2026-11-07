@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-08",
+  "type": "single",
+  "title": "查全率与查准率的计算",
+  "stem": "某检索系统存有与课题 A 相关文献 200 篇，检索时查出 150 篇，其中正确 120 篇，请说明查全率和查准率分别为 ( )和（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "60%；75%"
+    },
+    {
+      "key": "B",
+      "text": "80%；75%"
+    },
+    {
+      "key": "C",
+      "text": "75%；80%"
+    },
+    {
+      "key": "D",
+      "text": "60%；80%"
+    }
+  ],
+  "answer": [
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "查全率=检索出的相关文献数（120） ÷ 系统中全部相关文献数（200）；查准率=检索出的正确文献数（120） ÷ 检索出的全部文献数（150）。",
+  "evidence": {
+    "database_id": "web",
+    "query": "查全率 查准率 计算公式",
+    "steps": "查全率=检索出的相关文献数（120） ÷ 系统中全部相关文献数（200）；"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索原理-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

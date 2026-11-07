@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-40",
+  "type": "single",
+  "title": "剑桥数据库 Open full book 数量",
+  "stem": "在剑桥数据库中找到名为《BigDataandGlobalTradeLaw》的电子书。请问这本电子书的正文第 50 页（pdf 文档第 82页）有几张图？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "0"
+    },
+    {
+      "key": "B",
+      "text": "1"
+    },
+    {
+      "key": "C",
+      "text": "2"
+    },
+    {
+      "key": "D",
+      "text": "3"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "进入剑桥数据库（ https://www.cambridge.org/core）；检索框中输入书名检索；在找到的结果中点击标题或者缩略图进入图书题录页面；找到 OpenfullbookPDF 按钮打开全文 PDF；查看对应页码内容。",
+  "evidence": {
+    "database_id": "web",
+    "query": "Cambridge Core <书名>",
+    "steps": "进入剑桥数据库（ https://www.cambridge.org/core）；"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "实用学习资源-样题 3",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

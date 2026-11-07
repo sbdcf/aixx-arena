@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-34",
+  "type": "multiple",
+  "title": "文献鸟 Pro 与免费版功能差异",
+  "stem": "图书馆拟为教师批量采购文献鸟Stork付费功能，学科馆员需先依据官网“文献鸟 Pro”页及相关功能页，核对Pro版相对基本（免费）版的差异。以下说法中，与官网页面实测表述一致的有（）",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "每次每个关键词推送文献数目上限可由Pro用户自行设置，最高可设200篇"
+    },
+    {
+      "key": "B",
+      "text": "基本版用户也可以对推送的文献加星，从而使文献在服务器上永久保存"
+    },
+    {
+      "key": "C",
+      "text": "Pro可设置最低影响因子与中科院期刊分区过滤，且既可全局设置也可针对每个关键词分别设置"
+    },
+    {
+      "key": "D",
+      "text": "关键词数目上限由基本版的10个提高到Pro版的100个"
+    },
+    {
+      "key": "E",
+      "text": "购买“Stork Pro”高级功能会赠送“文献导读”功能，无需再单独购买导读"
+    }
+  ],
+  "answer": [
+    "A",
+    "C",
+    "D",
+    "E"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "官网「文献鸟 Pro」页实测：A 单关键词推送上限可自行设置、最高 200 篇；C 可设最低影响因子与中科院分区，且支持全局或按关键词分别设置；D 关键词数量上限由免费版 10 个提升到 Pro 版 100 个；E 购买 Stork Pro 赠送「文献导读」，无需另购。B「基本版加星后永久保存」与官网表述不符。",
+  "evidence": {
+    "database_id": "web",
+    "query": "文献鸟 Stork Pro 功能",
+    "steps": "打开文献鸟官网「Pro」页与功能说明页，逐项核对推送上限、影响因子/分区过滤、关键词数量与赠送功能。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools",
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 34 题",
+  "difficulty": 3,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

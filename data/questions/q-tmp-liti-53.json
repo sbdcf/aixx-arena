@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-53",
+  "type": "single",
+  "title": "《学生人工智能能力框架》第 29 页表格标题",
+  "stem": "在联合国教科文组织的官网上可以找到 2024 年发布的英文版《学生人工智能能力框架》 （AIcompetencyframeworkforstudents），这个文件正文第 29 页有一个表格，这个表格的标题是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "Competency blocks for level 1: Understand"
+    },
+    {
+      "key": "B",
+      "text": "Human-centred mindset"
+    },
+    {
+      "key": "C",
+      "text": "Ethics of AI"
+    },
+    {
+      "key": "D",
+      "text": "AI techniques and applications"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [
+    "needs_review"
+  ],
+  "explain": "Competencyblocksforlevel1:Understand Human-centred mindset EthicsofAI AItechniquesandapplications 在联合国教科文组织的官网上找到这个文件，翻到正文第 29 页，查看可知。文件地址：https://unesdoc.unesco.org/ark:/48223/pf0000391105",
+  "evidence": {
+    "database_id": "web",
+    "query": "UNESCO AI competency framework for students",
+    "steps": "Competencyblocksforlevel1:Understand Human-centred mindset EthicsofAI AItechniquesandapplications 在联合国教科文组织的官网上找到这个文件，翻到正文第 29 页，查看可知。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools",
+    "t-ethics"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "AI素养-样题 1",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

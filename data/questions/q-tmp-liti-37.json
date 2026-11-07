@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-37",
+  "type": "single",
+  "title": "学信网零散查询核验学历专业",
+  "stem": "请在学信网上查询这个毕业证书信息（证书编号：106101201301000019，姓名：周建芳）。请问这个毕业证书上载明的专业是什么？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "图书馆学"
+    },
+    {
+      "key": "B",
+      "text": "情报学"
+    },
+    {
+      "key": "C",
+      "text": "宏观经济学"
+    },
+    {
+      "key": "D",
+      "text": "信息管理学"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在学信网上点击学历查询下的零散查询，输入证号和姓名查询，检索结果中可以看到专业。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "零散查询 证书编号+姓名",
+    "steps": "在学信网上点击学历查询下的零散查询，输入证号和姓名查询，检索结果中可以看到专业。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 10",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

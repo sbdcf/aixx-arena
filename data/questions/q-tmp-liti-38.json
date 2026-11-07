@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-38",
+  "type": "single",
+  "title": "中国大学 MOOC 课程章节内容",
+  "stem": "在中国大学 MOOC 中有一门四川大学王红老师主讲的课程《中国诗歌艺术》，其中第 2.2 节讲述的内容是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "诗之声：选音与读音"
+    },
+    {
+      "key": "B",
+      "text": "诗的语词及构句特点"
+    },
+    {
+      "key": "C",
+      "text": "不循常规的语序"
+    },
+    {
+      "key": "D",
+      "text": "诗的节奏与韵律"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在中国大学 MOOC 中找到这门课，在课程大纲中找到这一节，看一下。",
+  "evidence": {
+    "database_id": "web",
+    "query": "诗之声：选音与读音",
+    "steps": "在中国大学 MOOC 中找到这门课，在课程大纲中找到这一节，看一下。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "实用学习资源-样题 1",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

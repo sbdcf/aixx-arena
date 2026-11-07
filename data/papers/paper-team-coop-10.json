@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "paper-team-coop-10",
+  "name": "团队对抗 10 题",
+  "format": "team-coop",
+  "duration_sec": 1200,
+  "draw": {
+    "single": 6,
+    "multiple": 2,
+    "judge": 2,
+    "min_available": 10,
+    "allow_partial": true,
+    "seed": 2026
+  },
+  "submit_mode": "stream",
+  "scoring": {
+    "mode": "correct_minus_wrong",
+    "points": {
+      "single": 4,
+      "multiple": 4,
+      "judge": 4
+    },
+    "wrong_penalty": 1,
+    "unanswered": 0,
+    "total_normalize": 0
+  }
+}

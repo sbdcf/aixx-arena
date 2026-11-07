@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-51",
+  "type": "judge",
+  "title": "连花清瘟胶囊批准文号核实",
+  "stem": "在国家药品监督管理局网站上的数据查询系统检索国产药品“连花清瘟胶囊”，可以查询到它的国药准字Z20040063",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "连花清瘟胶囊的国药准字为 Z20040063，可在国家药监局数据查询系统查到。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "国产药品 连花清瘟胶囊",
+    "steps": "在国家药监局「数据查询」的国产药品库按药品名称检索，核对批准文号是否为 Z20040063。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 51 题",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

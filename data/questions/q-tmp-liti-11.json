@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-11",
+  "type": "single",
+  "title": "万方多字段布尔检索的结果数",
+  "stem": "在万方中查找 2025 年以前发表的，篇名中出现“乙肝”或“乙型肝炎”，关键词中出现“治疗”和“评估”，摘要中出现“慢性”但不能出现“模型”的学位论文。请问找到的结果数量与下列哪个数字最接近（或者就是）？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "1"
+    },
+    {
+      "key": "B",
+      "text": "6"
+    },
+    {
+      "key": "C",
+      "text": "24"
+    },
+    {
+      "key": "D",
+      "text": "47"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在万方数据知识服务平台的高级检索中，文献类型选择“学位论文”，题目检索字段对应的检索框中输入：乙肝 OR 乙型肝炎，关键词字段对的检索框中输入：治疗 AND 评估，摘要字段对应的检索框中输入：慢性 NOT 模型，关键词和摘要前面选择“与”。点击“检索”按钮，看结果。",
+  "evidence": {
+    "database_id": "wanfang",
+    "query": "题名=乙肝 OR 乙型肝炎 AND 关键词=治疗 AND 评估",
+    "steps": "在万方数据知识服务平台的高级检索中，文献类型选择“学位论文”，题目检索字段对应的检索框中输入：乙肝 OR 乙型肝炎，关键词字段对的检索框中输入：治疗 AND 评估，摘要字段对应的检索框中输入：慢性 NOT 模型，关键词和摘要前面选择“与”。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-boolean",
+    "t-db-wanfang"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "信息检索理论与技术-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

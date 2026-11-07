@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-03",
+  "type": "single",
+  "title": "参考文献中 [N] 标识对应的文献类型",
+  "stem": "《时代新人培育背景下大学生“摸鱼”行为教育的方法》（陶德强、许晓峰）一文的第 9 篇参考文献文献类型为（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "图书"
+    },
+    {
+      "key": "B",
+      "text": "期刊"
+    },
+    {
+      "key": "C",
+      "text": "报纸"
+    },
+    {
+      "key": "D",
+      "text": "报告"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在中国知网检索《时代新人培育背景下大学生“摸鱼”行为教育的方法》（陶德强、许晓峰）一文，查看参考文献，第 9 篇为“黄建军.培养堪当民族复兴重任的时代新人[N].光明日报，2022-07-27(11). ”，文献类型为报纸。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "时代新人培育背景下大学生“摸鱼”行为教育的方法 参考文献",
+    "steps": "在中国知网检索《时代新人培育背景下大学生“摸鱼”行为教育的方法》（陶德强、许晓峰）一文，查看参考文献，第 9 篇为“黄建军.培养堪当民族复兴重任的时代新人[N].光明日报，2022-07-27(11). ”，文献类型为报纸。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息基本概念-样题 3",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

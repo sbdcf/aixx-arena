@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-20",
+  "type": "multiple",
+  "title": "支持以图识图的搜索引擎",
+  "stem": "下列检索系统，可以以图识图的有（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "百度的图片搜索（ https://image.baidu.com）"
+    },
+    {
+      "key": "B",
+      "text": "搜狗的图片搜索（ https://pic.sogou.com）"
+    },
+    {
+      "key": "C",
+      "text": "360 的图片搜索（ https://image.so.com ）"
+    },
+    {
+      "key": "D",
+      "text": "必应视觉搜寻（ https://cn.bing.com/visualsearch）"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "登录网站，探索一下，即可发现哪些可以以图识图。",
+  "evidence": {
+    "database_id": "web",
+    "query": "以图识图 百度 搜狗 360 必应",
+    "steps": "登录网站，探索一下，即可发现哪些可以以图识图。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 4",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

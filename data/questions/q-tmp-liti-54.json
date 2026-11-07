@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-54",
+  "type": "multiple",
+  "title": "深圳大学图书馆 GenAI 专题栏目",
+  "stem": "深圳大学图书馆网站中有一个生成式人工智能专题网页。这个专题网页中的内容包括（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "生成式AI 简介"
+    },
+    {
+      "key": "B",
+      "text": "最新AI 政策"
+    },
+    {
+      "key": "C",
+      "text": "GenAI 工具导航"
+    },
+    {
+      "key": "D",
+      "text": "AI 数据库"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "找到这个专题，即可做出判断。网址：https://www.lib.szu.edu.cn/learning/ai。",
+  "evidence": {
+    "database_id": "web",
+    "query": "https://www.lib.szu.edu.cn/learning/ai",
+    "steps": "找到这个专题，即可做出判断。网址：https://www.lib.szu.edu.cn/learning/ai。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "AI素养-样题 2",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

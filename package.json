@@ -1,0 +1,29 @@
+{
+  "name": "aixx-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --import ./packages/web/test/loader.mjs --test --experimental-test-isolation=none packages/core/test/smoke.node.test.ts packages/core/test/scoring.test.ts packages/core/test/draw.test.ts packages/core/test/buzz.test.ts packages/core/test/solo.test.ts packages/core/test/finish.test.ts packages/core/test/teamSolo.test.ts packages/core/test/teamCoop.test.ts packages/core/test/relay.test.ts packages/core/test/formatBuzz.test.ts packages/web/test/localDriver.node.test.ts packages/web/test/store.node.test.ts packages/server/test/online.test.ts",
+    "test:core": "node --test --experimental-test-isolation=none packages/core/test/scoring.test.ts packages/core/test/draw.test.ts packages/core/test/buzz.test.ts packages/core/test/solo.test.ts packages/core/test/finish.test.ts packages/core/test/teamSolo.test.ts packages/core/test/teamCoop.test.ts packages/core/test/relay.test.ts packages/core/test/formatBuzz.test.ts",
+    "typecheck": "tsc -p packages/core/tsconfig.json && tsc -p packages/server/tsconfig.json",
+    "start:server": "node packages/server/src/main.ts",
+    "sync:data": "node scripts/sync-data.mjs",
+    "verify:data": "node scripts/verify-data.mjs",
+    "pack:win": "node scripts/pack-release.mjs",
+    "pack:linux": "node scripts/pack-linux.mjs",
+    "dev:web": "vite packages/web",
+    "build:web": "vite build packages/web",
+    "preview:web": "vite preview packages/web"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "~5.6.3"
+  }
+}

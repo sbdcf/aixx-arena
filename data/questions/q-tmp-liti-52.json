@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-52",
+  "type": "judge",
+  "title": "微词云统计政府工作报告词频",
+  "stem": "在微词云（ https://www.weiciyun.com）中统计2021 年总理所做的政府工作报告。可以发现，“经济”这个词出现的次数高于“发展”。( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "先找到 2021年的政府工作报告，全文复制。在微词云网站上选择“在线分词”，粘贴复制的文本，然后下一步。微信扫码关注后即可看到结果。“发展”的词频高于“经济”。",
+  "evidence": {
+    "database_id": "web",
+    "query": "微词云 在线分词 政府工作报告",
+    "steps": "先找到 2021年的政府工作报告，全文复制。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "科研工具-样题 4",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-47",
+  "type": "judge",
+  "title": "Mendeley 能否按 DOI 搜索添加文献",
+  "stem": "在 mendeley 网页版和客户端中，都可以根据 DOI 搜索添加文献。( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在 mendeley 网页版或客户端中，点击 addnew 按钮，选择 Addentrymanually 可以看到提示。",
+  "evidence": {
+    "database_id": "web",
+    "query": "Mendeley add new entry manually",
+    "steps": "在 mendeley 网页版或客户端中，点击 addnew 按钮，选择 Addentrymanually 可以看到提示。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "知识管理工具-样题 1",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

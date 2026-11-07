@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-35",
+  "type": "multiple",
+  "title": "AI 工具在信息检索中的典型应用",
+  "stem": "以下哪些属于AI工具在信息检索场景中的典型应用？",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "多语言文献的自动翻译辅助"
+    },
+    {
+      "key": "B",
+      "text": "基于语义的智能推荐相关文献"
+    },
+    {
+      "key": "C",
+      "text": "文献自动摘要和关键信息提取"
+    },
+    {
+      "key": "D",
+      "text": "自动解析文献，提供客观准确可溯源的参考文献"
+    },
+    {
+      "key": "E",
+      "text": "智能问答式检索，直接回答用户问题"
+    }
+  ],
+  "answer": [
+    "A",
+    "C",
+    "E"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "AI 在检索场景中的典型应用是翻译辅助、自动摘要与关键信息提取、智能问答式检索（A、C、E）；B「基于语义的智能推荐」属推荐系统能力、不是检索场景的典型用法，D 让 AI 自动解析文献并给出「客观准确可溯源」的参考文献受幻觉限制、不可靠。",
+  "evidence": {
+    "database_id": "web",
+    "query": "AI 信息检索 应用 语义推荐 摘要 问答",
+    "steps": "按 AI 在检索链路（翻译、语义推荐、摘要抽取、问答）中的实际能力逐项判断，「自动生成可溯源参考文献」超出其能力边界。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 35 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

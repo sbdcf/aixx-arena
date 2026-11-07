@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-50",
+  "type": "single",
+  "title": "EXCEL 提取出生日期的函数",
+  "stem": "在 EXCEL 中提取身份证号码中的出生年月日，最合适的函数是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "left( )"
+    },
+    {
+      "key": "B",
+      "text": "right( )"
+    },
+    {
+      "key": "C",
+      "text": "mid( )"
+    },
+    {
+      "key": "D",
+      "text": "trim( )"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在 EXCEL 中，mid()函数可以在指定的字符串中从指定的字符开始提取指定数量的字符。如果身份证号码在A1 单元格，提取出生年月日的函数表达式：=mid(A1,7,8)。LEFT()函数可以提取最左边的指定数量字符。",
+  "evidence": {
+    "database_id": "web",
+    "query": "EXCEL mid 提取身份证出生年月日",
+    "steps": "在 EXCEL 中，mid()函数可以在指定的字符串中从指定的字符开始提取指定数量的字符。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "科研工具-样题 2",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

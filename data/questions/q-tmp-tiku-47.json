@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-47",
+  "type": "judge",
+  "title": "九寨沟湖水呈色的科学解释",
+  "stem": "近日，网络流传“九寨沟湖水依靠颜料染色才呈现蓝色”的不实视频，误导不少游客，损害景区形象。由中国科学院成都生物研究所研究员孙康对此作出专业科普：九寨沟湖水独有的蓝绿色，由物理、化学、生物三重因素共同造就。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "中科院成都生物研究所孙康的科普即指出九寨沟蓝绿色由物理、化学、生物三重因素共同造就。",
+  "evidence": {
+    "database_id": "web",
+    "query": "九寨沟 湖水 蓝色 钙华 藻类",
+    "steps": "查证中科院成都生物研究所研究者的科普表述，确认湖水呈色由物理、化学、生物因素共同作用。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic",
+    "t-ethics"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 47 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

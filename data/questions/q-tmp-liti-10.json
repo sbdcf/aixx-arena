@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-10",
+  "type": "single",
+  "title": "CSSCI 来源中被引最高的期刊论文",
+  "stem": "在 CNKI 或者万方数据知识服务平台中检索 2015 到 2021年间发表的篇名中含有“信息素养”的期刊论文，其中被引次数最高的 CSSCI论文是发表在哪个期刊上的？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "情报科学"
+    },
+    {
+      "key": "B",
+      "text": "大学图书馆学报"
+    },
+    {
+      "key": "C",
+      "text": "图书情报知识"
+    },
+    {
+      "key": "D",
+      "text": "图书馆学研究"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "进入 CNKI 学术期刊库的高级检索界面，限定篇名含有“信息素养”，在时间范围里把出版年度设置为2015到 2021年，来源类别选择 CSSCI，得到检索结果并按照被引排序。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "篇名=信息素养 AND 出版年=2015-2021 AND 来源类别=CSSCI AND 排序=被引",
+    "steps": "进入 CNKI 学术期刊库的高级检索界面，限定篇名含有“信息素养”，在时间范围里把出版年度设置为2015到 2021年，来源类别选择 CSSCI，得到检索结果并按照被引排序。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki",
+    "t-boolean"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "信息检索理论与技术-样题 1",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

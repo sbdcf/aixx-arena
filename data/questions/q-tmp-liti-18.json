@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-18",
+  "type": "multiple",
+  "title": "古籍全文导航站收录资源辨识",
+  "stem": "在中国古典文献资源导航系统的“古籍全文”栏目下，可以找到下列哪些网站？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "安徽基本古籍库"
+    },
+    {
+      "key": "B",
+      "text": "登楼古籍检索"
+    },
+    {
+      "key": "C",
+      "text": "湖南省古籍智慧化平台"
+    },
+    {
+      "key": "D",
+      "text": "尚古汇典"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "登录中国古典文献资源导航系统，进入“古籍全文”栏目，即可看到答案。",
+  "evidence": {
+    "database_id": "web",
+    "query": "中国古典文献资源导航系统 古籍全文",
+    "steps": "登录中国古典文献资源导航系统，进入“古籍全文”栏目，即可看到答案。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

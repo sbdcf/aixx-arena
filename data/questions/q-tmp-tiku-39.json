@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-39",
+  "type": "multiple",
+  "title": "专利 CN202610772784.2 信息核实",
+  "stem": "以下关于专利CN202610772784.2说法正确的有（）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "该专利有9项权利要求"
+    },
+    {
+      "key": "B",
+      "text": "该专利是一项发明专利"
+    },
+    {
+      "key": "C",
+      "text": "该专利有1张说明书附图"
+    },
+    {
+      "key": "D",
+      "text": "专利代理人为叶永强"
+    }
+  ],
+  "answer": [
+    "B",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "CN202610772784.2 申请号第 5 位为 1、公开号以 CN…A 结尾，属发明专利申请（B 对）；说明书附图 1 张（C 对）；权利要求 9 项、代理人为叶永强与公布文本不符（A、D 错）。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "CN202610772784.2",
+    "steps": "在国家知识产权局专利检索系统按申请号检索，查看专利类型、权利要求项数、附图张数与代理人。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 39 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

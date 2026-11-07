@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-02",
+  "type": "multiple",
+  "title": "同一图书不同 ISBN 的识别",
+  "stem": "读秀学术中收录了多个版本的《从清华园到史语所李济治学生涯琐记》，这些版本的 ISBN 号有（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "978-7-100-12126-2"
+    },
+    {
+      "key": "B",
+      "text": "7-100-09420-7"
+    },
+    {
+      "key": "C",
+      "text": "7-302-09670-8"
+    },
+    {
+      "key": "D",
+      "text": "978-7-100-18532-5"
+    }
+  ],
+  "answer": [
+    "A",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在读秀学术图书频道检索书名“从清华园到史语所李济治学生涯琐记”，查看该书 ISBN 号。",
+  "evidence": {
+    "database_id": "web",
+    "query": "从清华园到史语所 李济治学生涯琐记 ISBN",
+    "steps": "在读秀学术图书频道检索书名“从清华园到史语所李济治学生涯琐记”，查看该书 ISBN 号。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-biblio",
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息基本概念-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

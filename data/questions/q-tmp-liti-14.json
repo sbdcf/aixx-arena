@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-14",
+  "type": "single",
+  "title": "检索结果筛选字段的取值",
+  "stem": "在 ACM（ https://dl.acm.org）数据库首页的检索框中输入检索词“data”，回车后的检索结果中可以选择的筛选字段不包括（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "contenttype"
+    },
+    {
+      "key": "B",
+      "text": "publisher"
+    },
+    {
+      "key": "C",
+      "text": "names"
+    },
+    {
+      "key": "D",
+      "text": "title"
+    }
+  ],
+  "answer": [
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "根据题目中给出的条件检索，查看检索结果左侧的筛选区。",
+  "evidence": {
+    "database_id": "web",
+    "query": "检索结果 左侧筛选 contenttype",
+    "steps": "根据题目中给出的条件检索，查看检索结果左侧的筛选区。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "信息检索理论与技术-样题 5",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

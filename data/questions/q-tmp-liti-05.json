@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-05",
+  "type": "single",
+  "title": "期刊论文 DOI 的核实",
+  "stem": "DOI 的全称是“digital object identifier ”，即数字对象唯一标识，被喻为“互联网上的条形码”、“科技论文的身份证”。请问《中华流行病学杂志》2020 年第 5 期发表的《宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析》一文的DOI是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "10.3760/cma.j.cn112338-20200423-00633"
+    },
+    {
+      "key": "B",
+      "text": "10.3760/cma.j.cn112338-20200221-00146"
+    },
+    {
+      "key": "C",
+      "text": "10.3760/cma.j.cn112338-20200304-00251"
+    },
+    {
+      "key": "D",
+      "text": "10.3760/cma.j.cn112338-20200229-00216"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在万方数据知识服务平台检索《中华流行病学杂志》2020 年第 5 期发表的《宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析》一文，查看其 DOI。",
+  "evidence": {
+    "database_id": "wanfang",
+    "query": "宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析",
+    "steps": "在万方数据知识服务平台检索《中华流行病学杂志》2020 年第 5 期发表的《宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析》一文，查看其 DOI。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息基本概念-样题 5",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

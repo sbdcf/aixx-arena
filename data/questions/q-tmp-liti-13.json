@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-13",
+  "type": "multiple",
+  "title": "CNKI 精确与模糊匹配的结果辨别",
+  "stem": "在 CNKI 的高级检索中，文献类型选择“学术期刊”，“篇名”和“作者”检索字段进行如图设置，其他条件默认。请问：这样的检索条件，下列哪些论文可能出现在检索结果中？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "张建.住宅楼项目全过程造价控制方法的研究[J].居舍,2023,(35):169-172."
+    },
+    {
+      "key": "B",
+      "text": "张建红.控制接触网施工误差的方法探讨[J].科技与企业,2012,(23):188."
+    },
+    {
+      "key": "C",
+      "text": "张建彬.水泥混凝土路面施工质量控制方法[J].交通世界,2017,(15):76-77."
+    },
+    {
+      "key": "D",
+      "text": "张建.PID 控制参数优化方法及基于 MATLAB 的仿真[J].信息通信,2013,(02):40."
+    }
+  ],
+  "answer": [
+    "A",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [
+    "stem_image_missing"
+  ],
+  "explain": "在 CNKI 中：“篇名”检索字段下，“精确”匹配指的是不能拆分，“模糊” 匹配指的是可以拆分；“第一作者”检索字段下，“精确”指的是完全一致，模糊指的是包含。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "篇名=张建（分别用精确/模糊匹配）",
+    "steps": "在 CNKI 中：“篇名”检索字段下，“精确”匹配指的是不能拆分，“模糊” 匹配指的是可以拆分；"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-advanced",
+    "t-boolean"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "信息检索理论与技术-样题 4",
+  "difficulty": 3,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "paper-relay-5x3",
+  "name": "接力赛 5 分钟×3",
+  "format": "relay",
+  "duration_sec": 300,
+  "draw": null,
+  "legs": [
+    {
+      "single": 3,
+      "multiple": 1,
+      "judge": 1,
+      "min_available": 5,
+      "allow_partial": true,
+      "seed": 2026
+    },
+    {
+      "single": 3,
+      "multiple": 1,
+      "judge": 1,
+      "min_available": 5,
+      "allow_partial": true,
+      "seed": 2027
+    },
+    {
+      "single": 3,
+      "multiple": 1,
+      "judge": 1,
+      "min_available": 5,
+      "allow_partial": true,
+      "seed": 2028
+    }
+  ],
+  "submit_mode": "stream",
+  "scoring": {
+    "mode": "correct_minus_wrong",
+    "points": {
+      "single": 4,
+      "multiple": 4,
+      "judge": 4
+    },
+    "wrong_penalty": 1,
+    "unanswered": 0,
+    "total_normalize": 0
+  }
+}

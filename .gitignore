@@ -1,0 +1,17 @@
+# 依赖与构建产物
+node_modules/
+packages/web/dist/
+
+# 分发包：作为 GitHub Release 资产上传，不提交源码仓库
+release/
+
+# 临时工作目录（下载的 Node 运行时、打包中间物）
+_work/
+
+# 内部导题报告（含本机源目录，不随源码公开）
+data/questions/_import-report.md
+
+# 编辑器 / 操作系统杂项
+.DS_Store
+Thumbs.db
+*.log

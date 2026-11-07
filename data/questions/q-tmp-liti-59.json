@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-59",
+  "type": "multiple",
+  "title": "智谱清言智能体的配置项",
+  "stem": "使用智谱清言可以创建AI 智能体，在智能体配置界面，可以设置模块能力。其中可选的模块能力包括（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "联网能力"
+    },
+    {
+      "key": "B",
+      "text": "AI 绘画"
+    },
+    {
+      "key": "C",
+      "text": "代码能力"
+    },
+    {
+      "key": "D",
+      "text": "深度思考"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "用智谱清言创建一个智能体，在智能体配置页面可以看到答案。",
+  "evidence": {
+    "database_id": "web",
+    "query": "智谱清言 智能体 配置",
+    "steps": "用智谱清言创建一个智能体，在智能体配置页面可以看到答案。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "AI素养-样题 7",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-28",
+  "type": "single",
+  "title": "按 ISBN 找书所需书目信息",
+  "stem": "王小红想在重庆市图书馆借一本ISBN号为9787521774757的书，请问她要获取到下列哪个信息可以很快找到此本书",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "书名"
+    },
+    {
+      "key": "B",
+      "text": "索书号和书名"
+    },
+    {
+      "key": "C",
+      "text": "书名出版社"
+    },
+    {
+      "key": "D",
+      "text": "书名和作者"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "索书号能直接指向书架位置，配合书名确认，是入库找书最快的信息组合；只知道书名还要先在书目里查索书号。",
+  "evidence": {
+    "database_id": "nlc-opac",
+    "query": "9787521774757",
+    "steps": "在重庆图书馆 OPAC 按 ISBN 检索，查看题录中「索书号」与书名，判断入库找书所需关键信息。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-biblio"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 28 题",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

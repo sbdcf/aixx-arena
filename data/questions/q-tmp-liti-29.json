@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-29",
+  "type": "single",
+  "title": "国家统计局数据查询取数",
+  "stem": "在国家统计局官网的数据查询系统中查找我国普通本专科生毕业人数。请问：2018 年我国普通本专科毕业生人数是多少万？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "801.2213"
+    },
+    {
+      "key": "B",
+      "text": "797.1991"
+    },
+    {
+      "key": "C",
+      "text": "758.5298"
+    },
+    {
+      "key": "D",
+      "text": "753.3087"
+    }
+  ],
+  "answer": [
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "登录国家统计局网站，点击“统计数据”菜单中找到数据查询，在查询页面输入关键词“普通本专科生毕业人数”，在找到的数据项中点击相关报表，右上角选择“最近 10 年”，即可看到答案。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "普通本专科生毕业人数 最近10年",
+    "steps": "登录国家统计局网站，点击“统计数据”菜单中找到数据查询，在查询页面输入关键词“普通本专科生毕业人数”，在找到的数据项中点击相关报表，右上角选择“最近 10 年”，即可看到答案。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 2",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

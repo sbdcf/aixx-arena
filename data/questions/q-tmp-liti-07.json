@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-07",
+  "type": "single",
+  "title": "中图法 K265 对应的类目",
+  "stem": "大学生小王在四川省图书馆检索系统找到一本 ISBN 号为 978-7-5065-5373-5 的书，根据《中国图书馆分类法》，这本书应归入以下哪一类？（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "政治、法律类"
+    },
+    {
+      "key": "B",
+      "text": "历史、地理类"
+    },
+    {
+      "key": "C",
+      "text": "语言、文字类"
+    },
+    {
+      "key": "D",
+      "text": "艺术类"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在四川省图书馆官网“川图书目”检索 ISBN 号为 978-7-5065-5373-5 的书，检索结果显示该书为《抗日战争纪事》（陈之中,谭剑锋），中图分类号为 K265，根据《中国图书馆分类法》，本书应归入历史、地理类。",
+  "evidence": {
+    "database_id": "nlc-opac",
+    "query": "978-7-5065-5373-5",
+    "steps": "在四川省图书馆官网“川图书目”检索 ISBN 号为 978-7-5065-5373-5 的书，检索结果显示该书为《抗日战争纪事》（陈之中,谭剑锋），中图分类号为 K265，根据《中国图书馆分类法》，本书应归入历史、地理类。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ccl"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索原理-样题 1",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

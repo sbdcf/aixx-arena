@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-40",
+  "type": "multiple",
+  "title": "讯飞智文极速模式 PPT 生成方式",
+  "stem": "讯飞智文可以辅助生成PPT，请问其极速模式提供哪些辅助生成PPT的模式？",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "一句话生成"
+    },
+    {
+      "key": "B",
+      "text": "文档生成"
+    },
+    {
+      "key": "C",
+      "text": "文本生成"
+    },
+    {
+      "key": "D",
+      "text": "高级创建"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "讯飞智文“极速模式”提供一句话生成、文本生成、文档生成、高级创建四个入口。",
+  "evidence": {
+    "database_id": "web",
+    "query": "讯飞智文 极速模式 PPT",
+    "steps": "登录讯飞智文，选择「极速模式」，查看可选的一键生成入口（一句话/文档/文本/高级创建）。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-ai-tools"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 40 题",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-01",
+  "type": "single",
+  "title": "文献概念界定所在的章节",
+  "stem": "李明在读秀学术知识频道的正文字段检索“文献的概念界定”，在孙卿所著的《智慧图书馆文献资源建设研究》一书中找到了相关内容，请问相关内容在该书的第（ ）章。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "一"
+    },
+    {
+      "key": "B",
+      "text": "二"
+    },
+    {
+      "key": "C",
+      "text": "三"
+    },
+    {
+      "key": "D",
+      "text": "四"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在读秀学术知识频道的正文字段检索“文献的概念界定”，在检索结果中查找《智慧图书馆文献资源建设研究》一书，点进去可以看到第三章第一节内容为“文献的概念界定",
+  "evidence": {
+    "database_id": "web",
+    "query": "文献的概念界定 智慧图书馆文献资源建设研究",
+    "steps": "在读秀学术知识频道的正文字段检索“文献的概念界定”，在检索结果中查找《智慧图书馆文献资源建设研究》一书，点进去可以看到第三章第一节内容为“文献的概念界定"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-biblio"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息基本概念-样题 1",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

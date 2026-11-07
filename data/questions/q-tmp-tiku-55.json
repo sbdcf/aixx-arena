@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-55",
+  "type": "judge",
+  "title": "北大法宝台湾地区法规的法规位阶",
+  "stem": "北大法宝数据库收录的台湾地区法规的法规位阶有三阶。（）",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "台湾地区法规位阶为宪法—法律—命令三阶，北大法宝按法规位阶归类展示。",
+  "evidence": {
+    "database_id": "web",
+    "query": "北大法宝 台湾地区法规 位阶",
+    "steps": "在北大法宝「法律法规」库检索台湾地区法规，查看详情页标注的「法规位阶」层级数量。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data",
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 55 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

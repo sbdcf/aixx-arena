@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-24",
+  "type": "single",
+  "title": "arXiv 按编号检索的命中篇数",
+  "stem": "请在 arXiv 中找到 arXividentifier 为“2108.09800 ”的文献并打开全文。请问这篇 PDF 全文共有（ ）页。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "9"
+    },
+    {
+      "key": "B",
+      "text": "14"
+    },
+    {
+      "key": "C",
+      "text": "18"
+    },
+    {
+      "key": "D",
+      "text": "23"
+    }
+  ],
+  "answer": [
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "搜索找到并打开 arXiv 这个网站，https://arxiv.org。在页面右上角的搜索区选择检索点“arXividentifier”，输入检索词为“2108.09800 ”，确定后即可找到文献。点击页面右侧的ViewPDF，打开全文。",
+  "evidence": {
+    "database_id": "web",
+    "query": "arXiv identifier 2108.09800",
+    "steps": "搜索找到并打开 arXiv 这个网站，https://arxiv.org。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 7",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

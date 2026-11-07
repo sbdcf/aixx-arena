@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-42",
+  "type": "single",
+  "title": "GB/T 7714 期刊论文著录格式判断",
+  "stem": "以下哪一种符合 GB/T7714-2015 参考文献著录标准？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "朱晓灿.新时代科普类图书出版趋势探析.传播与版权[J],2021(9):29-31+41."
+    },
+    {
+      "key": "B",
+      "text": "朱晓灿.\"新时代科普类图书出版趋势探析.\"传播与版权,2021(9):29-31+41."
+    },
+    {
+      "key": "C",
+      "text": "朱晓灿.新时代科普类图书出版趋势探析[J].《传播与版权》,2021(9):29-31+41."
+    },
+    {
+      "key": "D",
+      "text": "朱晓灿.新时代科普类图书出版趋势探析[J].传播与版权,2021(9):29-31+41."
+    }
+  ],
+  "answer": [
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "对照国家标准著录。从 CNKI、维普、万方等学术数据库中也可以导出。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "篇名=新时代科普类图书出版趋势探析",
+    "steps": "对照国家标准著录。从 CNKI、维普、万方等学术数据库中也可以导出。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-literature"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "学术写作-样题 1",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

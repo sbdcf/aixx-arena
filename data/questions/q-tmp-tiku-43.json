@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-tiku-43",
+  "type": "multiple",
+  "title": "《软件学报》下载量最高论文特征",
+  "stem": "近几年，大数据迅速发展成为科技界和企业界甚至世界各国政府关注的热点。请在中国知网中，检索《软件学报》下载量最高的文章，下列描述正确的有",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "收稿时间: 2014-07-01"
+    },
+    {
+      "key": "B",
+      "text": "大数据的特征总结为5个V"
+    },
+    {
+      "key": "C",
+      "text": "作者中有中国工程院院士"
+    },
+    {
+      "key": "D",
+      "text": "四项国家自然科学基金资助"
+    }
+  ],
+  "answer": [
+    "A",
+    "C"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "《软件学报》下载量最高的《大数据系统和分析技术综述》（2014, 25(9):1889-1908）收稿时间为 2014-07-01（A 对），作者中含中国工程院院士李国杰（C 对）；原文把大数据特征归纳为 4 个 V 而非 5 个（B 错），基金标注也不是四项（D 错）。",
+  "evidence": {
+    "database_id": "cnki",
+    "query": "刊名=软件学报 AND 排序=下载",
+    "steps": "CNKI 期刊导航进入《软件学报》，按下载量排序打开最高篇，核对收稿时间、5V 特征、作者院士身份与基金标注。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-cnki"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "信息素养试题整理（三）",
+  "source_ref": "第 43 题",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

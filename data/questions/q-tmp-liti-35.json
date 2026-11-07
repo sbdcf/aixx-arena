@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-35",
+  "type": "judge",
+  "title": "国家药监局医疗器械注册证查询",
+  "stem": "某一款注册证编号为“辽械注准 20202140101 ”的医疗器械，它的产品名称是一次性手术隔离服。( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "正确"
+    },
+    {
+      "key": "B",
+      "text": "错误"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "先通过搜索引擎找到国家药品监督管理局官网；找到医疗器械栏目下的医疗器械查询；在高级检索中选择“注册证查询”，输入关键词，即可看到结果。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "注册证查询 <题干关键词>",
+    "steps": "先通过搜索引擎找到国家药品监督管理局官网；"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 8",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

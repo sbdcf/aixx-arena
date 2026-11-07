@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-21",
+  "type": "single",
+  "title": "pubscholar 文献来源库跳转",
+  "stem": "在 pubscholar 中可以找到《Long-termpulsepressuretrajectoriesandriskofincidentatrialfibrillation:theTromsøStudy》这篇文献，请问系统给出的全文获取渠道是下面的哪一个？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "OXFORD ACADEMIC"
+    },
+    {
+      "key": "B",
+      "text": "science"
+    },
+    {
+      "key": "C",
+      "text": "arXiv"
+    },
+    {
+      "key": "D",
+      "text": "pubmed"
+    }
+  ],
+  "answer": [
+    "A"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "在 pubscholar 中找到这篇文献，点开来源，即可跳转到 OXFORDACADEMIC。",
+  "evidence": {
+    "database_id": "web",
+    "query": "pubscholar 文献 来源 OXFORD ACADEMIC",
+    "steps": "在 pubscholar 中找到这篇文献，点开来源，即可跳转到 OXFORDACADEMIC。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 5",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

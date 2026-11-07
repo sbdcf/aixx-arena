@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-30",
+  "type": "single",
+  "title": "中国执行信息公开网案号核实",
+  "stem": "星河互联集团有限公司被列为失信被执行人，请问立案时间为 2018 年 10 月 31 日的法律判决需偿还申请执行人多少金额？( )",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "87065"
+    },
+    {
+      "key": "B",
+      "text": "92245"
+    },
+    {
+      "key": "C",
+      "text": "88910"
+    },
+    {
+      "key": "D",
+      "text": "83640"
+    }
+  ],
+  "answer": [
+    "B"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "中国执行信息公开网中搜索星河互联集团有限公司，找到对应日期的案号为(2018)京 0108 执 17244 号，点开详情即可查看。",
+  "evidence": {
+    "database_id": "gov-open",
+    "query": "星河互联集团有限公司 (2018)京0108执17244号",
+    "steps": "中国执行信息公开网中搜索星河互联集团有限公司，找到对应日期的案号为(2018)京 0108 执 17244 号，点开详情即可查看。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "政府开放信息资源-样题 3",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

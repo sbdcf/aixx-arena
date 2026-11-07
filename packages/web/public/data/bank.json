@@ -1,0 +1,5013 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-06T15:22:37.540Z",
+  "question_count": 87,
+  "questions": [
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-01",
+      "type": "single",
+      "title": "文献概念界定所在的章节",
+      "stem": "李明在读秀学术知识频道的正文字段检索“文献的概念界定”，在孙卿所著的《智慧图书馆文献资源建设研究》一书中找到了相关内容，请问相关内容在该书的第（ ）章。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "一"
+        },
+        {
+          "key": "B",
+          "text": "二"
+        },
+        {
+          "key": "C",
+          "text": "三"
+        },
+        {
+          "key": "D",
+          "text": "四"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在读秀学术知识频道的正文字段检索“文献的概念界定”，在检索结果中查找《智慧图书馆文献资源建设研究》一书，点进去可以看到第三章第一节内容为“文献的概念界定",
+      "evidence": {
+        "database_id": "web",
+        "query": "文献的概念界定 智慧图书馆文献资源建设研究",
+        "steps": "在读秀学术知识频道的正文字段检索“文献的概念界定”，在检索结果中查找《智慧图书馆文献资源建设研究》一书，点进去可以看到第三章第一节内容为“文献的概念界定"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-biblio"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息基本概念-样题 1",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-02",
+      "type": "multiple",
+      "title": "同一图书不同 ISBN 的识别",
+      "stem": "读秀学术中收录了多个版本的《从清华园到史语所李济治学生涯琐记》，这些版本的 ISBN 号有（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "978-7-100-12126-2"
+        },
+        {
+          "key": "B",
+          "text": "7-100-09420-7"
+        },
+        {
+          "key": "C",
+          "text": "7-302-09670-8"
+        },
+        {
+          "key": "D",
+          "text": "978-7-100-18532-5"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在读秀学术图书频道检索书名“从清华园到史语所李济治学生涯琐记”，查看该书 ISBN 号。",
+      "evidence": {
+        "database_id": "web",
+        "query": "从清华园到史语所 李济治学生涯琐记 ISBN",
+        "steps": "在读秀学术图书频道检索书名“从清华园到史语所李济治学生涯琐记”，查看该书 ISBN 号。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-biblio",
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息基本概念-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-03",
+      "type": "single",
+      "title": "参考文献中 [N] 标识对应的文献类型",
+      "stem": "《时代新人培育背景下大学生“摸鱼”行为教育的方法》（陶德强、许晓峰）一文的第 9 篇参考文献文献类型为（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "图书"
+        },
+        {
+          "key": "B",
+          "text": "期刊"
+        },
+        {
+          "key": "C",
+          "text": "报纸"
+        },
+        {
+          "key": "D",
+          "text": "报告"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在中国知网检索《时代新人培育背景下大学生“摸鱼”行为教育的方法》（陶德强、许晓峰）一文，查看参考文献，第 9 篇为“黄建军.培养堪当民族复兴重任的时代新人[N].光明日报，2022-07-27(11). ”，文献类型为报纸。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "时代新人培育背景下大学生“摸鱼”行为教育的方法 参考文献",
+        "steps": "在中国知网检索《时代新人培育背景下大学生“摸鱼”行为教育的方法》（陶德强、许晓峰）一文，查看参考文献，第 9 篇为“黄建军.培养堪当民族复兴重任的时代新人[N].光明日报，2022-07-27(11). ”，文献类型为报纸。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息基本概念-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-04",
+      "type": "judge",
+      "title": "年鉴在参考文献中的文献级别",
+      "stem": "《环境科学研究》2025 年网络首发的文章《生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响》直接引用了某种三次文献。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在中国知网检索《环境科学研究》2025 年网络首发的文章《生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响》，其参考文献中”中国统计年鉴[Z].付凌晖,刘爱华总编.中国统计出版社”属于三次文献。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响 参考文献",
+        "steps": "在中国知网检索《环境科学研究》2025 年网络首发的文章《生物强化和进料频率对厨余垃圾高负荷厌氧消化的影响》，其参考文献中”中国统计年鉴[Z].付凌晖,刘爱华总编.中国统计出版社”属于三次文献。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature",
+        "t-biblio"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息基本概念-样题 4",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-05",
+      "type": "single",
+      "title": "期刊论文 DOI 的核实",
+      "stem": "DOI 的全称是“digital object identifier ”，即数字对象唯一标识，被喻为“互联网上的条形码”、“科技论文的身份证”。请问《中华流行病学杂志》2020 年第 5 期发表的《宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析》一文的DOI是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "10.3760/cma.j.cn112338-20200423-00633"
+        },
+        {
+          "key": "B",
+          "text": "10.3760/cma.j.cn112338-20200221-00146"
+        },
+        {
+          "key": "C",
+          "text": "10.3760/cma.j.cn112338-20200304-00251"
+        },
+        {
+          "key": "D",
+          "text": "10.3760/cma.j.cn112338-20200229-00216"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在万方数据知识服务平台检索《中华流行病学杂志》2020 年第 5 期发表的《宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析》一文，查看其 DOI。",
+      "evidence": {
+        "database_id": "wanfang",
+        "query": "宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析",
+        "steps": "在万方数据知识服务平台检索《中华流行病学杂志》2020 年第 5 期发表的《宁波市新型冠状病毒肺炎密切接触者感染流行病学特征分析》一文，查看其 DOI。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息基本概念-样题 5",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-06",
+      "type": "single",
+      "title": "信息素养主题被引最高论文的作者",
+      "stem": "利用中国知网，检索武汉大学黄如花老师所发表的，标题中含有“信息素养”的论文，其中被引频次最高文章合作者是( )。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "李白杨"
+        },
+        {
+          "key": "B",
+          "text": "黄雨婷"
+        },
+        {
+          "key": "C",
+          "text": "冯婕"
+        },
+        {
+          "key": "D",
+          "text": "黄颖"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在中国知网的高级检索中分别输入作者：黄如花，作者单位：武汉大学，标题：信息素养，检索结果按照“被引”倒序，可以看到被引频次最高文章为《数据素养教育:大数据时代信息素养教育的拓展》，作者为黄如花和李白杨。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "作者=黄如花 AND 作者单位=武汉大学 AND 篇名=信息素养 AND 排序=被引",
+        "steps": "在中国知网的高级检索中分别输入作者：黄如花，作者单位：武汉大学，标题：信息素养，检索结果按照“被引”倒序，可以看到被引频次最高文章为《数据素养教育:大数据时代信息素养教育的拓展》，作者为黄如花和李白杨。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息基本概念-样题 6",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-07",
+      "type": "single",
+      "title": "中图法 K265 对应的类目",
+      "stem": "大学生小王在四川省图书馆检索系统找到一本 ISBN 号为 978-7-5065-5373-5 的书，根据《中国图书馆分类法》，这本书应归入以下哪一类？（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "政治、法律类"
+        },
+        {
+          "key": "B",
+          "text": "历史、地理类"
+        },
+        {
+          "key": "C",
+          "text": "语言、文字类"
+        },
+        {
+          "key": "D",
+          "text": "艺术类"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在四川省图书馆官网“川图书目”检索 ISBN 号为 978-7-5065-5373-5 的书，检索结果显示该书为《抗日战争纪事》（陈之中,谭剑锋），中图分类号为 K265，根据《中国图书馆分类法》，本书应归入历史、地理类。",
+      "evidence": {
+        "database_id": "nlc-opac",
+        "query": "978-7-5065-5373-5",
+        "steps": "在四川省图书馆官网“川图书目”检索 ISBN 号为 978-7-5065-5373-5 的书，检索结果显示该书为《抗日战争纪事》（陈之中,谭剑锋），中图分类号为 K265，根据《中国图书馆分类法》，本书应归入历史、地理类。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ccl"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索原理-样题 1",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-08",
+      "type": "single",
+      "title": "查全率与查准率的计算",
+      "stem": "某检索系统存有与课题 A 相关文献 200 篇，检索时查出 150 篇，其中正确 120 篇，请说明查全率和查准率分别为 ( )和（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "60%；75%"
+        },
+        {
+          "key": "B",
+          "text": "80%；75%"
+        },
+        {
+          "key": "C",
+          "text": "75%；80%"
+        },
+        {
+          "key": "D",
+          "text": "60%；80%"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "查全率=检索出的相关文献数（120） ÷ 系统中全部相关文献数（200）；查准率=检索出的正确文献数（120） ÷ 检索出的全部文献数（150）。",
+      "evidence": {
+        "database_id": "web",
+        "query": "查全率 查准率 计算公式",
+        "steps": "查全率=检索出的相关文献数（120） ÷ 系统中全部相关文献数（200）；"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索原理-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-09",
+      "type": "single",
+      "title": "限定条件下的检索结果占比",
+      "stem": "利用中国知网精确检索到武汉大学在 2020 年-2024 年间以“数字素养”为主题的所有文献中学位论文的占比是 ( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "40%"
+        },
+        {
+          "key": "B",
+          "text": "52%"
+        },
+        {
+          "key": "C",
+          "text": "63%"
+        },
+        {
+          "key": "D",
+          "text": "75%"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "利用中国知网总库进入高级检索界面，采用检索式：（主题：数字素养）AND（作者单位：武汉大学(精确)） 限制条件为：①同义词扩展; ②时间范围：发表时间：2020-01-01 到 2024-12-31;实施检索后获取 5 条结果，其中期刊论文 2 篇，硕士论文 2 篇，博士论文 1 篇，即学位论文共计 3 篇。 学位论文的占比=3/5=62.5%≈63%",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "主题=数字素养 AND 作者单位=武汉大学(精确)",
+        "steps": "利用中国知网总库进入高级检索界面，采用检索式：（主题：数字素养）AND（作者单位：武汉大学(精确)） 限制条件为：①同义词扩展; ②时间范围：发表时间：2020-01-01 到 2024-12-31;实施检索后获取 5 条结果，其中期刊论文 2 篇，硕士论文 2 篇，博士论文 1 篇，即学位论文共计 3 篇。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索原理-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-10",
+      "type": "single",
+      "title": "CSSCI 来源中被引最高的期刊论文",
+      "stem": "在 CNKI 或者万方数据知识服务平台中检索 2015 到 2021年间发表的篇名中含有“信息素养”的期刊论文，其中被引次数最高的 CSSCI论文是发表在哪个期刊上的？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "情报科学"
+        },
+        {
+          "key": "B",
+          "text": "大学图书馆学报"
+        },
+        {
+          "key": "C",
+          "text": "图书情报知识"
+        },
+        {
+          "key": "D",
+          "text": "图书馆学研究"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "进入 CNKI 学术期刊库的高级检索界面，限定篇名含有“信息素养”，在时间范围里把出版年度设置为2015到 2021年，来源类别选择 CSSCI，得到检索结果并按照被引排序。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "篇名=信息素养 AND 出版年=2015-2021 AND 来源类别=CSSCI AND 排序=被引",
+        "steps": "进入 CNKI 学术期刊库的高级检索界面，限定篇名含有“信息素养”，在时间范围里把出版年度设置为2015到 2021年，来源类别选择 CSSCI，得到检索结果并按照被引排序。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-boolean"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 1",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-11",
+      "type": "single",
+      "title": "万方多字段布尔检索的结果数",
+      "stem": "在万方中查找 2025 年以前发表的，篇名中出现“乙肝”或“乙型肝炎”，关键词中出现“治疗”和“评估”，摘要中出现“慢性”但不能出现“模型”的学位论文。请问找到的结果数量与下列哪个数字最接近（或者就是）？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "6"
+        },
+        {
+          "key": "C",
+          "text": "24"
+        },
+        {
+          "key": "D",
+          "text": "47"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在万方数据知识服务平台的高级检索中，文献类型选择“学位论文”，题目检索字段对应的检索框中输入：乙肝 OR 乙型肝炎，关键词字段对的检索框中输入：治疗 AND 评估，摘要字段对应的检索框中输入：慢性 NOT 模型，关键词和摘要前面选择“与”。点击“检索”按钮，看结果。",
+      "evidence": {
+        "database_id": "wanfang",
+        "query": "题名=乙肝 OR 乙型肝炎 AND 关键词=治疗 AND 评估",
+        "steps": "在万方数据知识服务平台的高级检索中，文献类型选择“学位论文”，题目检索字段对应的检索框中输入：乙肝 OR 乙型肝炎，关键词字段对的检索框中输入：治疗 AND 评估，摘要字段对应的检索框中输入：慢性 NOT 模型，关键词和摘要前面选择“与”。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-boolean",
+        "t-db-wanfang"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-12",
+      "type": "single",
+      "title": "ACM 检索中星号与问号的匹配",
+      "stem": "在有些外文数据库中，可以 \"analy()e\" 匹配 \"analyse\"(英式)\"analyze\"(美式)，在 ACM 数据库中，搜索范围限定在“TheACMFull-Textcollection ”检索标题中包含这个单词，摘要中包含一个以“comput ”开头的单词，时间限定在 2020-2023年之间。请问找到括号中应该填写的字母是？找到的结果数量与下列哪个最接近？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "*，1325"
+        },
+        {
+          "key": "B",
+          "text": "？，1325"
+        },
+        {
+          "key": "C",
+          "text": "*，3412"
+        },
+        {
+          "key": "D",
+          "text": "？，3412"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在 ACM 数据库中，星号代表可能的一个或多个字母，问号代表一个字母，所以，括号中应该是问号。在高级检索中，按照题目中给出的条件设置，找到的结果应该是 1327 条。",
+      "evidence": {
+        "database_id": "web",
+        "query": "ACM Digital Library truncation asterisk question mark",
+        "steps": "在 ACM 数据库中，星号代表可能的一个或多个字母，问号代表一个字母，所以，括号中应该是问号。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-boolean"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-13",
+      "type": "multiple",
+      "title": "CNKI 精确与模糊匹配的结果辨别",
+      "stem": "在 CNKI 的高级检索中，文献类型选择“学术期刊”，“篇名”和“作者”检索字段进行如图设置，其他条件默认。请问：这样的检索条件，下列哪些论文可能出现在检索结果中？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "张建.住宅楼项目全过程造价控制方法的研究[J].居舍,2023,(35):169-172."
+        },
+        {
+          "key": "B",
+          "text": "张建红.控制接触网施工误差的方法探讨[J].科技与企业,2012,(23):188."
+        },
+        {
+          "key": "C",
+          "text": "张建彬.水泥混凝土路面施工质量控制方法[J].交通世界,2017,(15):76-77."
+        },
+        {
+          "key": "D",
+          "text": "张建.PID 控制参数优化方法及基于 MATLAB 的仿真[J].信息通信,2013,(02):40."
+        }
+      ],
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [
+        "stem_image_missing"
+      ],
+      "explain": "在 CNKI 中：“篇名”检索字段下，“精确”匹配指的是不能拆分，“模糊” 匹配指的是可以拆分；“第一作者”检索字段下，“精确”指的是完全一致，模糊指的是包含。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "篇名=张建（分别用精确/模糊匹配）",
+        "steps": "在 CNKI 中：“篇名”检索字段下，“精确”匹配指的是不能拆分，“模糊” 匹配指的是可以拆分；"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-advanced",
+        "t-boolean"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 4",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-14",
+      "type": "single",
+      "title": "检索结果筛选字段的取值",
+      "stem": "在 ACM（ https://dl.acm.org）数据库首页的检索框中输入检索词“data”，回车后的检索结果中可以选择的筛选字段不包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "contenttype"
+        },
+        {
+          "key": "B",
+          "text": "publisher"
+        },
+        {
+          "key": "C",
+          "text": "names"
+        },
+        {
+          "key": "D",
+          "text": "title"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "根据题目中给出的条件检索，查看检索结果左侧的筛选区。",
+      "evidence": {
+        "database_id": "web",
+        "query": "检索结果 左侧筛选 contenttype",
+        "steps": "根据题目中给出的条件检索，查看检索结果左侧的筛选区。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 5",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-15",
+      "type": "single",
+      "title": "字段限制检索的检索点识别",
+      "stem": "在 CNKI 期刊论文数据库中（或者是在CNKI 数据库的高级检索中文献类型选择“学术期刊”），可选的检索字段不包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "关键词"
+        },
+        {
+          "key": "B",
+          "text": "题名"
+        },
+        {
+          "key": "C",
+          "text": "作者单位"
+        },
+        {
+          "key": "D",
+          "text": "期刊"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "进入系统，打开核对一下。",
+      "evidence": {
+        "database_id": "web",
+        "query": "字段限制检索 题名 关键词 作者单位",
+        "steps": "进入系统，打开核对一下。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic",
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 6",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-16",
+      "type": "multiple",
+      "title": "百度高级检索“关键词位置”的可选范围",
+      "stem": "在百度的高级检索界面中有一个“关键词位置”的限定，其中可以选择（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "网页任何地方"
+        },
+        {
+          "key": "B",
+          "text": "仅网页标题中"
+        },
+        {
+          "key": "C",
+          "text": "仅 URL 中"
+        },
+        {
+          "key": "D",
+          "text": "仅网页图片中"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在百度页面的右上角点击“设置”，在弹出的菜单中选择“高级检索”，仔细看一下“关键词位置”这个选项。",
+      "evidence": {
+        "database_id": "web",
+        "query": "百度 高级检索 关键词位置",
+        "steps": "在百度页面的右上角点击“设置”，在弹出的菜单中选择“高级检索”，仔细看一下“关键词位置”这个选项。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-boolean",
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "信息检索理论与技术-样题 7",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-18",
+      "type": "multiple",
+      "title": "古籍全文导航站收录资源辨识",
+      "stem": "在中国古典文献资源导航系统的“古籍全文”栏目下，可以找到下列哪些网站？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "安徽基本古籍库"
+        },
+        {
+          "key": "B",
+          "text": "登楼古籍检索"
+        },
+        {
+          "key": "C",
+          "text": "湖南省古籍智慧化平台"
+        },
+        {
+          "key": "D",
+          "text": "尚古汇典"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "登录中国古典文献资源导航系统，进入“古籍全文”栏目，即可看到答案。",
+      "evidence": {
+        "database_id": "web",
+        "query": "中国古典文献资源导航系统 古籍全文",
+        "steps": "登录中国古典文献资源导航系统，进入“古籍全文”栏目，即可看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-19",
+      "type": "single",
+      "title": "NSTL 重点领域信息服务的覆盖领域",
+      "stem": "NSTL（国家科技图书文献中心）的重点领域信息服务门户，不包括（ ）领域。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "轨道交通"
+        },
+        {
+          "key": "B",
+          "text": "新能源汽车"
+        },
+        {
+          "key": "C",
+          "text": "生物育种"
+        },
+        {
+          "key": "D",
+          "text": "新发突发与重点传染病"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在 NSTL（国家科技图书文献中心）官网查看重点领域信息服务领域（ https://portal.las.ac.cn/）。",
+      "evidence": {
+        "database_id": "web",
+        "query": "NSTL 重点领域信息服务",
+        "steps": "在 NSTL（国家科技图书文献中心）官网查看重点领域信息服务领域（ https://portal.las.ac.cn/）。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 3",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-20",
+      "type": "multiple",
+      "title": "支持以图识图的搜索引擎",
+      "stem": "下列检索系统，可以以图识图的有（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "百度的图片搜索（ https://image.baidu.com）"
+        },
+        {
+          "key": "B",
+          "text": "搜狗的图片搜索（ https://pic.sogou.com）"
+        },
+        {
+          "key": "C",
+          "text": "360 的图片搜索（ https://image.so.com ）"
+        },
+        {
+          "key": "D",
+          "text": "必应视觉搜寻（ https://cn.bing.com/visualsearch）"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "登录网站，探索一下，即可发现哪些可以以图识图。",
+      "evidence": {
+        "database_id": "web",
+        "query": "以图识图 百度 搜狗 360 必应",
+        "steps": "登录网站，探索一下，即可发现哪些可以以图识图。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 4",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-21",
+      "type": "single",
+      "title": "pubscholar 文献来源库跳转",
+      "stem": "在 pubscholar 中可以找到《Long-termpulsepressuretrajectoriesandriskofincidentatrialfibrillation:theTromsøStudy》这篇文献，请问系统给出的全文获取渠道是下面的哪一个？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "OXFORD ACADEMIC"
+        },
+        {
+          "key": "B",
+          "text": "science"
+        },
+        {
+          "key": "C",
+          "text": "arXiv"
+        },
+        {
+          "key": "D",
+          "text": "pubmed"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在 pubscholar 中找到这篇文献，点开来源，即可跳转到 OXFORDACADEMIC。",
+      "evidence": {
+        "database_id": "web",
+        "query": "pubscholar 文献 来源 OXFORD ACADEMIC",
+        "steps": "在 pubscholar 中找到这篇文献，点开来源，即可跳转到 OXFORDACADEMIC。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 5",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-22",
+      "type": "multiple",
+      "title": "多馆馆藏中可查到《白银资本》的图书馆",
+      "stem": "请问：下列哪些图书馆有贡德 · 弗兰克所著的《白银资本》这本书？（ ）{提醒：中英文、各版本都要考虑}",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "重庆大学图书馆"
+        },
+        {
+          "key": "B",
+          "text": "山东省图书馆"
+        },
+        {
+          "key": "C",
+          "text": "麻省理工学院图书馆"
+        },
+        {
+          "key": "D",
+          "text": "兰州大学图书馆"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "找到各图书馆的馆藏书目查询入口，检索字段选择“标题”，检索词输入“白银资本”或“ReORIENT:GlobalEconomyintheAsianAge ”，找到结果后验证作者信息。",
+      "evidence": {
+        "database_id": "nlc-opac",
+        "query": "题名=白银资本",
+        "steps": "找到各图书馆的馆藏书目查询入口，检索字段选择“标题”，检索词输入“白银资本”或“ReORIENT:GlobalEconomyintheAsianAge ”，找到结果后验证作者信息。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-biblio",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 6",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-23",
+      "type": "judge",
+      "title": "国图民国时期文献的在线阅览",
+      "stem": "在国家图书馆旗下的民国时期文献库中可以找到名为图书《代数难题详解》（俞树德编）并查看全文，“二简易方程式”这一节在正文的第 10 页。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [
+        "needs_review"
+      ],
+      "explain": "进入国家图书馆网站。在数字资源栏目下找到“民国时期文献”的链接并进入。搜索书名，找到“在线阅览”入口。",
+      "evidence": {
+        "database_id": "nlc-opac",
+        "query": "民国时期文献 在线阅览",
+        "steps": "进入国家图书馆网站。在数字资源栏目下找到“民国时期文献”的链接并进入。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic",
+        "t-biblio"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 6 之后的判断题（原文无标题）",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-24",
+      "type": "single",
+      "title": "arXiv 按编号检索的命中篇数",
+      "stem": "请在 arXiv 中找到 arXividentifier 为“2108.09800 ”的文献并打开全文。请问这篇 PDF 全文共有（ ）页。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "9"
+        },
+        {
+          "key": "B",
+          "text": "14"
+        },
+        {
+          "key": "C",
+          "text": "18"
+        },
+        {
+          "key": "D",
+          "text": "23"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "搜索找到并打开 arXiv 这个网站，https://arxiv.org。在页面右上角的搜索区选择检索点“arXividentifier”，输入检索词为“2108.09800 ”，确定后即可找到文献。点击页面右侧的ViewPDF，打开全文。",
+      "evidence": {
+        "database_id": "web",
+        "query": "arXiv identifier 2108.09800",
+        "steps": "搜索找到并打开 arXiv 这个网站，https://arxiv.org。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "文献信息检索系统-样题 7",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-25",
+      "type": "multiple",
+      "title": "“人工智能*图书馆”检索结果的机构发文量",
+      "stem": "在中国知网“学术期刊”库中检索主题同时包含“人工智能”和“图书馆”的文献，下列哪些机构发文量排名前五以内？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "南京大学"
+        },
+        {
+          "key": "B",
+          "text": "中国国家图书馆"
+        },
+        {
+          "key": "C",
+          "text": "武汉大学"
+        },
+        {
+          "key": "D",
+          "text": "四川大学"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在中国期刊库选择“主题”字段，输入检索词“人工智能 * 图书馆”，在检索结果页面左侧分组浏览的“机构”分组中可以找到各机构的发文量。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "主题=人工智能 * 图书馆",
+        "steps": "在中国期刊库选择“主题”字段，输入检索词“人工智能 * 图书馆”，在检索结果页面左侧分组浏览的“机构”分组中可以找到各机构的发文量。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-boolean"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "常用中文商业数据库-样题 1",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-26",
+      "type": "single",
+      "title": "维普学位论文的题名检索",
+      "stem": "通过维普学位论文系统检索论文“《蒙古族翻译史研究》汉英翻译实践报告”，作者单位是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "内蒙古大学"
+        },
+        {
+          "key": "B",
+          "text": "四川大学"
+        },
+        {
+          "key": "C",
+          "text": "重庆大学"
+        },
+        {
+          "key": "D",
+          "text": "四川师范大学"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在维普学位论文通过题名检索论文。",
+      "evidence": {
+        "database_id": "vip",
+        "query": "题名=<题干论文题名>",
+        "steps": "在维普学位论文通过题名检索论文。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-vip"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "常用中文商业数据库-样题 2",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-27",
+      "type": "multiple",
+      "title": "万方学位论文详情页的关键词核对",
+      "stem": "利用万方学位论文数据库检索题名为\"生命周期视角下华为公司股权激励制度研究\"的文献，该文献关键词包括有（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "案例研究法"
+        },
+        {
+          "key": "B",
+          "text": "持续发展"
+        },
+        {
+          "key": "C",
+          "text": "风险管理"
+        },
+        {
+          "key": "D",
+          "text": "生命周期"
+        }
+      ],
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "通过万方学位论文数据库中找到生命周期视角下华为公司股权激励制度研究\"文献，进入文献详情页，即可找到正确答案",
+      "evidence": {
+        "database_id": "wanfang",
+        "query": "生命周期视角下华为公司股权激励制度研究",
+        "steps": "通过万方学位论文数据库中找到生命周期视角下华为公司股权激励制度研究\"文献，进入文献详情页，即可找到正确答案"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-wanfang"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "常用中文商业数据库-样题 3",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-28",
+      "type": "judge",
+      "title": "习近平系列重要讲话数据库的检索验证",
+      "stem": "在“习近平系列重要讲话数据库”中可以查到习近平总书记在二十国集团领导人第十五次峰会第一阶段会议上的讲话，其中提到了“数字货币”，这是习近平总书记在正式发言或署名文章中第一次提到数字货币。( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在“习近平系列重要讲话数据库”中以全文为检索点，以“数字货币”为检索词，可以找到至少多条记录，其中可以发现 2020 年 10 月 31 日在《求是》发表的《国家中长期经济社会发展战略若干重大问题》署名文章中就提到了“数字货币”，所以题目表述错误。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "全文=数字货币",
+        "steps": "在“习近平系列重要讲话数据库”中以全文为检索点，以“数字货币”为检索词，可以找到至少多条记录，其中可以发现 2020 年 10 月 31 日在《求是》发表的《国家中长期经济社会发展战略若干重大问题》署名文章中就提到了“数字货币”，所以题目表述错误。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 1",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-29",
+      "type": "single",
+      "title": "国家统计局数据查询取数",
+      "stem": "在国家统计局官网的数据查询系统中查找我国普通本专科生毕业人数。请问：2018 年我国普通本专科毕业生人数是多少万？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "801.2213"
+        },
+        {
+          "key": "B",
+          "text": "797.1991"
+        },
+        {
+          "key": "C",
+          "text": "758.5298"
+        },
+        {
+          "key": "D",
+          "text": "753.3087"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "登录国家统计局网站，点击“统计数据”菜单中找到数据查询，在查询页面输入关键词“普通本专科生毕业人数”，在找到的数据项中点击相关报表，右上角选择“最近 10 年”，即可看到答案。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "普通本专科生毕业人数 最近10年",
+        "steps": "登录国家统计局网站，点击“统计数据”菜单中找到数据查询，在查询页面输入关键词“普通本专科生毕业人数”，在找到的数据项中点击相关报表，右上角选择“最近 10 年”，即可看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-30",
+      "type": "single",
+      "title": "中国执行信息公开网案号核实",
+      "stem": "星河互联集团有限公司被列为失信被执行人，请问立案时间为 2018 年 10 月 31 日的法律判决需偿还申请执行人多少金额？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "87065"
+        },
+        {
+          "key": "B",
+          "text": "92245"
+        },
+        {
+          "key": "C",
+          "text": "88910"
+        },
+        {
+          "key": "D",
+          "text": "83640"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "中国执行信息公开网中搜索星河互联集团有限公司，找到对应日期的案号为(2018)京 0108 执 17244 号，点开详情即可查看。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "星河互联集团有限公司 (2018)京0108执17244号",
+        "steps": "中国执行信息公开网中搜索星河互联集团有限公司，找到对应日期的案号为(2018)京 0108 执 17244 号，点开详情即可查看。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-31",
+      "type": "single",
+      "title": "国家标准主要起草人核实",
+      "stem": "2020 年 5 月 6 日，国家标准《儿童口罩技术规范》（标准号：GB/T38880-2020）发布并实施。以下所列哪一位不是该标准的起草人？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "高尚荣"
+        },
+        {
+          "key": "B",
+          "text": "李桂梅"
+        },
+        {
+          "key": "C",
+          "text": "许伟民"
+        },
+        {
+          "key": "D",
+          "text": "李建全"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "国家标准全文公开系统里利用标准号查到该标准全文，第 2 页“本标准主要起草人”中查询即得。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "按题干标准号检索（国家标准全文公开系统）",
+        "steps": "国家标准全文公开系统里利用标准号查到该标准全文，第 2 页“本标准主要起草人”中查询即得。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 4",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-32",
+      "type": "single",
+      "title": "专利的技术领域与附图数量",
+      "stem": "小米公司持有一项名为“一种用于耳机插头的连接部件、耳机插孔及终端”的发明专利，通过国家知识产权局专利检索系统搜索并阅读专利原文，在文献的说明书部分，了解到该专利的技术领域为（ ），附图共有（ ）页。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "电子工程，3"
+        },
+        {
+          "key": "B",
+          "text": "物联网，4"
+        },
+        {
+          "key": "C",
+          "text": "电子技术，5"
+        },
+        {
+          "key": "D",
+          "text": "制造技术，6"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在国家知识产权局的专利库中查找专利原文，阅读文献即可查到该专利的技术领域和附图。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "按题干专利号检索（国家知识产权局专利检索）",
+        "steps": "在国家知识产权局的专利库中查找专利原文，阅读文献即可查到该专利的技术领域和附图。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 5",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-33",
+      "type": "single",
+      "title": "比亚迪商标申请日期核实",
+      "stem": "比亚迪股份有限公司注册号为 27706260 的商标“比亚迪云微”，申请日期为 ( ) ?",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "2017 年 11 月 24 日"
+        },
+        {
+          "key": "B",
+          "text": "2017 年 10 月 24 日"
+        },
+        {
+          "key": "C",
+          "text": "2018 年 11 月 24 日"
+        },
+        {
+          "key": "D",
+          "text": "2018 年 10 月 24 日"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在在国家知识产权局商标局中国商标网商标综合查询在（ https://wcjs.sbj.cnipa.gov.cn/sgtmi）中检索注册号为27706260 的商标“比亚迪云微”，可以查到该商标申请日期为 2017 年 11 月 24 日。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "注册号=27706260 比亚迪云微",
+        "steps": "在在国家知识产权局商标局中国商标网商标综合查询在（ https://wcjs.sbj.cnipa.gov.cn/sgtmi）中检索注册号为27706260 的商标“比亚迪云微”，可以查到该商标申请日期为 2017 年 11 月 24 日。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 6",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-34",
+      "type": "multiple",
+      "title": "中国互联网联合辟谣平台的栏目分类",
+      "stem": "在中国互联网联合辟谣平台官网有一个“辟谣信息查证”的栏目，提供搜索和筛选功能。请问：筛选中的“按分类分”，系统提供的筛选项包括以下哪些？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "科学常识"
+        },
+        {
+          "key": "B",
+          "text": "时事政治"
+        },
+        {
+          "key": "C",
+          "text": "公共政策"
+        },
+        {
+          "key": "D",
+          "text": "公共安全"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "进入这个网站，在首页找到入口，进去这个栏目（ https://www.piyao.org.cn/pysjk/frontsql.htm）实地查询。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "piyao.org.cn 辟谣数据库",
+        "steps": "进入这个网站，在首页找到入口，进去这个栏目（ https://www.piyao.org.cn/pysjk/frontsql.htm）实地查询。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ethics",
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 7",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-35",
+      "type": "judge",
+      "title": "国家药监局医疗器械注册证查询",
+      "stem": "某一款注册证编号为“辽械注准 20202140101 ”的医疗器械，它的产品名称是一次性手术隔离服。( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "先通过搜索引擎找到国家药品监督管理局官网；找到医疗器械栏目下的医疗器械查询；在高级检索中选择“注册证查询”，输入关键词，即可看到结果。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "注册证查询 <题干关键词>",
+        "steps": "先通过搜索引擎找到国家药品监督管理局官网；"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 8",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-36",
+      "type": "single",
+      "title": "研招网天体物理专业开设院校筛选",
+      "stem": "通过研招网查询可知，招天体物理专业硕士研究生并且接受退役大学生士兵专项计划考试报考的“双一流”建设高校是( )。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "北京大学"
+        },
+        {
+          "key": "B",
+          "text": "中国科学院大学"
+        },
+        {
+          "key": "C",
+          "text": "天津师范大学"
+        },
+        {
+          "key": "D",
+          "text": "云南大学"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在研招网的硕士专业目录检索界面中输入专业名称“天体物理”，是否接收退役大学生士兵专项计划考生报考筛选条件选择“是”，找到检索结果，点击“开设院校”按钮，在检索结果中勾选“双一流”建设高校，可以看到答案。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "专业名称=天体物理 AND 退役大学生士兵专项=是",
+        "steps": "在研招网的硕士专业目录检索界面中输入专业名称“天体物理”，是否接收退役大学生士兵专项计划考生报考筛选条件选择“是”，找到检索结果，点击“开设院校”按钮，在检索结果中勾选“双一流”建设高校，可以看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 9",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-37",
+      "type": "single",
+      "title": "学信网零散查询核验学历专业",
+      "stem": "请在学信网上查询这个毕业证书信息（证书编号：106101201301000019，姓名：周建芳）。请问这个毕业证书上载明的专业是什么？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "图书馆学"
+        },
+        {
+          "key": "B",
+          "text": "情报学"
+        },
+        {
+          "key": "C",
+          "text": "宏观经济学"
+        },
+        {
+          "key": "D",
+          "text": "信息管理学"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在学信网上点击学历查询下的零散查询，输入证号和姓名查询，检索结果中可以看到专业。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "零散查询 证书编号+姓名",
+        "steps": "在学信网上点击学历查询下的零散查询，输入证号和姓名查询，检索结果中可以看到专业。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "政府开放信息资源-样题 10",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-38",
+      "type": "single",
+      "title": "中国大学 MOOC 课程章节内容",
+      "stem": "在中国大学 MOOC 中有一门四川大学王红老师主讲的课程《中国诗歌艺术》，其中第 2.2 节讲述的内容是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "诗之声：选音与读音"
+        },
+        {
+          "key": "B",
+          "text": "诗的语词及构句特点"
+        },
+        {
+          "key": "C",
+          "text": "不循常规的语序"
+        },
+        {
+          "key": "D",
+          "text": "诗的节奏与韵律"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在中国大学 MOOC 中找到这门课，在课程大纲中找到这一节，看一下。",
+      "evidence": {
+        "database_id": "web",
+        "query": "诗之声：选音与读音",
+        "steps": "在中国大学 MOOC 中找到这门课，在课程大纲中找到这一节，看一下。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "实用学习资源-样题 1",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-39",
+      "type": "single",
+      "title": "公益大讲堂课程时长",
+      "stem": "在高校信息素养教育数据库中可以找到多个全国信息素养公益大讲堂的在线讲座视频，其中包括第三期四川师范大学王一老师主讲的《数字数据可视化——快速搞定炫酷图表》，请问这个在线视频讲座的时长与下列哪个选项最接近？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "45 分 35 秒"
+        },
+        {
+          "key": "B",
+          "text": "55 分 55 秒"
+        },
+        {
+          "key": "C",
+          "text": "60 分 09 秒"
+        },
+        {
+          "key": "D",
+          "text": "65 分 43 秒"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "百度一下，找到这个数据库的官网；选择“直播讲座”栏目。（如果不在校园网内，可能会有登录提示，选择“不登录”即可，这个公益讲座是开放的）；选择“公益大讲堂”栏目，找到课程；播放视频，看进度条。",
+      "evidence": {
+        "database_id": "web",
+        "query": "直播讲座 公益大讲堂 <课程名>",
+        "steps": "百度一下，找到这个数据库的官网；选择“直播讲座”栏目。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "实用学习资源-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-40",
+      "type": "single",
+      "title": "剑桥数据库 Open full book 数量",
+      "stem": "在剑桥数据库中找到名为《BigDataandGlobalTradeLaw》的电子书。请问这本电子书的正文第 50 页（pdf 文档第 82页）有几张图？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "2"
+        },
+        {
+          "key": "D",
+          "text": "3"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "进入剑桥数据库（ https://www.cambridge.org/core）；检索框中输入书名检索；在找到的结果中点击标题或者缩略图进入图书题录页面；找到 OpenfullbookPDF 按钮打开全文 PDF；查看对应页码内容。",
+      "evidence": {
+        "database_id": "web",
+        "query": "Cambridge Core <书名>",
+        "steps": "进入剑桥数据库（ https://www.cambridge.org/core）；"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "实用学习资源-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-41",
+      "type": "multiple",
+      "title": "合肥三只羊企业工商信息核对",
+      "stem": "以下关于“合肥三只羊网络科技有限公司”说法正确的是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "该企业的注册时间：2021-03-18"
+        },
+        {
+          "key": "B",
+          "text": "该企业注册资本不足：200 万"
+        },
+        {
+          "key": "C",
+          "text": "该企业所属行业为：软件和信息技术服务业"
+        },
+        {
+          "key": "D",
+          "text": "该企业统一社会信用代码：91340103MA2WTXNN25"
+        }
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "通过天眼查或企查查搜索“合肥三只羊网络科技有限公司”，浏览企业工商信息，对比选项。",
+      "evidence": {
+        "database_id": "web",
+        "query": "合肥三只羊网络科技有限公司",
+        "steps": "通过天眼查或企查查搜索“合肥三只羊网络科技有限公司”，浏览企业工商信息，对比选项。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "实用学习资源-样题 4",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-42",
+      "type": "single",
+      "title": "GB/T 7714 期刊论文著录格式判断",
+      "stem": "以下哪一种符合 GB/T7714-2015 参考文献著录标准？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "朱晓灿.新时代科普类图书出版趋势探析.传播与版权[J],2021(9):29-31+41."
+        },
+        {
+          "key": "B",
+          "text": "朱晓灿.\"新时代科普类图书出版趋势探析.\"传播与版权,2021(9):29-31+41."
+        },
+        {
+          "key": "C",
+          "text": "朱晓灿.新时代科普类图书出版趋势探析[J].《传播与版权》,2021(9):29-31+41."
+        },
+        {
+          "key": "D",
+          "text": "朱晓灿.新时代科普类图书出版趋势探析[J].传播与版权,2021(9):29-31+41."
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "对照国家标准著录。从 CNKI、维普、万方等学术数据库中也可以导出。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "篇名=新时代科普类图书出版趋势探析",
+        "steps": "对照国家标准著录。从 CNKI、维普、万方等学术数据库中也可以导出。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "学术写作-样题 1",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-43",
+      "type": "multiple",
+      "title": "一稿多投的界定",
+      "stem": "下列行为，属于“一稿多投”的是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "论文以不同或同一种文字在同一种期刊的国际版本上再次发表"
+        },
+        {
+          "key": "B",
+          "text": "将主要数据和图表相同的两篇论文分别投稿不同期刊"
+        },
+        {
+          "key": "C",
+          "text": "将同一篇论文同时投稿多家期刊"
+        },
+        {
+          "key": "D",
+          "text": "将发表过的会议论文充实 50%以上数据后再次向期刊投稿，引用上次发表的论文并向编辑部说明"
+        }
+      ],
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "论文以不同或同一种文字在同一种期刊的国际版本上再次发表，或者将发表过的会议论文充实 50%以上数据后再次向期刊投稿，引用上次发表的论文并向编辑部说明不属于“一稿多投”。",
+      "evidence": {
+        "database_id": "web",
+        "query": "一稿多投 界定 学术规范",
+        "steps": "论文以不同或同一种文字在同一种期刊的国际版本上再次发表，或者将发表过的会议论文充实 50%以上数据后再次向期刊投稿，引用上次发表的论文并向编辑部说明不属于“一稿多投”。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ethics"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "学术写作-样题 2",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-44",
+      "type": "multiple",
+      "title": "期刊收录来源（CSSCI/北大核心）辨别",
+      "stem": "刊发学术论文《基于认捐模式的图书馆受赠研究》的期刊属于（ ）期刊。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "CSSCI"
+        },
+        {
+          "key": "B",
+          "text": "SSCI"
+        },
+        {
+          "key": "C",
+          "text": "北大核心"
+        },
+        {
+          "key": "D",
+          "text": "CSCD"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在 CNKI（或万方、维普）中找到这篇论文，确定所在期刊，进入期刊主页，即可看到答案。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "刊名=<题干期刊名> 期刊主页",
+        "steps": "在 CNKI（或万方、维普）中找到这篇论文，确定所在期刊，进入期刊主页，即可看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "学术写作-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-45",
+      "type": "multiple",
+      "title": "万彩办公大师的 PDF 工具功能",
+      "stem": "下列哪个是万彩办公大师内置的功能？( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "PDF 分隔"
+        },
+        {
+          "key": "B",
+          "text": "PDF 合并"
+        },
+        {
+          "key": "C",
+          "text": "PDF 批量添加页码"
+        },
+        {
+          "key": "D",
+          "text": "WORD 转 PDF"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "下载万彩办公大师绿色免安装版，启动后即可看到各种工具。",
+      "evidence": {
+        "database_id": "web",
+        "query": "万彩办公大师 PDF 工具",
+        "steps": "下载万彩办公大师绿色免安装版，启动后即可看到各种工具。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "学术写作-样题 4",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-46",
+      "type": "judge",
+      "title": "雨课堂 PPT 插件的功能判断",
+      "stem": "雨课堂是一个 PPT 插件，可以免费安装使用，可以弹幕，支持单选、多选、填空、主观题等多种题型，有分组功能。( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "装上这个插件，深度使用一下，就知道了。",
+      "evidence": {
+        "database_id": "web",
+        "query": "雨课堂 PPT 插件 弹幕 分组",
+        "steps": "装上这个插件，深度使用一下，就知道了。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "学术写作-样题 5",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-47",
+      "type": "judge",
+      "title": "Mendeley 能否按 DOI 搜索添加文献",
+      "stem": "在 mendeley 网页版和客户端中，都可以根据 DOI 搜索添加文献。( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在 mendeley 网页版或客户端中，点击 addnew 按钮，选择 Addentrymanually 可以看到提示。",
+      "evidence": {
+        "database_id": "web",
+        "query": "Mendeley add new entry manually",
+        "steps": "在 mendeley 网页版或客户端中，点击 addnew 按钮，选择 Addentrymanually 可以看到提示。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "知识管理工具-样题 1",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-48",
+      "type": "judge",
+      "title": "百度脑图的导出格式",
+      "stem": "百度脑图可以导出多种格式，但是其中不包括 XMIND 格式。( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "先打开百度脑图，制作一个简单的脑图。文件“另存为”，然后选择“导 出”，可以看到可选择的格式，其中包括 XMIND 格式。",
+      "evidence": {
+        "database_id": "web",
+        "query": "百度脑图 导出 格式",
+        "steps": "先打开百度脑图，制作一个简单的脑图。文件“另存为”，然后选择“导 出”，可以看到可选择的格式，其中包括 XMIND 格式。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "知识管理工具-样题 2",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-49",
+      "type": "single",
+      "title": "CNKI 期刊 RSS 订阅地址",
+      "stem": "中文期刊《马克思主义研究》在 CNKI 中的 RSS 订阅地址是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "https://navi.cnki.net/knavi/RSS/STUD"
+        },
+        {
+          "key": "B",
+          "text": "https://navi.cnki.net/knavi/RSS/RST"
+        },
+        {
+          "key": "C",
+          "text": "https://navi.cnki.net/knavi/RSS/STYU"
+        },
+        {
+          "key": "D",
+          "text": "https://navi.cnki.net/knavi/RSS/STEU"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "CNKI 的期刊导航中找到该期刊的详细页面，页面中有 RSS 订阅图标，点击后即可获取 URL。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "期刊导航 <刊名> RSS",
+        "steps": "CNKI 的期刊导航中找到该期刊的详细页面，页面中有 RSS 订阅图标，点击后即可获取 URL。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "科研工具-样题 1",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-50",
+      "type": "single",
+      "title": "EXCEL 提取出生日期的函数",
+      "stem": "在 EXCEL 中提取身份证号码中的出生年月日，最合适的函数是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "left( )"
+        },
+        {
+          "key": "B",
+          "text": "right( )"
+        },
+        {
+          "key": "C",
+          "text": "mid( )"
+        },
+        {
+          "key": "D",
+          "text": "trim( )"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在 EXCEL 中，mid()函数可以在指定的字符串中从指定的字符开始提取指定数量的字符。如果身份证号码在A1 单元格，提取出生年月日的函数表达式：=mid(A1,7,8)。LEFT()函数可以提取最左边的指定数量字符。",
+      "evidence": {
+        "database_id": "web",
+        "query": "EXCEL mid 提取身份证出生年月日",
+        "steps": "在 EXCEL 中，mid()函数可以在指定的字符串中从指定的字符开始提取指定数量的字符。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "科研工具-样题 2",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-51",
+      "type": "single",
+      "title": "CNKI“第一单位”检索点识别",
+      "stem": "请问 2011 年至 2020 年间以“四川师范大学”为第一作者单位发表 CSSCI 论文最多的作者是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "谭光辉"
+        },
+        {
+          "key": "B",
+          "text": "汪洪亮"
+        },
+        {
+          "key": "C",
+          "text": "唐代兴"
+        },
+        {
+          "key": "D",
+          "text": "蔡方鹿"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "CSSCI 论文，一般在中文期刊论文数据库中检索，其中比较常用的是 CNKI、维普、万方。在这三个数据库中，只有 CNKI 有“第一单位”（第一作者单位）这个检索点。所以选择 CNKI。在 CNKI 的高级检索界面，文献类型选择“学术期刊”，检索点选择“第一单位”，检索词输入“四川师范大学”，匹配方式选择默认的“模糊”，时间限制 2011-2020，来源期刊勾选“CSSCI ”，然后点击“检索”。在检索结果页面，选择“导出与分析”→“可视化分析”→“全部检索结果分析”，在分析结果页面，选择“中国作者分布”项，即可看到高频作者排序柱状图。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "第一作者=谭光辉 AND 第一单位=<机构>",
+        "steps": "CSSCI 论文，一般在中文期刊论文数据库中检索，其中比较常用的是 CNKI、维普、万方。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "科研工具-样题 3",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-52",
+      "type": "judge",
+      "title": "微词云统计政府工作报告词频",
+      "stem": "在微词云（ https://www.weiciyun.com）中统计2021 年总理所做的政府工作报告。可以发现，“经济”这个词出现的次数高于“发展”。( )",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "先找到 2021年的政府工作报告，全文复制。在微词云网站上选择“在线分词”，粘贴复制的文本，然后下一步。微信扫码关注后即可看到结果。“发展”的词频高于“经济”。",
+      "evidence": {
+        "database_id": "web",
+        "query": "微词云 在线分词 政府工作报告",
+        "steps": "先找到 2021年的政府工作报告，全文复制。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "科研工具-样题 4",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-53",
+      "type": "single",
+      "title": "《学生人工智能能力框架》第 29 页表格标题",
+      "stem": "在联合国教科文组织的官网上可以找到 2024 年发布的英文版《学生人工智能能力框架》 （AIcompetencyframeworkforstudents），这个文件正文第 29 页有一个表格，这个表格的标题是（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "Competency blocks for level 1: Understand"
+        },
+        {
+          "key": "B",
+          "text": "Human-centred mindset"
+        },
+        {
+          "key": "C",
+          "text": "Ethics of AI"
+        },
+        {
+          "key": "D",
+          "text": "AI techniques and applications"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [
+        "needs_review"
+      ],
+      "explain": "Competencyblocksforlevel1:Understand Human-centred mindset EthicsofAI AItechniquesandapplications 在联合国教科文组织的官网上找到这个文件，翻到正文第 29 页，查看可知。文件地址：https://unesdoc.unesco.org/ark:/48223/pf0000391105",
+      "evidence": {
+        "database_id": "web",
+        "query": "UNESCO AI competency framework for students",
+        "steps": "Competencyblocksforlevel1:Understand Human-centred mindset EthicsofAI AItechniquesandapplications 在联合国教科文组织的官网上找到这个文件，翻到正文第 29 页，查看可知。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools",
+        "t-ethics"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 1",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-54",
+      "type": "multiple",
+      "title": "深圳大学图书馆 GenAI 专题栏目",
+      "stem": "深圳大学图书馆网站中有一个生成式人工智能专题网页。这个专题网页中的内容包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "生成式AI 简介"
+        },
+        {
+          "key": "B",
+          "text": "最新AI 政策"
+        },
+        {
+          "key": "C",
+          "text": "GenAI 工具导航"
+        },
+        {
+          "key": "D",
+          "text": "AI 数据库"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "找到这个专题，即可做出判断。网址：https://www.lib.szu.edu.cn/learning/ai。",
+      "evidence": {
+        "database_id": "web",
+        "query": "https://www.lib.szu.edu.cn/learning/ai",
+        "steps": "找到这个专题，即可做出判断。网址：https://www.lib.szu.edu.cn/learning/ai。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 2",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-55",
+      "type": "multiple",
+      "title": "腾讯元宝可切换的底层模型",
+      "stem": "在 AI 工具腾讯元宝（网页版）首页可以选择 AI 大模型，其中包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "DeepSeek"
+        },
+        {
+          "key": "B",
+          "text": "Hunyuan"
+        },
+        {
+          "key": "C",
+          "text": "Qwen"
+        },
+        {
+          "key": "D",
+          "text": "文心"
+        }
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "进入腾讯元宝官网首页，在对话框中可以选择。网址：https://yuanbao.tencent.com/chat/naQivTmsDa。",
+      "evidence": {
+        "database_id": "web",
+        "query": "腾讯元宝 模型 DeepSeek Hunyuan",
+        "steps": "进入腾讯元宝官网首页，在对话框中可以选择。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 3",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-56",
+      "type": "multiple",
+      "title": "豆包 AIPPT 的模板分类",
+      "stem": "使用豆包的 AIPPT 功能可以快速生成 PPT（登录豆包后），在生成的过程中可以基于场景和风格选择 PPT 模板，其中可选的风格包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "商务"
+        },
+        {
+          "key": "B",
+          "text": "简约"
+        },
+        {
+          "key": "C",
+          "text": "喜庆"
+        },
+        {
+          "key": "D",
+          "text": "复古"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在浏览器中进入豆包官网并登录，在对话框的下方选择 AIPPT，输入任意主题，让豆包生成 PPT，在生成的过程中可以看到模板分类。",
+      "evidence": {
+        "database_id": "web",
+        "query": "豆包 AIPPT 模板",
+        "steps": "在浏览器中进入豆包官网并登录，在对话框的下方选择 AIPPT，输入任意主题，让豆包生成 PPT，在生成的过程中可以看到模板分类。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 4",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-57",
+      "type": "multiple",
+      "title": "讯飞星火论文写作栏目的功能",
+      "stem": "星火科研助手中有一个学术写作的栏目，这个栏目下的具体功能包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "学术翻译"
+        },
+        {
+          "key": "B",
+          "text": "英文润色"
+        },
+        {
+          "key": "C",
+          "text": "中文润色"
+        },
+        {
+          "key": "D",
+          "text": "全文审校"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "注册登录这个网站，进入“学术写作”栏目，即可看到答案。网址：https://paper.iflytek.com",
+      "evidence": {
+        "database_id": "web",
+        "query": "paper.iflytek.com 学术写作",
+        "steps": "注册登录这个网站，进入“学术写作”栏目，即可看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 5",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-58",
+      "type": "multiple",
+      "title": "豆包音乐生成的风格选项",
+      "stem": "使用AI 工具豆包可以生成音乐，入口在官网首页对话框下方。使用豆包的这个功能生成音乐，系统会给出提示词模板，其中可以选择音乐风格，其中包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "DJ"
+        },
+        {
+          "key": "B",
+          "text": "民谣"
+        },
+        {
+          "key": "C",
+          "text": "戏曲"
+        },
+        {
+          "key": "D",
+          "text": "朋克"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "在电脑浏览器中访问豆包（ https://www.doubao.com），点击对话框下方的“音乐生成”，打开提示词模板中的音乐风格下拉菜单，可以看到答案。",
+      "evidence": {
+        "database_id": "web",
+        "query": "豆包 音乐生成 风格",
+        "steps": "在电脑浏览器中访问豆包（ https://www.doubao.com），点击对话框下方的“音乐生成”，打开提示词模板中的音乐风格下拉菜单，可以看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 6",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-liti-59",
+      "type": "multiple",
+      "title": "智谱清言智能体的配置项",
+      "stem": "使用智谱清言可以创建AI 智能体，在智能体配置界面，可以设置模块能力。其中可选的模块能力包括（ ）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "联网能力"
+        },
+        {
+          "key": "B",
+          "text": "AI 绘画"
+        },
+        {
+          "key": "C",
+          "text": "代码能力"
+        },
+        {
+          "key": "D",
+          "text": "深度思考"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "用智谱清言创建一个智能体，在智能体配置页面可以看到答案。",
+      "evidence": {
+        "database_id": "web",
+        "query": "智谱清言 智能体 配置",
+        "steps": "用智谱清言创建一个智能体，在智能体配置页面可以看到答案。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "比赛官网例题",
+      "source_ref": "AI素养-样题 7",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-17",
+      "type": "single",
+      "title": "《学习轨迹研究综述》DOI 核实",
+      "stem": "DOI的全称是“digital object unique identifier”，即数字对象唯一标识，被喻为“科技论文的身份证”。请问某学术期刊2026年第5期发表的《学习轨迹研究综述》一文的DOI是（）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "DOI:10.1007/s10409-025-25450-x."
+        },
+        {
+          "key": "B",
+          "text": "DOI: 10.11896/jsjkx.250600159."
+        },
+        {
+          "key": "C",
+          "text": "DOI:10.15888/j.cnki.csa.010106."
+        },
+        {
+          "key": "D",
+          "text": "DOI:10.7498/aps.75.20251418."
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "《学习轨迹研究综述》载《计算机科学》2026 年第 5 期 13-21 页，DOI 为 10.11896/jsjkx.250600159。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "篇名=学习轨迹研究综述 AND 年=2026",
+        "steps": "CNKI 检索到该文详情页，复制「DOI」字段与选项逐一比对（注意 10. 前缀与末尾句点）。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature",
+        "t-db-cnki"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 17 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-27",
+      "type": "single",
+      "title": "超星汇雅电子书检索字段数量",
+      "stem": "在超星汇雅电子书检索结果页（二级页面）的搜索栏下方，可切换的检索类别（字段）共有（）种。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "4种：书名、作者、目录、全文检索"
+        },
+        {
+          "key": "B",
+          "text": "2种：书名、作者"
+        },
+        {
+          "key": "C",
+          "text": "5种：书名、作者、目录、全文检索、出版社"
+        },
+        {
+          "key": "D",
+          "text": "3种：书名、作者、主题词"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "汇雅电子书检索结果页搜索栏下方提供 4 种字段：书名、作者、目录、全文检索。",
+      "evidence": {
+        "database_id": "web",
+        "query": "超星汇雅电子书 检索结果页",
+        "steps": "打开超星汇雅电子书执行一次检索，在结果页搜索栏下方读取可切换的检索类别项。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 27 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-28",
+      "type": "single",
+      "title": "按 ISBN 找书所需书目信息",
+      "stem": "王小红想在重庆市图书馆借一本ISBN号为9787521774757的书，请问她要获取到下列哪个信息可以很快找到此本书",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "书名"
+        },
+        {
+          "key": "B",
+          "text": "索书号和书名"
+        },
+        {
+          "key": "C",
+          "text": "书名出版社"
+        },
+        {
+          "key": "D",
+          "text": "书名和作者"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "索书号能直接指向书架位置，配合书名确认，是入库找书最快的信息组合；只知道书名还要先在书目里查索书号。",
+      "evidence": {
+        "database_id": "nlc-opac",
+        "query": "9787521774757",
+        "steps": "在重庆图书馆 OPAC 按 ISBN 检索，查看题录中「索书号」与书名，判断入库找书所需关键信息。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-biblio"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 28 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-29",
+      "type": "single",
+      "title": "第五次经济普查四川建筑业法人单位数",
+      "stem": "经济普查，有利于全面把握我国经济“家底”，更好服务推进中国式现代化。国家统计局（https://data.stats.gov.cn）第五次经济普查数据中，四川地区建筑业法人单位数为（）个。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "109790"
+        },
+        {
+          "key": "B",
+          "text": "38958"
+        },
+        {
+          "key": "C",
+          "text": "43162"
+        },
+        {
+          "key": "D",
+          "text": "102080"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "国家统计局第五次全国经济普查数据中，四川地区建筑业法人单位数为 109,790 个。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "建筑业 法人单位数 四川 第五次经济普查",
+        "steps": "进入 data.stats.gov.cn，「数据查询 → 普查数据」中选择第五次经济普查，按地区（四川）与行业（建筑业）取法人单位数。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 29 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-30",
+      "type": "single",
+      "title": "2025 年食品类强制性国标数量",
+      "stem": "利用全国标准信息公共服务平台检索，2025 年发布的与“食品”相关的强制性国家标准共有多少条",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "1"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "2025 年发布的与“食品”相关的强制性国家标准为 GB 7718-2025《预包装食品标签通则》与 GB 28050-2025《预包装食品营养标签通则》两条；GB 2762 现行版本是 2022 年发布，不计入。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "食品 AND 强制性国家标准 AND 发布日期=2025",
+        "steps": "在全国标准信息公共服务平台按「食品」检索，筛选强制性标准且发布日期为 2025 年，统计条数。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 30 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-31",
+      "type": "multiple",
+      "title": "《人工智能在电力系统…》的关键词",
+      "stem": "关键词是从文献题目、文摘或正文中提取具有实质意义并能代表文献主题内容的词汇，具有一定的精确搜索功能。中国知网收录的《人工智能在电力系统及综合能源系统中的应用综述》的关键词有以下哪些（）",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "综合能源系统"
+        },
+        {
+          "key": "B",
+          "text": "人工智能"
+        },
+        {
+          "key": "C",
+          "text": "电力系统"
+        },
+        {
+          "key": "D",
+          "text": "机器学习"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "该综述的关键词为综合能源系统、人工智能、电力系统、机器学习四项，四项均属该文关键词。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "篇名=人工智能在电力系统及综合能源系统中的应用综述",
+        "steps": "CNKI 打开该文详情页，读取「关键词」字段列出的词。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 31 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-32",
+      "type": "multiple",
+      "title": "图书情报与档案管理专业招生信息",
+      "stem": "高考选科旨在引导考生匹配大学专业、发挥个人特长，并突破传统文理分科局限，使学习与职业规划衔接更紧密。考生小明欲通过教育部“阳光高考”平台，查询“图书情报与档案管理”专业类别相关的招生院校信息，以下相关选项描述正确的是（）？",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "“图书馆学”专业毕业三年内学生在广东省的平均薪酬指数最高"
+        },
+        {
+          "key": "B",
+          "text": "“档案学”专业全国有35所院校均有开设"
+        },
+        {
+          "key": "C",
+          "text": "图书情报与档案管理专业类别下设“图书馆学”“档案学”“信息资源管理”和“数据资源与数据智能”四个专业"
+        },
+        {
+          "key": "D",
+          "text": "图书情报与档案管理专业在普通本科和职业本科院校均有开设"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "按“阳光高考”平台数据：图书馆学专业毕业三年内学生在广东省的平均薪酬指数最高（A 对）；档案学全国有 35 所院校开设（B 对）；该专业类下设图书馆学、档案学、信息资源管理、数据资源与数据智能四个专业（C 对）；D 说“职业本科院校也开设”不成立。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "阳光高考 图书情报与档案管理",
+        "steps": "在阳光高考平台「专业知识库/招生计划」中查看该专业类下设专业、开设院校数与就业数据。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 32 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-34",
+      "type": "multiple",
+      "title": "文献鸟 Pro 与免费版功能差异",
+      "stem": "图书馆拟为教师批量采购文献鸟Stork付费功能，学科馆员需先依据官网“文献鸟 Pro”页及相关功能页，核对Pro版相对基本（免费）版的差异。以下说法中，与官网页面实测表述一致的有（）",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "每次每个关键词推送文献数目上限可由Pro用户自行设置，最高可设200篇"
+        },
+        {
+          "key": "B",
+          "text": "基本版用户也可以对推送的文献加星，从而使文献在服务器上永久保存"
+        },
+        {
+          "key": "C",
+          "text": "Pro可设置最低影响因子与中科院期刊分区过滤，且既可全局设置也可针对每个关键词分别设置"
+        },
+        {
+          "key": "D",
+          "text": "关键词数目上限由基本版的10个提高到Pro版的100个"
+        },
+        {
+          "key": "E",
+          "text": "购买“Stork Pro”高级功能会赠送“文献导读”功能，无需再单独购买导读"
+        }
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "官网「文献鸟 Pro」页实测：A 单关键词推送上限可自行设置、最高 200 篇；C 可设最低影响因子与中科院分区，且支持全局或按关键词分别设置；D 关键词数量上限由免费版 10 个提升到 Pro 版 100 个；E 购买 Stork Pro 赠送「文献导读」，无需另购。B「基本版加星后永久保存」与官网表述不符。",
+      "evidence": {
+        "database_id": "web",
+        "query": "文献鸟 Stork Pro 功能",
+        "steps": "打开文献鸟官网「Pro」页与功能说明页，逐项核对推送上限、影响因子/分区过滤、关键词数量与赠送功能。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools",
+        "t-search-advanced"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 34 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-35",
+      "type": "multiple",
+      "title": "AI 工具在信息检索中的典型应用",
+      "stem": "以下哪些属于AI工具在信息检索场景中的典型应用？",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "多语言文献的自动翻译辅助"
+        },
+        {
+          "key": "B",
+          "text": "基于语义的智能推荐相关文献"
+        },
+        {
+          "key": "C",
+          "text": "文献自动摘要和关键信息提取"
+        },
+        {
+          "key": "D",
+          "text": "自动解析文献，提供客观准确可溯源的参考文献"
+        },
+        {
+          "key": "E",
+          "text": "智能问答式检索，直接回答用户问题"
+        }
+      ],
+      "answer": [
+        "A",
+        "C",
+        "E"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "AI 在检索场景中的典型应用是翻译辅助、自动摘要与关键信息提取、智能问答式检索（A、C、E）；B「基于语义的智能推荐」属推荐系统能力、不是检索场景的典型用法，D 让 AI 自动解析文献并给出「客观准确可溯源」的参考文献受幻觉限制、不可靠。",
+      "evidence": {
+        "database_id": "web",
+        "query": "AI 信息检索 应用 语义推荐 摘要 问答",
+        "steps": "按 AI 在检索链路（翻译、语义推荐、摘要抽取、问答）中的实际能力逐项判断，「自动生成可溯源参考文献」超出其能力边界。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 35 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-36",
+      "type": "multiple",
+      "title": "郫县豆瓣地理标志证明商标规则",
+      "stem": "某高职电商专业学生计划在网店销售四川特产，在商品标题和详情页中使用“郫县豆瓣”作为宣传名称。为核实该名称的法律属性及使用规范，他在国家知识产权局官网商标查询系统中检索“郫县豆瓣”商标信息。以下关于检索结果及地理标志证明商标使用规则的说法，正确的有（）",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "这是一件以地理标志为核心内容注册的证明商标"
+        },
+        {
+          "key": "B",
+          "text": "商标公开检索结果，展示该商标的申请人名称、申请人地址、注册号、申请日期等信息"
+        },
+        {
+          "key": "C",
+          "text": "只要在商品包装上标注“郫县风味”字样，即可证明该商品与“郫县豆瓣”具有同等品质，不涉及任何商标侵权"
+        },
+        {
+          "key": "D",
+          "text": "“郫县豆瓣”商标的注册人为“成都市郫都区食品工业协会”，该商标为普通商标，任何在郫都区生产豆瓣的企业均可自由使用"
+        }
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "郫县豆瓣为地理标志证明商标，检索结果展示申请人/地址/注册号/申请日期；证明商标须经注册人许可使用，不能自由使用，标注“郫县风味”也不免责。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "郫县豆瓣 商标 注册号",
+        "steps": "国家知识产权局商标查询系统检索「郫县豆瓣」，查看商标类型（证明商标）、注册人、注册号与商品类别，对照地理标志使用规则。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-ethics"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 36 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-37",
+      "type": "multiple",
+      "title": "低空经济法律 CSSCI 论文筛选",
+      "stem": "在中国知网检索以中国民航大学为第一作者单位发表的篇名中既包含“低空经济”又包含“法律”的CSSCI论文，下列论文中符合上述条件的有哪些？",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "龙卫球,王锡柱.低空经济发展特殊法律制度创新研究[J].华东政法大学学报,2025,28(2):63-76."
+        },
+        {
+          "key": "B",
+          "text": "贾圣真.低空经济法律制度的体系建构[J].当代法学,2025,39(6):76-86."
+        },
+        {
+          "key": "C",
+          "text": "康健.低空经济发展法律规范供给的地方实践及其完善[J].河南财经政法大学学报,2025,40(4):1-14."
+        },
+        {
+          "key": "D",
+          "text": "王锡柱.低空经济发展中的空地冲突及其法律因应[J].法律科学(西北政法大学学报),2026,44(1):190-201."
+        }
+      ],
+      "answer": [
+        "B",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "贾圣真、王锡柱均以中国民航大学为第一作者单位，且篇名同时含“低空经济”“法律”；龙卫球（北航）、康健（河南财经政法大学）不符合。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "作者单位=中国民航大学 AND 篇名=低空经济 AND 篇名=法律 AND 来源类别=CSSCI",
+        "steps": "CNKI 高级检索组合「第一作者单位」与两个「篇名」条件并限定 CSSCI，逐篇核对作者单位与刊名。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-boolean"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 37 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-38",
+      "type": "multiple",
+      "title": "31 省份上半年人均可支配收入报道",
+      "stem": "国家统计局于2026年7月15日发布了上半年居民收入统计数据，随后多家媒体对此进行了报道。假设你需要在新浪门户网站上，快速找到包含31个省份2026年上半年人均可支配收入的相关报道文章，以下选项中正确的有（）？",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "2026年上半年，全国居民人均可支配收入22981元，比上年同期增长5.2%，扣除价格因素，实际增长4.2%"
+        },
+        {
+          "key": "B",
+          "text": "2026年上半年，四川省居民人均可支配收入19739元，同比名义增长5.1%，扣除价格因素实际增长4.2%。"
+        },
+        {
+          "key": "C",
+          "text": "2026年上半年，全国居民人均可支配收入位居第一的城市是北京市（47290元）"
+        },
+        {
+          "key": "D",
+          "text": "2026年上半年，四川省居民人均工资性收入10264元，同比增长4.6%。"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "国家统计局 2026-07-15 发布：上半年全国居民人均可支配收入 22981 元、比上年同期名义增长 5.2%、实际增长 4.2%（A 对）；四川 19739 元、名义增长 5.1%、实际增长 4.2%，工资性收入 10264 元、增长 4.6%（B、D 对）；C 把「城市」与「省份」口径混用，不成立。",
+      "evidence": {
+        "database_id": "web",
+        "query": "2026年上半年 人均可支配收入 31省 新浪",
+        "steps": "在新浪财经检索相关报道，核对全国与分省数据、统计口径（名义/实际增速、工资性收入），排除城市排名等错误表述。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 38 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-39",
+      "type": "multiple",
+      "title": "专利 CN202610772784.2 信息核实",
+      "stem": "以下关于专利CN202610772784.2说法正确的有（）。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "该专利有9项权利要求"
+        },
+        {
+          "key": "B",
+          "text": "该专利是一项发明专利"
+        },
+        {
+          "key": "C",
+          "text": "该专利有1张说明书附图"
+        },
+        {
+          "key": "D",
+          "text": "专利代理人为叶永强"
+        }
+      ],
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "CN202610772784.2 申请号第 5 位为 1、公开号以 CN…A 结尾，属发明专利申请（B 对）；说明书附图 1 张（C 对）；权利要求 9 项、代理人为叶永强与公布文本不符（A、D 错）。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "CN202610772784.2",
+        "steps": "在国家知识产权局专利检索系统按申请号检索，查看专利类型、权利要求项数、附图张数与代理人。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 39 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-40",
+      "type": "multiple",
+      "title": "讯飞智文极速模式 PPT 生成方式",
+      "stem": "讯飞智文可以辅助生成PPT，请问其极速模式提供哪些辅助生成PPT的模式？",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "一句话生成"
+        },
+        {
+          "key": "B",
+          "text": "文档生成"
+        },
+        {
+          "key": "C",
+          "text": "文本生成"
+        },
+        {
+          "key": "D",
+          "text": "高级创建"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "讯飞智文“极速模式”提供一句话生成、文本生成、文档生成、高级创建四个入口。",
+      "evidence": {
+        "database_id": "web",
+        "query": "讯飞智文 极速模式 PPT",
+        "steps": "登录讯飞智文，选择「极速模式」，查看可选的一键生成入口（一句话/文档/文本/高级创建）。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 40 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-41",
+      "type": "multiple",
+      "title": "黄明东加拿大高校学术伦理研究观点",
+      "stem": "加拿大高等学校内部学术伦理机制及其运行过程,对于规范我国高校学术行为有积极的建设性意义。请在中国知网查询作者为黄明东的相关研究文献，以下说法正确的是（）",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "加拿大十分重视妇女、儿童和社会弱势群体的权利的保护"
+        },
+        {
+          "key": "B",
+          "text": "加拿大的每一所高等学校都设有学术伦理审查办公室"
+        },
+        {
+          "key": "C",
+          "text": "加拿大高校要求教授每年必须完成2门次课程的教学任务"
+        },
+        {
+          "key": "D",
+          "text": "在加拿大，课题的申报获得成功以后，所有经费均直接拨付到课题组"
+        }
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "该文指出加拿大重视妇女、儿童及弱势群体权利保护，各高校普遍设学术伦理审查机构；C 的“每年 2 门次课程”与 D 的“经费直接拨付课题组”与原文不符。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "作者=黄明东 AND 主题=加拿大 学术伦理",
+        "steps": "CNKI 作者检索定位相关论文，阅读全文核对关于弱势群体保护、伦理审查机构、教学任务与经费拨付的表述。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-ethics"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 41 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-42",
+      "type": "multiple",
+      "title": "国防科技情报期刊的 2026 重点选题",
+      "stem": "高效投稿需把握三大核心环节：一曰定标——依据单位认可的期刊目录明确刊物层次（核心或普刊）；二曰定向——围绕目标期刊的办刊方向与征稿要求精准选题；三曰定规——预留充裕的写作周期，并严格对标期刊格式规范，以提升稿件录用率。基于此，中国知网收录了一篇国家社科基金项目“国防科技重点领域情报保障体系构建研究”的阶段性成果（主题涉及情报与智库），请问刊登该文的期刊，其2026年重点选题方向包含哪些（）？\n国家社会科学基金项目“国防科技重点领域情报保障体系构建研究”",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "国防科技评价研究"
+        },
+        {
+          "key": "B",
+          "text": "数据要素价值释放与数据治理研究"
+        },
+        {
+          "key": "C",
+          "text": "大模型与小模型的技术融合方法"
+        },
+        {
+          "key": "D",
+          "text": "智能扫描与组织技术"
+        }
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "刊登该文的期刊 2026 年重点选题含「数据要素价值释放与数据治理研究」「大模型与小模型的技术融合方法」「智能扫描与组织技术」（B、C、D）；「国防科技评价研究」不在其列。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "基金=国防科技重点领域情报保障体系构建研究",
+        "steps": "CNKI 按基金名称检索该阶段性成果，从刊名进入期刊主页查看「2026 年重点选题方向」征稿启事。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki",
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 42 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-43",
+      "type": "multiple",
+      "title": "《软件学报》下载量最高论文特征",
+      "stem": "近几年，大数据迅速发展成为科技界和企业界甚至世界各国政府关注的热点。请在中国知网中，检索《软件学报》下载量最高的文章，下列描述正确的有",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "收稿时间: 2014-07-01"
+        },
+        {
+          "key": "B",
+          "text": "大数据的特征总结为5个V"
+        },
+        {
+          "key": "C",
+          "text": "作者中有中国工程院院士"
+        },
+        {
+          "key": "D",
+          "text": "四项国家自然科学基金资助"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "《软件学报》下载量最高的《大数据系统和分析技术综述》（2014, 25(9):1889-1908）收稿时间为 2014-07-01（A 对），作者中含中国工程院院士李国杰（C 对）；原文把大数据特征归纳为 4 个 V 而非 5 个（B 错），基金标注也不是四项（D 错）。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "刊名=软件学报 AND 排序=下载",
+        "steps": "CNKI 期刊导航进入《软件学报》，按下载量排序打开最高篇，核对收稿时间、5V 特征、作者院士身份与基金标注。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-cnki"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 43 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-44",
+      "type": "multiple",
+      "title": "李娜博士论文的引证文献",
+      "stem": "利用万方中国学位论文全文数据库检索，下列哪项是吉林大学李娜博士论文《满铁对中国东北的文化侵略》的引证文献",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "伪满洲国时期的辽宁报刊文献研究"
+        },
+        {
+          "key": "B",
+          "text": "日伪政权在武汉沦陷区的文化建构"
+        },
+        {
+          "key": "C",
+          "text": "满铁对我国东北煤资源的调查过程探析"
+        },
+        {
+          "key": "D",
+          "text": "《辽东诗坛》中的中日古典诗歌交流考"
+        }
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "万方中国学位论文全文库中该文的引证文献含《日伪政权在武汉沦陷区的文化建构》《满铁对我国东北煤资源的调查过程探析》《〈辽东诗坛〉中的中日古典诗歌交流考》（B、C、D）；《伪满洲国时期的辽宁报刊文献研究》不在其列。",
+      "evidence": {
+        "database_id": "wanfang",
+        "query": "题名=满铁对中国东北的文化侵略",
+        "steps": "万方学位论文库打开该论文详情，切换「引证文献」标签逐条比对题名。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-db-wanfang",
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 44 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-45",
+      "type": "multiple",
+      "title": "助学贷款诈骗短信的应对",
+      "stem": "2025年9月，成都某高职院校学生小李收到一条短信，称其“助学贷款账户异常，需立即核验身份，否则将影响征信”。短信附带链接“https://edu-verify.cn/login”，点击后页面显示“国家助学贷款管理中心”标识，但浏览器地址栏未显示“安全锁”图标。页面要求输入身份证号、银行卡号、手机号及短信验证码，并提示“30分钟内未核验将冻结账户”。小李已输入身份证号和银行卡号，但尚未输入验证码，此时他应该（）",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "登录中国人民银行征信中心官网（https://ipcrs.pbccrc.org.cn）查询个人征信报告，确认是否存在异常记录后，再决定是否继续操作"
+        },
+        {
+          "key": "B",
+          "text": "立即拨打短信中预留的“400-xxx-xxxx”客服电话说明情况，并按客服指引完成后续操作"
+        },
+        {
+          "key": "C",
+          "text": "立即联系学校学生资助管理中心（通过学院官网公布的官方电话）核实情况，同时对诈骗短信、虚假页面截屏录屏留存证据，通过国家反诈中心渠道提交涉诈线索报备"
+        },
+        {
+          "key": "D",
+          "text": "立即停止在可疑页面输入任何信息，关闭页面，登录“国家反诈中心”APP对涉嫌诈骗的网址和短信进行咨询，同时通知本校辅导员并报警"
+        }
+      ],
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "应立即停止输入、关闭页面，通过学校资助中心官方电话与“国家反诈中心”核实并报警留证；按短信电话操作或“查完征信再决定是否继续”都会放大风险。",
+      "evidence": {
+        "database_id": "web",
+        "query": "助学贷款 短信 诈骗 核验 应对",
+        "steps": "识别域名仿冒、无 HTTPS 锁标、索要验证码等诈骗特征；正确做法是停止输入、经官方渠道核实、留存证据并报警。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ethics",
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 45 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-46",
+      "type": "judge",
+      "title": "联合国教科文组织 AI 伦理建议书通过时间",
+      "stem": "《人工智能伦理问题建议书》是联合国教科文组织于2021年11月24日通过。建议书中提到：会员国应投资于并促进数字以及媒体与信息素养技能，加强理解人工智能系统的使用和影响所需的批判性思维和能力，从而减少和打击虚假信息、错误信息和仇恨言论。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "中文报道均记《人工智能伦理问题建议书》于 2021 年 11 月 24 日经教科文组织第 41 届大会通过，且建议书确含数字与媒体信息素养条款。",
+      "evidence": {
+        "database_id": "web",
+        "query": "Recommendation on the Ethics of Artificial Intelligence 2021",
+        "steps": "查阅 UNESCO《人工智能伦理问题建议书》官方文本，核对其通过时间（2021 年 11 月 23 日大会通过、11 月 24 日发布）与关于信息素养的条款。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ethics",
+        "t-ai-tools"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 46 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-47",
+      "type": "judge",
+      "title": "九寨沟湖水呈色的科学解释",
+      "stem": "近日，网络流传“九寨沟湖水依靠颜料染色才呈现蓝色”的不实视频，误导不少游客，损害景区形象。由中国科学院成都生物研究所研究员孙康对此作出专业科普：九寨沟湖水独有的蓝绿色，由物理、化学、生物三重因素共同造就。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "中科院成都生物研究所孙康的科普即指出九寨沟蓝绿色由物理、化学、生物三重因素共同造就。",
+      "evidence": {
+        "database_id": "web",
+        "query": "九寨沟 湖水 蓝色 钙华 藻类",
+        "steps": "查证中科院成都生物研究所研究者的科普表述，确认湖水呈色由物理、化学、生物因素共同作用。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic",
+        "t-ethics"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 47 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-48",
+      "type": "judge",
+      "title": "印象笔记的笔记类型与快捷键",
+      "stem": "印象笔记可以新建普通笔记和语音笔记，均可以快速插入智能表格和添加标签；可以新建桌面便签，可以插入待办事项和添加标签；可以按Ctrl+Alt+D组合键调用新Markdown笔记编辑窗口。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "“语音笔记”不支持插入智能表格，故“均可以快速插入智能表格”不成立；桌面便签、Ctrl+Alt+D 新建 Markdown 笔记等描述为真。",
+      "evidence": {
+        "database_id": "web",
+        "query": "印象笔记 语音笔记 桌面便签 Ctrl+Alt+D",
+        "steps": "在印象笔记客户端逐项试用：新建普通/语音笔记、桌面便签、待办事项，并测试 Ctrl+Alt+D 是否为 Markdown 编辑窗口。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 48 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-49",
+      "type": "judge",
+      "title": "GB/T 4894-2024 的文献定义",
+      "stem": "《信息与文献 基础和术语》（GB/T 4894-2024）将“文献”定义为：在文献工作过程中，作为一个单位处理的记录信息或实物对象。由此可见，文献不仅涵盖纸张或缩微版本的书写和印刷资料（如图书、期刊等），也包括非印刷的媒介（如内部网资源、电影）以及集合等，具有更为广泛的外延。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "GB/T 4894-2024 将“文献”定义为文献工作过程中作为一个单位处理的记录信息或实物对象，外延包含非印刷媒介与集合。",
+      "evidence": {
+        "database_id": "web",
+        "query": "GB/T 4894-2024 信息与文献 基础和术语",
+        "steps": "查阅《信息与文献 基础和术语》（GB/T 4894-2024）「文献」条目，核对其定义与外延是否涵盖非印刷媒介。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-biblio",
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 49 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-50",
+      "type": "judge",
+      "title": "实证论文与综述论文的章节结构",
+      "stem": "小王在知网分别检索到以下两篇论文：论文甲：《高职院校资源供给对学生获得感的影响——一个有调节的中介模型》 论文乙：《国内外高职教师自主培训研究综述》 小王阅读两篇论文全文后发现：论文甲设有“研究设计”“实证分析”等章节，论文乙设有“前言”“正文”“小结”等章节。据此小王得出判断：对比这两篇文献可以推知，实证论文都会包含研究过程与结果相关内容，综述类论文基本只做文献梳理，不会出现实证分析性质的内容。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "仅凭两篇论文的章节结构，推不出“实证论文都会包含研究过程与结果、综述类不会出现实证分析”的全称结论。",
+      "evidence": {
+        "database_id": "cnki",
+        "query": "篇名=高职院校资源供给对学生获得感的影响 OR 国内外高职教师自主培训研究综述",
+        "steps": "分别下载两篇论文全文，比对章节结构，注意综述类论文也可能包含实证分析内容，判断结论是否以偏概全。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-literature"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 50 题",
+      "difficulty": 3,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-51",
+      "type": "judge",
+      "title": "连花清瘟胶囊批准文号核实",
+      "stem": "在国家药品监督管理局网站上的数据查询系统检索国产药品“连花清瘟胶囊”，可以查询到它的国药准字Z20040063",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "连花清瘟胶囊的国药准字为 Z20040063，可在国家药监局数据查询系统查到。",
+      "evidence": {
+        "database_id": "gov-open",
+        "query": "国产药品 连花清瘟胶囊",
+        "steps": "在国家药监局「数据查询」的国产药品库按药品名称检索，核对批准文号是否为 Z20040063。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 51 题",
+      "difficulty": 1,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-52",
+      "type": "judge",
+      "title": "知乎盐选会员知识服务产品规模",
+      "stem": "知乎通过盐选会员体系，为用户提供超过5.7万个知识服务产品，包括10万+本盐选好文，2000+场专业课程，13万+本优质电子书，500+个专业心理测试，3万+本杂志。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "题干所列数字与知乎盐选官网/公开宣传口径不一致（如“盐选好文 10 万+”），故判为错误。",
+      "evidence": {
+        "database_id": "web",
+        "query": "知乎 盐选会员 知识服务产品",
+        "steps": "查看知乎盐选会员权益页/官方介绍中披露的产品规模数字，逐项核对各数量级。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 52 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-53",
+      "type": "judge",
+      "title": "百度和搜狗高级检索的相同检索项",
+      "stem": "百度和搜狗的高级检索相比，相同的检索项包括指定网站/搜词位置/文件格式/网页时间。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "百度与搜狗的高级检索虽都有指定网站、搜索词位置、文件格式、网页时间等选项，但两者检索项集合并不完全相同，故题干表述错误。",
+      "evidence": {
+        "database_id": "web",
+        "query": "百度 高级搜索 搜狗 高级搜索 检索项",
+        "steps": "分别打开百度与搜狗高级搜索页，逐项比对可用检索项（站内搜索、时间、文件格式、关键词位置等）。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-search-advanced",
+        "t-boolean"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 53 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-54",
+      "type": "judge",
+      "title": "百度学术 AI 全文翻译能否直接引用",
+      "stem": "百度学术是百度旗下的免费学术资源搜索平台，2025年8月，百度学术进行AI重构，致力于打造一站式AI学术平台。百度学术的AI阅读支持文献中英互译，当你拿到一篇英语论文，选择【全文翻译】，整篇论文就能被精准翻译成中文，可以直接将翻译内容引用为论文权威论据。",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "机器翻译结果不能直接作为“权威论据”引用，引用须回到原文，故整体表述错误。",
+      "evidence": {
+        "database_id": "web",
+        "query": "百度学术 AI 阅读 全文翻译",
+        "steps": "试用百度学术 AI 阅读的全文翻译，确认翻译结果是否可作为论文权威论据直接引用（需回原文核对，不能直接引用译文）。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-ai-tools",
+        "t-ethics"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 54 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "schema_version": 1,
+      "id": "q-tmp-tiku-55",
+      "type": "judge",
+      "title": "北大法宝台湾地区法规的法规位阶",
+      "stem": "北大法宝数据库收录的台湾地区法规的法规位阶有三阶。（）",
+      "stem_images": [],
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "answer_status": "verified",
+      "issues": [],
+      "explain": "台湾地区法规位阶为宪法—法律—命令三阶，北大法宝按法规位阶归类展示。",
+      "evidence": {
+        "database_id": "web",
+        "query": "北大法宝 台湾地区法规 位阶",
+        "steps": "在北大法宝「法律法规」库检索台湾地区法规，查看详情页标注的「法规位阶」层级数量。"
+      },
+      "verification": [
+        {
+          "date": "2026-11-06",
+          "by": "sbdcf",
+          "result": "confirmed"
+        }
+      ],
+      "taxonomy": [
+        "t-open-data",
+        "t-search-basic"
+      ],
+      "exam_year": 2026,
+      "round": "校赛",
+      "source": "信息素养试题整理（三）",
+      "source_ref": "第 55 题",
+      "difficulty": 2,
+      "duplicate_of": null,
+      "contributor": "",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
+    }
+  ],
+  "papers": {
+    "paper-buzz-01": {
+      "schema_version": 1,
+      "id": "paper-buzz-01",
+      "name": "抢答赛 10 题",
+      "format": "buzz",
+      "duration_sec": 0,
+      "draw": {
+        "single": 5,
+        "multiple": 3,
+        "judge": 2,
+        "min_available": 10,
+        "allow_partial": true,
+        "seed": null
+      },
+      "submit_mode": "stream",
+      "scoring": {
+        "mode": "per_question",
+        "points": {
+          "single": 0,
+          "multiple": 0,
+          "judge": 0
+        },
+        "wrong_penalty": 0,
+        "unanswered": 0,
+        "total_normalize": 0
+      },
+      "buzz": {
+        "buffer_ms": 1000,
+        "submit_window_sec": 20,
+        "qualify_ratio": 0.5,
+        "qualify_fill": "strict",
+        "correct_points": 4,
+        "wrong_points": -1,
+        "reveal_sec": 5,
+        "close_on_all_submitted": false,
+        "tie_window_ms": 5
+      }
+    },
+    "paper-relay-5x3": {
+      "schema_version": 1,
+      "id": "paper-relay-5x3",
+      "name": "接力赛 5 分钟×3",
+      "format": "relay",
+      "duration_sec": 300,
+      "draw": null,
+      "legs": [
+        {
+          "single": 3,
+          "multiple": 1,
+          "judge": 1,
+          "min_available": 5,
+          "allow_partial": true,
+          "seed": 2026
+        },
+        {
+          "single": 3,
+          "multiple": 1,
+          "judge": 1,
+          "min_available": 5,
+          "allow_partial": true,
+          "seed": 2027
+        },
+        {
+          "single": 3,
+          "multiple": 1,
+          "judge": 1,
+          "min_available": 5,
+          "allow_partial": true,
+          "seed": 2028
+        }
+      ],
+      "submit_mode": "stream",
+      "scoring": {
+        "mode": "correct_minus_wrong",
+        "points": {
+          "single": 4,
+          "multiple": 4,
+          "judge": 4
+        },
+        "wrong_penalty": 1,
+        "unanswered": 0,
+        "total_normalize": 0
+      }
+    },
+    "paper-school-55": {
+      "schema_version": 1,
+      "id": "paper-school-55",
+      "name": "校赛模拟 55 题",
+      "format": "solo",
+      "duration_sec": 3600,
+      "draw": {
+        "single": 30,
+        "multiple": 15,
+        "judge": 10,
+        "min_available": 40,
+        "allow_partial": true,
+        "seed": null
+      },
+      "submit_mode": "batch",
+      "scoring": {
+        "mode": "per_question",
+        "points": {
+          "single": 1,
+          "multiple": 2,
+          "judge": 1
+        },
+        "wrong_penalty": 0,
+        "unanswered": 0,
+        "total_normalize": 100
+      }
+    },
+    "paper-team-coop-10": {
+      "schema_version": 1,
+      "id": "paper-team-coop-10",
+      "name": "团队对抗 10 题",
+      "format": "team-coop",
+      "duration_sec": 1200,
+      "draw": {
+        "single": 6,
+        "multiple": 2,
+        "judge": 2,
+        "min_available": 10,
+        "allow_partial": true,
+        "seed": 2026
+      },
+      "submit_mode": "stream",
+      "scoring": {
+        "mode": "correct_minus_wrong",
+        "points": {
+          "single": 4,
+          "multiple": 4,
+          "judge": 4
+        },
+        "wrong_penalty": 1,
+        "unanswered": 0,
+        "total_normalize": 0
+      }
+    },
+    "paper-team-solo-10": {
+      "schema_version": 1,
+      "id": "paper-team-solo-10",
+      "name": "个人对抗 10 题",
+      "format": "team-solo",
+      "duration_sec": 300,
+      "draw": {
+        "single": 6,
+        "multiple": 2,
+        "judge": 2,
+        "min_available": 10,
+        "allow_partial": true,
+        "seed": 2026
+      },
+      "submit_mode": "stream",
+      "scoring": {
+        "mode": "correct_minus_wrong",
+        "points": {
+          "single": 2,
+          "multiple": 2,
+          "judge": 2
+        },
+        "wrong_penalty": 1,
+        "unanswered": 0,
+        "total_normalize": 0
+      }
+    }
+  }
+}

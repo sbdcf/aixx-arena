@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-27",
+  "type": "multiple",
+  "title": "万方学位论文详情页的关键词核对",
+  "stem": "利用万方学位论文数据库检索题名为\"生命周期视角下华为公司股权激励制度研究\"的文献，该文献关键词包括有（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "案例研究法"
+    },
+    {
+      "key": "B",
+      "text": "持续发展"
+    },
+    {
+      "key": "C",
+      "text": "风险管理"
+    },
+    {
+      "key": "D",
+      "text": "生命周期"
+    }
+  ],
+  "answer": [
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "通过万方学位论文数据库中找到生命周期视角下华为公司股权激励制度研究\"文献，进入文献详情页，即可找到正确答案",
+  "evidence": {
+    "database_id": "wanfang",
+    "query": "生命周期视角下华为公司股权激励制度研究",
+    "steps": "通过万方学位论文数据库中找到生命周期视角下华为公司股权激励制度研究\"文献，进入文献详情页，即可找到正确答案"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-db-wanfang"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "常用中文商业数据库-样题 3",
+  "difficulty": 1,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

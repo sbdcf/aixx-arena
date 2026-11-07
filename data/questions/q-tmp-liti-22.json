@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-22",
+  "type": "multiple",
+  "title": "多馆馆藏中可查到《白银资本》的图书馆",
+  "stem": "请问：下列哪些图书馆有贡德 · 弗兰克所著的《白银资本》这本书？（ ）{提醒：中英文、各版本都要考虑}",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "重庆大学图书馆"
+    },
+    {
+      "key": "B",
+      "text": "山东省图书馆"
+    },
+    {
+      "key": "C",
+      "text": "麻省理工学院图书馆"
+    },
+    {
+      "key": "D",
+      "text": "兰州大学图书馆"
+    }
+  ],
+  "answer": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "找到各图书馆的馆藏书目查询入口，检索字段选择“标题”，检索词输入“白银资本”或“ReORIENT:GlobalEconomyintheAsianAge ”，找到结果后验证作者信息。",
+  "evidence": {
+    "database_id": "nlc-opac",
+    "query": "题名=白银资本",
+    "steps": "找到各图书馆的馆藏书目查询入口，检索字段选择“标题”，检索词输入“白银资本”或“ReORIENT:GlobalEconomyintheAsianAge ”，找到结果后验证作者信息。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-biblio",
+    "t-search-basic"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "文献信息检索系统-样题 6",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}

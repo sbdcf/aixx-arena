@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q-tmp-liti-41",
+  "type": "multiple",
+  "title": "合肥三只羊企业工商信息核对",
+  "stem": "以下关于“合肥三只羊网络科技有限公司”说法正确的是（ ）。",
+  "stem_images": [],
+  "options": [
+    {
+      "key": "A",
+      "text": "该企业的注册时间：2021-03-18"
+    },
+    {
+      "key": "B",
+      "text": "该企业注册资本不足：200 万"
+    },
+    {
+      "key": "C",
+      "text": "该企业所属行业为：软件和信息技术服务业"
+    },
+    {
+      "key": "D",
+      "text": "该企业统一社会信用代码：91340103MA2WTXNN25"
+    }
+  ],
+  "answer": [
+    "A",
+    "C",
+    "D"
+  ],
+  "answer_status": "verified",
+  "issues": [],
+  "explain": "通过天眼查或企查查搜索“合肥三只羊网络科技有限公司”，浏览企业工商信息，对比选项。",
+  "evidence": {
+    "database_id": "web",
+    "query": "合肥三只羊网络科技有限公司",
+    "steps": "通过天眼查或企查查搜索“合肥三只羊网络科技有限公司”，浏览企业工商信息，对比选项。"
+  },
+  "verification": [
+    {
+      "date": "2026-11-06",
+      "by": "sbdcf",
+      "result": "confirmed"
+    }
+  ],
+  "taxonomy": [
+    "t-open-data",
+    "t-search-advanced"
+  ],
+  "exam_year": 2026,
+  "round": "校赛",
+  "source": "比赛官网例题",
+  "source_ref": "实用学习资源-样题 4",
+  "difficulty": 2,
+  "duplicate_of": null,
+  "contributor": "",
+  "created": "2026-11-06",
+  "updated": "2026-11-06"
+}
