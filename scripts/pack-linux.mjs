@@ -67,7 +67,7 @@ async function main() {
   // 4. 运行期 package.json：声明 ESM，start 指向包内 runtime/node
   const manifest = {
     name: 'aixx-arena-server',
-    version: '0.1.0',
+    version: '0.1.1',
     private: true,
     type: 'module',
     description: 'AI+信息素养训练场 · 联机后端（Linux 便携包）',

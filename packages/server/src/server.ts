@@ -34,7 +34,7 @@ import { Room, RoomError, isSupportedFormat, uniqueCode } from './rooms.ts'
 import { Session } from './session.ts'
 import type { SessionHooks } from './session.ts'
 
-export const SERVER_VERSION = '0.1.0'
+export const SERVER_VERSION = '0.1.1'
 
 /** 断线后允许 resume 的宽限（任务契约：30s）。 */
 const RECONNECT_GRACE_MS = 30_000
@@ -709,6 +709,14 @@ export async function startServer(options: ServerOptions = {}): Promise<ArenaSer
           team_id: room.teamOf(participant.id)?.id,
           member_id: message.member_id,
         })
+        return
+      }
+
+      case 'set_leg_order': {
+        const room = requireRoom(participant)
+        if (!isStringArray(message.order)) throw new RoomError('BAD_MESSAGE', 'order 必须是字符串数组')
+        room.setLegOrder(participant.id, message.order)
+        broadcastLobby(room)
         return
       }
 

@@ -300,6 +300,11 @@ export function setReady(value: boolean): void {
   roomDriver?.setReady(value)
 }
 
+/** relay：队长在开局前调整本队棒次（服务端校验必须是队员全排列） */
+export function setLegOrder(order: string[]): void {
+  roomDriver?.setLegOrder(order)
+}
+
 export function startRoomMatch(): void {
   roomDriver?.startMatch()
 }

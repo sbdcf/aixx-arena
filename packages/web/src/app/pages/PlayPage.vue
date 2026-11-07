@@ -66,15 +66,16 @@ const soloScopeText = computed(() => {
   if (!isTeamSolo.value) return '本人作答'
   return isOnline.value ? '队内各自作答（按队汇总）' : '单人模拟（团队成绩按队汇总）'
 })
-/** 交卷语义来自试卷配置：stream = 提交即判分不可改，batch = 可回改、交卷统一判分 */
-const submitModeText = computed(() =>
-  record.value?.paper.submit_mode === 'stream' ? '提交即判分 · 不可修改' : '交卷后统一判分 · 可回改',
-)
+/** 交卷语义来自试卷配置：stream = 提交即判分不可改，batch = 可回改、交卷统一判分；接力例外：交棒才锁 */
+const submitModeText = computed(() => {
+  if (isRelay.value) return '本棒内可反复改答案 · 交棒后锁定'
+  return record.value?.paper.submit_mode === 'stream' ? '提交即判分 · 不可修改' : '交卷后统一判分 · 可回改'
+})
 /** 底部提示要跟着交卷语义走，不然 stream 卷写「可随时回改」就是骗人 */
 const footerHint = computed(() => {
   if (isBuzz.value) return '题面先出、缓冲期禁抢；开抢后点选项即提交，提交即锁定，下一题自动开始'
   if (isCoop.value) return '团队赛题序由主答推进，不能回头'
-  if (isRelay.value) return '本棒答完点「下一题」，推过本棒最后一题就交棒'
+  if (isRelay.value) return '本棒内答错、多选都能改到对为止；推过本棒最后一题就交棒，交棒后锁定'
   return record.value?.paper.submit_mode === 'stream' ? '点选项即提交，判分后不可修改' : '选择即保存，可随时回改'
 })
 /** 扣分口径也来自试卷：抢答卷把它写在 buzz 里，其余赛制在 scoring 里 */

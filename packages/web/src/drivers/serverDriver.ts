@@ -196,6 +196,11 @@ export class ServerDriver {
     this.send({ t: 'ready', value })
   }
 
+  /** relay：队长赛前调整本队棒次（服务端校验全排列） */
+  setLegOrder(order: string[]): void {
+    this.send({ t: 'set_leg_order', order })
+  }
+
   startMatch(): void {
     this.send({ t: 'start' })
   }

@@ -68,7 +68,7 @@ async function main() {
   // 4. 运行期 package.json：声明 ESM，并把 start 指到便携 node
   const manifest = {
     name: 'aixx-arena-server',
-    version: '0.1.0',
+    version: '0.1.1',
     private: true,
     type: 'module',
     description: 'AI+信息素养训练场 · 联机后端（便携包）',

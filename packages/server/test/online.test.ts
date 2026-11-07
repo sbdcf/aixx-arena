@@ -442,3 +442,99 @@ test('附：掉线后用 resume_id 重连，接管连接并补发 lobby', async 
   assert.equal(lobby.host_id, host.participantId)
   assert.equal(lobby.viewer_id, host.participantId)
 })
+
+test('11. relay：队长赛前分配棒次（开局固化），本棒内可反复改答案、交棒后锁定', async (t) => {
+  const server = await launch()
+  const clients: TestClient[] = []
+  t.after(async () => {
+    for (const client of clients) client.close()
+    await server.close()
+  })
+
+  const host = await createRoomAsHost(server.port, '接力队长', 'paper-relay-5x3')
+  clients.push(host.client)
+  const mate = await connectPlayer(server.port, '接力队友')
+  clients.push(mate.client)
+  mate.client.send({ t: 'join', room_code: host.roomCode })
+  await mate.client.waitForType('lobby')
+  mate.client.send({ t: 'join_team', team_code: host.teamCode })
+  const joined = await mate.client.waitFor(
+    (message): message is LobbyMessage =>
+      message.t === 'lobby' && message.teams.some((team) => team.members.length === 2),
+  )
+  assert.equal(joined.format, 'relay')
+  assert.deepEqual(joined.teams[0]?.leg_order, [host.participantId, mate.participantId])
+
+  // 队员不能替队长改棒次
+  mate.client.send({ t: 'set_leg_order', order: [mate.participantId, host.participantId] })
+  const denied = await mate.client.waitForType('error')
+  assert.equal(denied.code, 'NOT_AUTHORIZED')
+
+  // 队长把顺序改成「队友先上」，双方大厅都收到新顺序
+  const expected = [mate.participantId, host.participantId]
+  host.client.send({ t: 'set_leg_order', order: expected })
+  await host.client.waitFor(
+    (message) => message.t === 'lobby' && message.teams[0]?.leg_order?.[0] === mate.participantId,
+  )
+  await mate.client.waitFor(
+    (message) => message.t === 'lobby' && message.teams[0]?.leg_order?.[0] === mate.participantId,
+  )
+
+  // 顺序不是队员全排列 → BAD_MESSAGE
+  host.client.send({ t: 'set_leg_order', order: [host.participantId] })
+  const bad = await host.client.waitForType('error')
+  assert.equal(bad.code, 'BAD_MESSAGE')
+
+  // 开局：leg_order 固化，当前棒 = 指定的第一棒（队友）
+  host.client.send({ t: 'start' })
+  const paper = await host.client.waitForType('paper')
+  await mate.client.waitForType('paper')
+  assert.equal(paper.questions.length, 15)
+  const startRoom = await host.client.waitForType('room')
+  assert.equal(startRoom.snapshot.format, 'relay')
+  if (startRoom.snapshot.format !== 'relay') throw new Error('expected relay snapshot')
+  assert.equal(startRoom.snapshot.current_answerer_id, mate.participantId)
+  assert.deepEqual(startRoom.snapshot.leg_order.slice(0, 2), expected)
+
+  const qid = paper.questions[0]?.id
+  assert.ok(qid)
+  const question = bank.questions.find((candidate) => candidate.id === qid)
+  assert.ok(question)
+  const wrongKey = question.options.find((option) => !question.answer.includes(option.key))?.key
+  assert.ok(wrongKey)
+
+  // 第一次提交（错答案）：本棒内不锁，可以继续改
+  mate.client.send({ t: 'submit', qid, seq: 1, choice: [wrongKey] })
+  const firstAck = await mate.client.waitForType('ack')
+  assert.equal(firstAck.accepted, true)
+  assert.equal(firstAck.locked, false)
+  assert.equal(firstAck.correct, false)
+
+  // 同一题再交一次（正确多选）：覆写重判
+  const seq = 2
+  mate.client.send({ t: 'submit', qid, seq, choice: [...question.answer] })
+  const secondAck = await mate.client.waitForType('ack')
+  assert.equal(secondAck.accepted, true)
+  assert.equal(secondAck.locked, false)
+  assert.equal(secondAck.correct, true)
+  assert.equal(secondAck.points, 4)
+
+  const expectedChoice = [...question.answer].sort()
+  const hostRoom = await host.client.waitFor(
+    (message): message is RoomMessage =>
+      message.t === 'room' &&
+      message.snapshot.own.answers[qid]?.join(',') === expectedChoice.join(','),
+  )
+  assert.deepEqual(hostRoom.snapshot.own.answers[qid], expectedChoice)
+  assert.equal(hostRoom.snapshot.own.locked.includes(qid), false)
+
+  // 队友交棒 → 下一棒是队长，历史棒答案锁定、当前棒可提交
+  mate.client.send({ t: 'handoff' })
+  const nextRoom = await host.client.waitFor(
+    (message): message is RoomMessage => message.t === 'room' && message.snapshot.format === 'relay' && message.snapshot.leg_index === 1,
+  )
+  if (nextRoom.snapshot.format !== 'relay') throw new Error('expected relay snapshot')
+  assert.equal(nextRoom.snapshot.current_answerer_id, host.participantId)
+  assert.equal(nextRoom.snapshot.own.can_submit, true)
+  assert.ok(nextRoom.snapshot.own.locked.includes(qid))
+})

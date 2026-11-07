@@ -7,6 +7,7 @@ import {
   newTeam,
   resumeRoomSession,
   room,
+  setLegOrder,
   setReady,
   startRoomMatch,
 } from '@/stores/matchStore.ts'
@@ -106,6 +107,41 @@ function toggleReady(): void {
   setReady(!myReady.value)
 }
 
+function memberName(teamId: string, memberId: string): string {
+  const team = lobby.value?.teams.find((item) => item.id === teamId)
+  return team?.members.find((member) => member.id === memberId)?.name ?? memberId
+}
+
+/** 接力棒次：服务端已维护全排列，缺省按队员列出兜底 */
+function legOrder(teamId: string): string[] {
+  const team = lobby.value?.teams.find((item) => item.id === teamId)
+  if (!team) return []
+  return team.leg_order && team.leg_order.length > 0 ? team.leg_order : team.members.map((member) => member.id)
+}
+
+function canEditLegOrder(teamId: string): boolean {
+  const team = lobby.value?.teams.find((item) => item.id === teamId)
+  return Boolean(
+    lobby.value &&
+      lobby.value.format === 'relay' &&
+      !lobby.value.started &&
+      team &&
+      room.participantId &&
+      team.captain_id === room.participantId,
+  )
+}
+
+function moveLeg(teamId: string, index: number, delta: number): void {
+  if (!canEditLegOrder(teamId)) return
+  const order = [...legOrder(teamId)]
+  const target = index + delta
+  if (target < 0 || target >= order.length) return
+  const current = order[index] as string
+  order[index] = order[target] as string
+  order[target] = current
+  setLegOrder(order)
+}
+
 function start(): void {
   startRoomMatch()
 }
@@ -176,6 +212,39 @@ function quit(): void {
                 <span class="spacer" />
                 <span class="tiny muted">{{ member.online ? (member.ready ? '已准备' : '未准备') : '掉线' }}</span>
               </div>
+            </div>
+            <div v-if="lobby.format === 'relay'" class="stack" style="gap: 6px; margin-top: 12px">
+              <div class="row">
+                <span class="tiny muted">棒次</span>
+                <span class="spacer" />
+                <span v-if="canEditLegOrder(team.id)" class="tiny muted">队长可调整顺序</span>
+              </div>
+              <div v-for="(memberId, index) in legOrder(team.id)" :key="memberId" class="row member-line">
+                <span class="badge">第 {{ index + 1 }} 棒</span>
+                <span>{{ memberName(team.id, memberId) }}</span>
+                <span class="spacer" />
+                <template v-if="canEditLegOrder(team.id)">
+                  <button
+                    class="btn btn-ghost btn-sm"
+                    type="button"
+                    :disabled="index === 0"
+                    title="提前一位"
+                    @click="moveLeg(team.id, index, -1)"
+                  >
+                    ↑
+                  </button>
+                  <button
+                    class="btn btn-ghost btn-sm"
+                    type="button"
+                    :disabled="index === legOrder(team.id).length - 1"
+                    title="推后一位"
+                    @click="moveLeg(team.id, index, 1)"
+                  >
+                    ↓
+                  </button>
+                </template>
+              </div>
+              <div class="tiny muted">不足 3 人时按此顺序循环上场；开局后顺序锁定。</div>
             </div>
           </div>
           <div v-if="lobby.teams.length === 0" class="team-card empty-card">还没有队伍，先建一支</div>

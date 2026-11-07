@@ -117,13 +117,13 @@ test('relay 提交：只有当前棒选手、且只能交本棒的题', () => {
     messages: [{ t: 'error', code: 'BAD_MESSAGE', message: '这一棒的题目里没有这个题号' }],
   })
 
-  // 正常：判分 + ack 带 correct/points + 广播实时榜
+  // 正常：判分 + ack 带 correct/points + 广播实时榜；本棒内不锁（可继续改）
   const ok = reduceRelay(s0, sub('q1', ['A'], 'm1'), ctx)
   assert.equal(ok.state.teams.t1.answers.q1.correct, true)
   assert.equal(ok.state.teams.t1.answers.q1.points, 4)
   assert.deepEqual(ok.effects.to_member?.[0], {
     member_id: 'm1',
-    messages: [{ t: 'ack', seq: 1, qid: 'q1', accepted: true, locked: true, correct: true, points: 4 }],
+    messages: [{ t: 'ack', seq: 1, qid: 'q1', accepted: true, locked: false, correct: true, points: 4 }],
   })
   assert.deepEqual(ok.effects.broadcast?.[0], {
     t: 'score',
@@ -133,14 +133,13 @@ test('relay 提交：只有当前棒选手、且只能交本棒的题', () => {
     ],
   })
 
-  // 重复提交：accepted:false locked:true
-  const again = reduceRelay(ok.state, sub('q1', ['A'], 'm1'), ctx)
-  assert.deepEqual(again.effects.to_member?.[0]?.messages[0], {
-    t: 'ack',
-    seq: 1,
-    qid: 'q1',
-    accepted: false,
-    locked: true,
+  // 本棒内重复提交 = 覆写并重新判分（改答案 / 多选继续勾选都靠它）
+  const again = reduceRelay(ok.state, sub('q1', ['B'], 'm1'), ctx)
+  assert.equal(again.state.teams.t1.answers.q1.correct, false)
+  assert.equal(again.state.teams.t1.answers.q1.points, -1)
+  assert.deepEqual(again.effects.to_member?.[0], {
+    member_id: 'm1',
+    messages: [{ t: 'ack', seq: 1, qid: 'q1', accepted: true, locked: false, correct: false, points: -1 }],
   })
 })
 
@@ -282,4 +281,99 @@ test('relay view：can_submit 只对当前棒；leg_index / current_answerer_id 
   assert.equal(viewAfter.clock.leg_deadline_at, T0 + 10_000 + (LEG_SEC + 290) * 1000)
   // 队伍分：一队 0 分
   assert.deepEqual(viewAfter.scores?.[0], { team_id: 't1', name: '一队', score: 0 })
+})
+
+test('relay 多选：先少选后补全会覆写重判（不再点一个就锁死）', () => {
+  const multiQuestions = [
+    makeQuestion({ id: 'q1', type: 'multiple', answer: ['A', 'C'] }),
+    makeQuestion({ id: 'q2', type: 'single', answer: ['B'] }),
+    makeQuestion({ id: 'q3', type: 'single', answer: ['C'] }),
+    makeQuestion({ id: 'q4', type: 'single', answer: ['D'] }),
+    makeQuestion({ id: 'q5', type: 'single', answer: ['A'] }),
+    makeQuestion({ id: 'q6', type: 'single', answer: ['B'] }),
+  ]
+  const ctx = makeCtx({
+    questions: multiQuestions,
+    paper: makePaper({
+      legs: [
+        { single: 1, multiple: 1, judge: 0, min_available: 2, allow_partial: true },
+        { single: 2, multiple: 0, judge: 0, min_available: 2, allow_partial: true },
+        { single: 2, multiple: 0, judge: 0, min_available: 2, allow_partial: true },
+      ],
+    }),
+  })
+  const s0 = start(ctx)
+
+  // 多选第一次只勾了 A（少选 = 错），第二次补上 C（完整答案 = 对）
+  const partial = reduceRelay(s0, sub('q1', ['A'], 'm1'), ctx)
+  assert.equal(partial.state.teams.t1.answers.q1.correct, false)
+  assert.equal(partial.state.teams.t1.answers.q1.points, -1)
+
+  const full = reduceRelay(partial.state, sub('q1', ['A', 'C'], 'm1', T0 + 2000), ctx)
+  assert.equal(full.state.teams.t1.answers.q1.correct, true)
+  assert.equal(full.state.teams.t1.answers.q1.points, 4)
+  assert.deepEqual(full.effects.broadcast?.[0], {
+    t: 'score',
+    teams: [
+      { id: 't1', name: '一队', score: 4 },
+      { id: 't2', name: '二队', score: 0 },
+    ],
+  })
+})
+
+test('relay view.locked：本棒答案可改所以不锁，交棒后历史棒锁定，封卷后全锁', () => {
+  const ctx = makeCtx()
+  const s0 = start(ctx)
+
+  const a1 = reduceRelay(s0, sub('q1', ['A'], 'm1'), ctx)
+  const beforeHandoff = view(a1.state, 'm1', T0 + 1000)
+  assert.deepEqual(beforeHandoff.own.locked, [])
+
+  const handed = reduceRelay(a1.state, { type: 'HANDOFF', at: T0 + 2000, actor_id: 'm1' }, ctx)
+  const afterHandoff = view(handed.state, 'm2', T0 + 2000)
+  assert.deepEqual(afterHandoff.own.locked, ['q1'])
+
+  // 第 2 棒再答一题 → 仍不锁；本队封卷后全部锁定
+  const a3 = reduceRelay(handed.state, sub('q3', ['C'], 'm2', T0 + 2500), ctx)
+  assert.deepEqual(view(a3.state, 'm2', T0 + 2500).own.locked, ['q1'])
+  const finished = reduceRelay(a3.state, { type: 'FINISH', at: T0 + 3000, actor_id: 'm2' }, ctx)
+  const locked = view(finished.state, 'm2', T0 + 3000).own.locked
+  assert.equal(locked.length, 2)
+  assert.ok(locked.includes('q1'))
+  assert.ok(locked.includes('q3'))
+})
+
+test('relay leg_order：赛前指定的棒次优先，成员/去重后按默认序补齐', () => {
+  const ctx = makeCtx({
+    roster: {
+      teams: [
+        { id: 't1', name: '一队', member_ids: ['m1', 'm2', 'm3'], captain_id: 'm1', leg_order: ['m3', 'm1', 'm2'] },
+        { id: 't2', name: '二队', member_ids: ['m4', 'm5'], captain_id: 'm4', leg_order: ['m5', 'm4'] },
+      ],
+      names: { m1: '甲', m2: '乙', m3: '丙', m4: '丁', m5: '戊' },
+    },
+  })
+  const state = start(ctx)
+  assert.deepEqual(state.teams.t1.leg_order, ['m3', 'm1', 'm2'])
+  // 2 人队指定顺序后仍循环补齐第 3 棒
+  assert.deepEqual(state.teams.t2.leg_order, ['m5', 'm4', 'm5'])
+  assert.deepEqual(state.short_teams, ['t2'])
+
+  // 首棒变成了 m3：只有 m3 能提交
+  const viewM3 = view(state, 'm3', T0)
+  if (viewM3.format !== 'relay') throw new Error('expected relay view')
+  assert.equal(viewM3.own.can_submit, true)
+  assert.equal(viewM3.current_answerer_id, 'm3')
+  const denied = reduceRelay(state, sub('q1', ['A'], 'm1'), ctx)
+  assert.equal(denied.effects.to_member?.[0]?.messages[0]?.t, 'error')
+
+  // 顺序里混入非本队成员/重复项：过滤后仍按默认序补齐，保证一人一棒
+  const dirty = makeCtx({
+    roster: {
+      teams: [{ id: 't1', name: '一队', member_ids: ['m1', 'm2', 'm3'], captain_id: 'm1', leg_order: ['m2', 'ghost', 'm2'] }],
+      names: { m1: '甲', m2: '乙', m3: '丙' },
+    },
+  })
+  const dirtyState = start(dirty)
+  assert.deepEqual(dirtyState.teams.t1.leg_order, ['m2', 'm1', 'm3'])
 })

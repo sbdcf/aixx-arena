@@ -647,13 +647,13 @@ TICK    : 全局到期 → 所有队结算
 
 ```ts
 interface RelayTeamState {
-  leg_order: string[]        // 恰好 3 个 member_id，开赛固化
+  leg_order: string[]        // 恰好 3 个 member_id；开赛瞬间固化（优先用赛前指定顺序）
   leg_index: 0 | 1 | 2
   current_index: number      // 棒内题号，交棒时归零
   leg_started_at: number
   leg_budget_sec: number     // 本棒预算 = X + carry
   carry_sec: number
-  answers: Record<string, { choice: string[]; at: number; correct: boolean; points: number }>
+  answers: Record<string, { choice: string[]; at: number; correct: boolean; points: number; by: string; leg_index: number }>
   finished_at?: number
 }
 interface RelayState extends MatchStateBase {
@@ -667,6 +667,8 @@ interface RelayState extends MatchStateBase {
 START   : 所有队 leg_index=0，budget=X，leg_started_at=at
           global deadline_at = at + 3X*1000
 SUBMIT  : 仅当前棒选手、且 qid ∈ leg_question_ids[leg_index]
+          同一 qid 可在本棒内反复提交：覆写并重新判分（多选逐次勾选即逐次覆写）
+          本棒内已答不锁定；交棒后历史棒不可再提交
 ADVANCE : 仅当前棒选手。current_index += 1
           若 current_index > 本棒题数-1 → 等价 HANDOFF；否则只前进（不动时间预算）
 HANDOFF : 仅当前棒选手（或 TICK 强制 / 断线 30s 自动 / 棒尾 ADVANCE 等价触发）
@@ -678,8 +680,9 @@ TICK    : (at - leg_started_at)/1000 >= leg_budget_sec → 强制 HANDOFF
           at >= deadline_at → 全部结算
 ```
 
-**棒次到人的映射（v0.2 定，v0.1 只有一个 `answererOf` 回调，等于没定义）**：
-- 开赛时 `leg_order` = 队伍成员，顺序为「队长在首位，其余按加入顺序」，取前 3 人。
+**棒次到人的映射（v0.2 定，v1.1 支持赛前指定）**：
+- 开赛前，队长可在房间大厅用 `set_leg_order` 指定本队棒次（必须是本队队员的一个排列），开赛瞬间固化。
+- 开赛时 `leg_order` = 队伍成员；未指定时顺序为「队长在首位，其余按加入顺序」，取前 3 人。
 - 不足 3 人（2 人队）：按顺序循环补齐，例如 `[A, B, A]`，并在开局日志里写 `relay_short_team`。
 - 掉线 30s 自动交棒：按连续交棒处理，时间照走；最后一棒掉线 → 该队直接结算。
 
@@ -789,6 +792,7 @@ export type ClientMsg =
   | { t: 'submit_all' }                  // 本人/本队交卷
   | { t: 'end' }                         // 房主终止全局
   | { t: 'set_answerer'; member_id: string }
+  | { t: 'set_leg_order'; order: string[] }   // 接力赛前分配本队棒次（仅队长，未开赛）
   | { t: 'ping'; t0: number }
   | { t: 'feedback'; qid: string; reason: string }
   | { t: 'leave' }
@@ -819,7 +823,7 @@ export type ServerMsg =
 
 **v0.6 新增两条消息（P3 联机所需，7 处说明凑齐才不至于边写边猜）：**
 
-- `lobby`：开局前的唯一状态源。字段：房间号、赛制、试卷、房主、是否已开赛、观众 id、自己所在队伍、全部队伍（`LobbyTeam{id,name,code?,members[]}`，`code` 只发给本队成员）、未分队散人。任何人员/准备状态变化都重发给全房。
+- `lobby`：开局前的唯一状态源。字段：房间号、赛制、试卷、房主、是否已开赛、观众 id、自己所在队伍、全部队伍（`LobbyTeam{id,name,code?,members[],leg_order?}`，`code` 只发给本队成员；relay 的 `leg_order` 是当前棒次顺序，队员为 `members` 的 id）、未分队散人。任何人员/准备/棒次变化都重发给全房。
 - `paper`：开局瞬间发给每位选手的整卷题面。元素是 `PaperQuestion{id,type,stem,stem_images?,options,difficulty?,taxonomy?,source?}` —— **没有 `answer` / `explain`**，答案只能从 `reveal` 出。solo / team-solo / team-coop 需要整卷（选手要自由翻题），relay / buzz 用 `question` 逐题推送。
 
 `question` 逐题推送只给 relay / buzz 用：`buffer_ms` 是禁抢缓冲，`deadline_at` 是本题作答截止（绝对毫秒）。
@@ -835,7 +839,7 @@ v0.1 说「UI 只消费 ServerMsg」，但 batch 模式既不产生 `ack` 也不
 | solo（batch） | `{accepted:true, locked:false}`，**不带 correct** | 交卷后一次性全卷 | ❌ |
 | team-solo（stream） | `{accepted, locked:true, correct, points}` | 交卷后一次性全卷 | ❌ |
 | team-coop（stream） | 同上 | 交卷后一次性全卷 | ❌ |
-| relay（stream） | 同上 | 交卷后一次性全卷 | ❌ |
+| relay（stream，本棒内可覆写） | `{accepted:true, locked:false, correct, points}`；同题重复提交覆写并重判；交棒后历史棒再提交被拒（`BAD_MESSAGE`） | 交卷后一次性全卷 | ❌ |
 | buzz（stream） | `{accepted, locked:true, correct}` | 本题 `closed` 后立即 `reveal`（含解析），停留 `reveal_sec` | ❌ |
 
 补充规则：
@@ -844,6 +848,7 @@ v0.1 说「UI 只消费 ServerMsg」，但 batch 模式既不产生 `ack` 也不
 - **`seq` 语义**：每个 participant 在每个 match 内**单调递增**，从 1 开始。服务端保存 `last_seq`，`seq <= last_seq` → `STALE_SEQ`（丢弃，不回 ack）；接受后 `last_seq = seq` 并回 `ack{seq}`。这样重连补发天然幂等。
 - **`LocalDriver` 必须合成同构消息**：它内部跑 `reduce`，然后把 `effects` 转成与 ServerMsg 完全相同的对象，自己维护一个 `seq` 计数器。UI 拿到的消息流，两种模式**逐字段一致**。
 - **UI 不得直接读 `MatchState`**，只能读 `room.snapshot` 与过程消息。这是审计点，写入代码评审清单。
+- **relay 是 stream 的「棒内可改」变体**：本棒内同一题可反复提交并覆写重判（`locked:false`），多选因此能逐次勾选、答错能改；交棒瞬间把此前各题锁进历史棒，之后不可再改。`OwnView.locked` 只列已交棒历史棒的 qid（封卷后列全部）。
 
 ---
 
@@ -876,7 +881,7 @@ v0.1 说「UI 只消费 ServerMsg」，但 batch 模式既不产生 `ack` 也不
 │ 底部：解析（交卷后）／队伍状态（联机）                        │
 └──────────────────────────────────────────────────────────┘
 ```
-- 键盘：`←/→` 切题（接力夹在本棒内），`A–H` 选项（多选可反复切换，交卷前可改）。
+- 键盘：`←/→` 切题（接力夹在本棒内），`A–H` 选项（多选可反复切换；接力本棒内可改答案，交棒后锁定）。
 - **不做快捷键交卷**：交卷是不可逆动作，必须走确认弹层，避免误触。
 - `<1100px` 时题号面板收为顶部抽屉；手机竖屏退化为单列 + 底部固定「上一题 / 题号 / 下一题」。
 
@@ -910,6 +915,7 @@ export interface Driver {
   advance?(): void                                // 团队共享游标（team-coop）
   setAnswerer?(memberId: string): void            // 换主答（team-coop）
   handoff?(): void                                // 交棒（relay）
+  setLegOrder?(order: string[]): void             // 接力赛前分配本队棒次（队长；仅联机大厅）
   on(handler: (message: ServerMsg) => void): () => void
   dispose(): void
   snapshot(): PublicMatchState | null             // 页面初始化用，避免等第一帧
@@ -1181,6 +1187,7 @@ v0.1 完全没有回答这个问题，而 `reduce` 需要 `Roster`。本地练�
 | 提交答案（team-coop / buzz） | ❌ | ❌ | ✅ | ❌ |
 | 提交答案（relay） | ❌ | ❌ | ✅（当前棒） | ❌ |
 | 交棒（relay） | ❌ | ❌ | ✅（当前棒） | ❌ |
+| 分配棒次（relay，赛前） | ❌ | ✅（本队） | ❌ | ❌ |
 | 反馈题目 | ✅ | ✅ | ✅ | ✅ |
 
 权限检查分两处：`server.ts` 查「是不是这个房间的人」与房间级动作（开赛/结束），`rooms.ts` 查队伍级角色（队长/团队码）；**赛制内的角色**（主答、当前棒）由 core 的状态机再判一次并回 `NOT_AUTHORIZED`——两层都判，避免前端绕过后端只判一次就放行。
@@ -1347,7 +1354,7 @@ assert.equal(r2.state.deadline_at, 1000 + 3 * 300 * 1000)      // 全局截止�
 7. **hash 路由 + GitHub Pages**：不要用 history 模式，否则刷新 `/play/xxx` 直接 404。
 8. **https 页面连 `ws://` 一定失败**：不是"可能被拦"，是规范要求。形态 D 必须两端都加密，或干脆用形态 B。
 9. **`seq` 必须每个 participant 独立计数**：全局共享一个计数器会在多标签页重连时把对方的消息挤成 `STALE_SEQ`。
-10. **`leg_order` 要固化**：不要在 HANDOFF 时去查"房间当前成员里下一个是谁"——掉线、被踢、换队都会让这个查询给出不同结果，而重连快照必须与当时的判定一致。
+10. **`leg_order` 要固化**：不要在 HANDOFF 时去查"房间当前成员里下一个是谁"——掉线、被踢、换队都会让这个查询给出不同结果，而重连快照必须与当时的判定一致。开赛前可由队长用 `set_leg_order` 指定，开赛瞬间固化成 state；`RoomTeam.leg_order` 只是大厅展示，开赛后不再影响判定。
 
 ---
 
@@ -1362,5 +1369,6 @@ assert.equal(r2.state.deadline_at, 1000 + 3 * 300 * 1000)      // 全局截止�
 | v0.8 | 2026-11-06 | P4 实作回写：服务端分棒组卷（`legs` → `drawRelay().legs.flat()`）、`handoff` 路由、交棒一切以快照为准、本棒倒计时用 `clock.leg_deadline_at`、单人队循环排棒 |
 | v0.9 | 2026-11-06 | P5 实作回写：题面在缓冲期先推（`announced`）、`qualify_ratio` / `reveal_ms` 固化进 state、开局 TICK、抢答无交卷、实时榜取代答题卡；P6 完成成绩导出（CSV / JSON）与教练视角 |
 | v1.0 | 2026-11-06 | 整理版：技术选型并入 §2 架构章（2.3 技术栈 / 2.4 被否决方案），删除开发机环境相关章节；§4 目录树、§12 测试策略、§13 实施路线按实际实现重写；变更历史压缩为本表 |
+| v1.1 | 2026-11-07 | 接力赛修复：本棒内可反复提交/覆写答案并重判（多选逐次勾选、答错可改），交棒后历史棒锁定；新增 `set_leg_order` 消息与 `LobbyTeam/RosterTeam.leg_order`，队长可赛前分配棒次 |
 
 原则：**文档与实现不一致时，以实现为准并回写文档**。每一轮实作后，把"写代码时发现文档不够用"的点直接补进对应章节，而不是堆在末尾列表里。

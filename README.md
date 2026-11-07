@@ -49,7 +49,7 @@
 
 ### 路线 1：Windows 便携包（最省事，老师 / 有 Windows 电脑的同学）
 
-1. 从本仓库的 [Releases](https://github.com/sbdcf/aixx-arena/releases/latest) 下载 `aixx-server-win-v0.1.zip`（也可以让老师把解压后的文件夹直接发给你），解压到任意目录，例如 `D:\aixx-server-win`。
+1. 从本仓库的 [Releases](https://github.com/sbdcf/aixx-arena/releases/latest) 下载 `aixx-server-win-v0.1.1.zip`（也可以让老师把解压后的文件夹直接发给你），解压到任意目录，例如 `D:\aixx-server-win`。
 2. 双击目录里的 `start.cmd`。第一次运行时 Windows 可能弹出「是否允许访问网络」，勾选「**专用网络**」并允许。
 3. 窗口里出现 `ready. Ctrl+C to stop.` 就是启动成功。**这个黑窗口不要关**，关了服务就停了。
 4. 本机浏览器打开 `http://127.0.0.1:8787/`；要让同教室的学生连，把窗口里 `lan` 那行地址（形如 `http://192.168.1.23:8787`）发给他们。
@@ -91,7 +91,7 @@ npm run dev:web         # 终端 2：前端开发服务器（热更新），按�
 | 1 | 个人客观题（校赛模拟） | 整卷作答，可回改，交卷后统一判分 | 55 题 / 60 分钟 | ✅ | —（联机大厅不开放此赛制） |
 | 2 | 团队个人赛 | 队内各人独立作答，按队汇总总分 | 10 题 / 5 分钟 | ✅ 单人模拟 | ✅ 每队 1–3 人 |
 | 3 | 团队赛（1 答 2 辅） | 1 人主答提交，队友同屏看题；可中途换主答 | 10 题 / 20 分钟 | ✅ 本地同屏模拟 | ✅ 每队必须正好 3 人 |
-| 4 | 接力赛 | 3 棒 × 5 题，上一棒没花完的时间继承给下一棒 | 每棒 5 分钟 | ✅ 一人三棒 | ✅ 建议每队 3 人，不足按顺序循环排棒 |
+| 4 | 接力赛 | 3 棒 × 5 题，上一棒没花完的时间继承给下一棒 | 每棒 5 分钟 | ✅ 一人三棒 | ✅ 建议每队 3 人；队长可在房间大厅指定棒次，不足按顺序循环排棒 |
 | 5 | 团队抢答 | 多队同场，按服务端收到时间排序，前 50% 抢到且答对才加分 | 10 题，逐题推进 | ✅ 模拟一队 | ✅ 建议 ≥ 2 队 |
 
 **几个容易踩的点**
@@ -215,7 +215,7 @@ D:\aixx-server-win\
 ```
 AI+信息素养训练场 · 联机后端
 
-aixx-arena server v0.1.0 (protocol v1)
+aixx-arena server v0.1.1 (protocol v1)
   local    http://127.0.0.1:8787
   lan      http://192.168.1.23:8787
   web root packages\web\dist
@@ -245,7 +245,7 @@ ready. Ctrl+C to stop.
 **自测（强烈建议，10 秒）**：在这台电脑的浏览器里打开 `http://127.0.0.1:8787/healthz`，应该看到一行 JSON：
 
 ```json
-{"ok":true,"version":"0.1.0","protocol":1,"uptime_sec":12,"rooms":0,"participants":0}
+{"ok":true,"version":"0.1.1","protocol":1,"uptime_sec":12,"rooms":0,"participants":0}
 ```
 
 看到 `"ok":true` 就说明后端活着，可以继续。看不到就说明窗口已关或启动失败。
@@ -373,6 +373,8 @@ ready. Ctrl+C to stop.
 
 点不动时页面上会给出原因，例如「至少需要一支队伍」「『第一队』还差 1 人（1 答 2 辅必须凑满 3 人）」，接力赛还会提示某队人数不足、将按人数循环排棒次。
 
+接力赛的队伍卡片里会列出「第 1/2/3 棒」及对应队员，**队长**（建队的人）可以点 ↑/↓ 调整本队棒次，开赛瞬间锁定；不是队长就只显示顺序，不能改。
+
 > 注意：上面说的是按钮什么时候能点。真正开赛时服务端还会再检查一次「所有在场同学都已分队」，若还有人在「还没分队的同学」名单里，会报「还有 N 名玩家未分队」，让他们先入队或先离开房间。
 
 **你应该看到**：全场同时跳到答题页，顶部开始倒计时，所有人题目一致。
@@ -455,10 +457,10 @@ runtime\node.exe packages\server\src\main.ts --port 9000 --max-rooms 30 --web-ro
 
 #### B0 直接用发布包（最省事，x64）
 
-从 [Releases](https://github.com/sbdcf/aixx-arena/releases/latest) 下载 `aixx-server-linux-v0.1.tar.gz`，解压后执行：
+从 [Releases](https://github.com/sbdcf/aixx-arena/releases/latest) 下载 `aixx-server-linux-v0.1.1.tar.gz`，解压后执行：
 
 ```bash
-tar -xzf aixx-server-linux-v0.1.tar.gz
+tar -xzf aixx-server-linux-v0.1.1.tar.gz
 cd aixx-server-linux
 bash start.sh
 ```
@@ -899,9 +901,9 @@ draw(pool, spec, seed, used_ids?): { questions, degraded, available_count, reque
 
 **`relay`（赛制 4）**
 
-- 状态：`leg_order`（恰好 3 个成员 id，开赛固化）、`leg_index`、棒内 `current_index`、`leg_started_at`、`leg_budget_sec`、`carry_sec`、`answers`、`finished_at?`；另有 `leg_question_ids` 三棒题目切分。
+- 状态：`leg_order`（恰好 3 个成员 id；开赛瞬间固化，优先用队长赛前指定的顺序）、`leg_index`、棒内 `current_index`、`leg_started_at`、`leg_budget_sec`、`carry_sec`、`answers`、`finished_at?`；另有 `leg_question_ids` 三棒题目切分。
 - 时间继承（关键）：`carry = max(0, budget_sec - (at - leg_started_at) / 1000)`，下一棒 `budget = 300 + carry`，`leg_started_at = at`；全局 `deadline_at = 开赛时刻 + 3X × 1000`，**不随交棒变化**。用 `ceil` 会让队伍凭空多出 1 秒，所以必须直接截断。
-- 事件与规则：`START` / `SUBMIT` / `ADVANCE` / `HANDOFF` / `TICK` / `END`。只能提交本棒题目；棒内推满后 `ADVANCE` 等价 `HANDOFF`；本棒超时由 `TICK` 强制交棒；第 3 棒 `HANDOFF` 即该队结束。不足 3 人按顺序循环补齐（如 `[A, B, A]`），日志记 `relay_short_team`。
+- 事件与规则：`START` / `SUBMIT` / `ADVANCE` / `HANDOFF` / `TICK` / `END`。只能提交本棒题目；**同一题可在本棒内反复提交，覆写并重新判分**（多选逐项勾选、答错改答案都靠这个），交棒后历史棒不可再改；棒内推满后 `ADVANCE` 等价 `HANDOFF`；本棒超时由 `TICK` 强制交棒；第 3 棒 `HANDOFF` 即该队结束。不足 3 人按顺序循环补齐（如 `[A, B, A]`），日志记 `relay_short_team`。
 - 卷面：每题 4 分，答错 −1，满分 60。
 
 **`buzz`（赛制 5）**
@@ -1018,7 +1020,7 @@ solo / team-solo 的游标不进状态机，因为它们对判分毫无影响（
 └────────────────────────────────────────────────┘
 ```
 
-- 键盘：`←/→` 切题（接力夹在本棒内），`A–H` 选项（多选可反复切换，交卷前可改）。**不做快捷键交卷**：交卷不可逆，必须走确认弹层。
+- 键盘：`←/→` 切题（接力夹在本棒内），`A–H` 选项（多选可反复切换；接力本棒内可改答案，交棒后锁定）。**不做快捷键交卷**：交卷不可逆，必须走确认弹层。
 - `<1100px` 题号面板收为顶部抽屉；手机竖屏退化为单列 + 底部固定「上一题 / 题号 / 下一题」。
 #### 状态与本地存储
 不引 Pinia：全局只有一个「当前对局」，一个 `reactive()` 单例就够。
@@ -1122,6 +1124,7 @@ export interface Driver {
 | 提交答案（team-coop / buzz） | ❌ | ❌ | ✅ | ❌ |
 | 提交答案（relay） | ❌ | ❌ | ✅（当前棒） | ❌ |
 | 交棒（relay） | ❌ | ❌ | ✅（当前棒） | ❌ |
+| 分配棒次（relay，赛前） | ❌ | ✅（本队） | ❌ | ❌ |
 | 反馈题目 | ✅ | ✅ | ✅ | ✅ |
 
 权限检查分两处：`server.ts` 查房间与房间级动作（开赛 / 结束），`rooms.ts` 查队伍级角色（队长 / 团队码）；**赛制内的角色**（主答、当前棒）由 core 的状态机再判一次并回 `NOT_AUTHORIZED`——两层都判，避免绕过前端只判一次就放行。
@@ -1171,7 +1174,7 @@ export interface Driver {
 7. hash 路由 + GitHub Pages：不要用 history 模式，否则刷新 `/play/xxx` 直接 404。
 8. https 页面连 `ws://` 一定失败：这是规范要求，不是「可能被拦」；形态 D 必须两端都加密。
 9. `seq` 必须每 participant 独立计数：全局共享一个计数器会在多标签页重连时把对方消息挤成 `STALE_SEQ`。
-10. `leg_order` 要固化：不要在 `HANDOFF` 时去查「房间当前成员里下一个是谁」，掉线 / 被踢 / 换队都会让结果与重连快照不一致。
+10. `leg_order` 要固化：不要在 `HANDOFF` 时去查「房间当前成员里下一个是谁」，掉线 / 被踢 / 换队都会让结果与重连快照不一致。开赛前可由队长用 `set_leg_order` 指定，开赛瞬间固化成 state；大厅里的 `RoomTeam.leg_order` 只用于展示，开赛后不再影响判定。
 ### 版本记录
 | 版本 | 日期 | 关键变化 |
 | --- | --- | --- |
@@ -1267,7 +1270,7 @@ npm run typecheck      # exit 0
 curl.exe http://127.0.0.1:8787/healthz
 ```
 
-`/healthz` 返回 `{"ok":true,"version":"0.1.0","protocol":1,...}` 即正常；再打开首页确认有「5 种赛制卡片」，点「联机大厅」建一个房间、能看到房间号。
+`/healthz` 返回 `{"ok":true,"version":"0.1.1","protocol":1,...}` 即正常；再打开首页确认有「5 种赛制卡片」，点「联机大厅」建一个房间、能看到房间号。
 
 ### 重新打 Windows 便携包
 
@@ -1317,6 +1320,6 @@ aixx-arena/
 | [`deploy/linux/README.md`](deploy/linux/README.md) | Docker Compose、Node 直跑、systemd、Nginx / wss |
 | [`packages/server/README.md`](packages/server/README.md) | 服务端参数、HTTP/WS 接口、开发者说明（也会进便携包的 `README.txt`） |
 
-**版本**：服务端 `0.1.0` / 协议 `1`；设计文档 v1.0（2026-11-06）；本 README 同步于 2026-11-07。
+**版本**：服务端 `0.1.1` / 协议 `1`；设计文档 v1.1（2026-11-07）；本 README 同步于 2026-11-07。
 
 **维护约定**：改实现或改部署方式时，同时更新本 README 的对应章节和 `docs/design.md`；如果两者暂时不一致，先按代码实际行为修文档，再回头统一措辞。README 面向「第一次来的人」，尽量用操作步骤和原始界面文案，不要求读者懂编程。

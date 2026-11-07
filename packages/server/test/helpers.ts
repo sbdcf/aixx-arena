@@ -167,7 +167,8 @@ export async function connectPlayer(port: number, name: string, options: { resum
 /** 走完「创建房间 + 建队」的最短路径，返回房主视角。 */
 export async function createRoomAsHost(port: number, name: string, paperId = 'paper-team-solo-10'): Promise<Player & { roomCode: string; teamCode: string }> {
   const player = await connectPlayer(port, name)
-  player.client.send({ t: 'create', format: paperId.includes('coop') ? 'team-coop' : 'team-solo', paper_id: paperId })
+  const format = paperId.includes('relay') ? 'relay' : paperId.includes('buzz') ? 'buzz' : paperId.includes('coop') ? 'team-coop' : 'team-solo'
+  player.client.send({ t: 'create', format, paper_id: paperId })
   const lobby = await player.client.waitForType('lobby')
   player.client.send({ t: 'new_team', name: '红队' })
   const teamLobby = await player.client.waitForType('lobby')

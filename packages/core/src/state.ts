@@ -32,6 +32,8 @@ export interface RosterTeam {
   name: string
   member_ids: string[]
   captain_id: string
+  /** relay：队长赛前指定的棒次顺序（member_ids 的一个排列）；缺省按队长首位 + 加入顺序 */
+  leg_order?: string[]
 }
 
 /** 开赛瞬间固化进 state 的成员快照；开赛后不再变动（重连快照自足）。 */

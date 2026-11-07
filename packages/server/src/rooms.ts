@@ -80,6 +80,8 @@ export interface RoomTeam {
   code: string
   captain_id: string
   member_ids: string[]
+  /** relay：队长赛前指定的棒次顺序（member_ids 的一个排列） */
+  leg_order: string[]
 }
 
 export interface RoomOptions {
@@ -209,6 +211,7 @@ export class Room {
       code,
       captain_id: participantId,
       member_ids: [participantId],
+      leg_order: [participantId],
     }
     this.teams.push(team)
     return { team, switched }
@@ -228,6 +231,7 @@ export class Room {
     const previous = this.teamOf(participantId)
     this.leaveTeam(participantId)
     team.member_ids.push(participantId)
+    team.leg_order.push(participantId)
     return { team, switched: Boolean(previous) }
   }
 
@@ -236,12 +240,39 @@ export class Room {
       const index = team.member_ids.indexOf(participantId)
       if (index < 0) continue
       team.member_ids.splice(index, 1)
+      team.leg_order = team.leg_order.filter((id) => id !== participantId)
       if (team.captain_id === participantId && team.member_ids.length > 0) {
         team.captain_id = team.member_ids[0] as string
       }
       this.pruneEmptyTeams()
       return
     }
+  }
+
+  /** relay 赛前分配棒次：只有队长能改，且必须是本队队员的一个全排列。 */
+  setLegOrder(participantId: string, order: string[]): RoomTeam {
+    if (this.started) throw new RoomError('ROOM_STARTED', '已经开局，无法调整棒次')
+    if (this.format !== 'relay') throw new RoomError('BAD_MESSAGE', '只有接力赛需要分配棒次')
+    const team = this.teamOf(participantId)
+    if (!team) throw new RoomError('NOT_AUTHORIZED', '你先加入一支队伍')
+    if (team.captain_id !== participantId) throw new RoomError('NOT_AUTHORIZED', '只有队长能调整棒次')
+
+    const unique = new Set(order)
+    const sameSet =
+      order.length === team.member_ids.length &&
+      unique.size === order.length &&
+      team.member_ids.every((id) => unique.has(id))
+    if (!sameSet) throw new RoomError('BAD_MESSAGE', '棒次顺序必须恰好包含本队全部队员且不重复')
+
+    team.leg_order = [...order]
+    this.log({
+      at: Date.now(),
+      event: 'leg_order',
+      participant_id: participantId,
+      team_id: team.id,
+      data: { order: [...order] },
+    })
+    return team
   }
 
   private pruneEmptyTeams(): void {
@@ -264,6 +295,7 @@ export class Room {
       id: team.id,
       name: team.name,
       captain_id: team.captain_id,
+      leg_order: [...team.leg_order],
       ...(team.id === viewerTeam?.id ? { code: team.code } : {}),
       members: team.member_ids
         .map((memberId) => this.members.get(memberId))
@@ -300,6 +332,7 @@ export class Room {
         name: team.name,
         captain_id: team.captain_id,
         member_ids: [...team.member_ids],
+        leg_order: [...team.leg_order],
       }))
     return { teams, names }
   }

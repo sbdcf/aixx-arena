@@ -36,7 +36,7 @@ npm run start:server
 启动成功会打印：
 
 ```
-aixx-arena server v0.1.0 (protocol v1)
+aixx-arena server v0.1.1 (protocol v1)
   local    http://127.0.0.1:8787
   lan      http://192.168.x.x:8787
   web root <repo>/packages/web/dist

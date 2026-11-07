@@ -36,6 +36,8 @@ export interface LobbyTeam {
   name: string
   captain_id: string
   code?: string
+  /** relay：赛前棒次顺序（队长可调，开赛固化）；非 relay 为空/缺省 */
+  leg_order?: string[]
   members: { id: string; name: string; ready: boolean; online: boolean }[]
 }
 
@@ -67,6 +69,7 @@ export type ClientMsg =
   | { t: 'submit_all' }
   | { t: 'end' }
   | { t: 'set_answerer'; member_id: string }
+  | { t: 'set_leg_order'; order: string[] }
   | { t: 'ping'; t0: number }
   | { t: 'feedback'; qid: string; reason: string }
   | { t: 'leave' }

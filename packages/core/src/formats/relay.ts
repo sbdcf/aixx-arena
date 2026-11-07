@@ -76,12 +76,25 @@ export function splitLegQuestions(ctx: ReduceCtx): [string[], string[], string[]
   return ids as [string[], string[], string[]]
 }
 
-/** 棒次顺序：队长在首位，其余按加入顺序；不足 3 人循环补齐 */
-function buildLegOrder(team: { id: string; member_ids: string[]; captain_id: string }): { order: string[]; short: boolean } {
+/**
+ * 棒次顺序：优先用队长赛前指定的 `leg_order`，未指定的成员按「队长在首位，其余按加入顺序」补齐；
+ * 不足 3 人循环补齐
+ */
+function buildLegOrder(team: {
+  id: string
+  member_ids: string[]
+  captain_id: string
+  leg_order?: string[]
+}): { order: string[]; short: boolean } {
   if (team.member_ids.length === 0) throw new Error(`队伍 ${team.id} 没有成员`)
 
   const captain = team.member_ids.includes(team.captain_id) ? team.captain_id : team.member_ids[0]
-  const ordered = [captain, ...team.member_ids.filter((id) => id !== captain)]
+  const fallback = [captain, ...team.member_ids.filter((id) => id !== captain)]
+  // 只信任本队成员，去重；缺的成员按默认顺序补在后面，保证一人恰好一棒
+  const custom = (team.leg_order ?? []).filter(
+    (id, index, all) => team.member_ids.includes(id) && all.indexOf(id) === index,
+  )
+  const ordered = [...custom, ...fallback.filter((id) => !custom.includes(id))]
   const order = ordered.slice(0, LEGS)
   while (order.length < LEGS) order.push(ordered[order.length % ordered.length])
   return { order, short: ordered.length < LEGS }
@@ -340,17 +353,7 @@ function handleSubmit(
   if (!state.leg_question_ids[teamState.leg_index].includes(qid)) {
     return { state, effects: { to_member: [errorTo(actorId, 'BAD_MESSAGE', '这一棒的题目里没有这个题号')] } }
   }
-  if (teamState.answers[qid] !== undefined) {
-    return {
-      state,
-      effects: {
-        to_member: [
-          { member_id: actorId, messages: [{ t: 'ack', seq: event.seq ?? 0, qid, accepted: false, locked: true }] },
-        ],
-      },
-    }
-  }
-
+  // 本棒内允许反复提交（多选逐次勾选、改答案都走这里）：覆写并重新判分，交棒后才锁历史棒
   const choice = normalizeChoice(event.choice ?? [])
   const judged = judge({ question, choice, scoring: ctx.paper.scoring, answered: true })
   const nextTeam: RelayTeamState = {
@@ -381,7 +384,7 @@ function handleSubmit(
               seq: event.seq ?? 0,
               qid,
               accepted: true,
-              locked: true,
+              locked: false,
               correct: judged.correct,
               points: judged.points,
             },
@@ -612,7 +615,16 @@ function view(state: RelayState, viewerId: string | null, at: number): PublicMat
   const answerer = teamState ? answererOf(teamState) : undefined
 
   const answers: Record<string, string[]> = {}
-  for (const [qid, record] of Object.entries(teamState?.answers ?? {})) answers[qid] = [...record.choice]
+  const locked: string[] = []
+  const teamFinished = teamState?.finished_at !== undefined
+  const allLocked = teamFinished || state.phase === 'ended'
+  for (const [qid, record] of Object.entries(teamState?.answers ?? {})) {
+    answers[qid] = [...record.choice]
+    // 本棒已答不锁（可反复修改），交棒后历史棒 / 本队封卷后全锁
+    if (allLocked || (teamState !== undefined && record.leg_index < teamState.leg_index)) {
+      locked.push(qid)
+    }
+  }
 
   const peers: PeerInfo[] = []
   for (const team of state.roster.teams) {
@@ -650,7 +662,7 @@ function view(state: RelayState, viewerId: string | null, at: number): PublicMat
     own: {
       scope: 'team',
       answers,
-      locked: Object.keys(answers),
+      locked,
       can_submit:
         Boolean(teamState) &&
         teamState?.finished_at === undefined &&
